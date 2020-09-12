@@ -1,12 +1,13 @@
-import { Button } from "@material-ui/core";
+import { Hero } from "../src/components";
 
 const Home = () => {
   return (
-    <div>
-      <Button variant="outlined" color="primary">
-        Hello Work
-      </Button>
-    </div>
+    <Hero
+      image="/factory-entrance.jpg"
+      imageText="factory entrance"
+      title="The Kitchen Top Stone Mason"
+      description="Specializing In Custom Made Stone Kitchen Top"
+    />
   );
 };
 

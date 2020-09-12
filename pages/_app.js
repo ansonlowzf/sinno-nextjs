@@ -1,5 +1,6 @@
 import { ThemeProvider, CssBaseline } from "@material-ui/core";
-import theme from "../styles/theme";
+import theme from "../src/theme";
+import { Header } from "../src/components";
 
 const MyApp = ({ Component, pageProps }) => {
   React.useEffect(() => {
@@ -13,6 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <Header />
       <Component {...pageProps} />
     </ThemeProvider>
   );
