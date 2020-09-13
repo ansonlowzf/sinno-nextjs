@@ -26,9 +26,6 @@ const useStyles = makeStyles((theme) => ({
   textContainer: {
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
-    [theme.breakpoints.down(`sm`)]: {
-      textAlign: `center`,
-    },
   },
 }));
 
@@ -52,7 +49,7 @@ export const Hero = ({ image, imageText, title, description }) => {
         alignItems="center"
         className={classes.overlay}
       >
-        <Grid item className={classes.textContainer}>
+        <Grid item /* className={classes.textContainer}*/>
           <Typography variant="h1" color="secondary" gutterBottom>
             {title}
           </Typography>
