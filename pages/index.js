@@ -13,18 +13,18 @@ const Home = () => {
         description="Specializing In Custom Made Stone Kitchen Top"
       />
       <SectionWrapper>
-        <BodyT1 />
+        <BodyT1 title="What We Do?" />
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>This is a H2</Heading2>
+        <Heading2>Stone Product</Heading2>
         <Container maxWidth="lg">
           <Grid container spacing={5} justify="center" alignItems="center">
-            <Grid item sm={6} md={5}>
-              <StoneCard />
+            <Grid item xs={12} sm={6} md={5}>
+              <StoneCard stone="Quartz Stone" description="Engineered Stone" />
             </Grid>
-            <Grid item sm={6} md={5}>
-              <StoneCard />
+            <Grid item xs={12} sm={6} md={5}>
+              <StoneCard stone="Granite" description="Natural Stone" />
             </Grid>
           </Grid>
         </Container>

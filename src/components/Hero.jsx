@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
+    marginBottom: theme.spacing(13),
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: theme.spacing(5),
+    },
   },
   overlay: {
     position: "absolute",

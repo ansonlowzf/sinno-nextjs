@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const StoneCard = () => {
+export const StoneCard = ({ stone, description }) => {
   const classes = useStyles();
 
   return (
@@ -31,20 +31,16 @@ export const StoneCard = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {stone}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+        <Button size="large" color="primary">
+          Find out
         </Button>
       </CardActions>
     </Card>
