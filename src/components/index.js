@@ -3,3 +3,4 @@ export * from "./Header";
 export * from "./Hero";
 export * from "./BodyT1";
 export * from "./Footer";
+export * from "./StoneCard";
