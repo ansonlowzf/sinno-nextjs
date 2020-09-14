@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
   heroStyle: {
     position: `relative`,
     width: `100%`,
-    height: `90vh`,
+    height: `80vh`,
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     backgroundSize: "cover",
@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   textContainer: {
-    paddingLeft: theme.spacing(1),
-    paddingRight: theme.spacing(1),
+    paddingLeft: theme.spacing(1.75),
+    paddingRight: theme.spacing(1.75),
   },
 }));
 
@@ -37,19 +37,17 @@ export const Hero = ({ image, imageText, title, description }) => {
       className={classes.heroStyle}
       style={{
         backgroundImage: `url(${image})`,
-        height: `90vh`,
       }}
     >
       {/* Increase the priority of the hero background image */}
       {<img style={{ display: "none" }} src={image} alt={imageText} />}
-
       <Grid
         container
         justify="center"
         alignItems="center"
         className={classes.overlay}
       >
-        <Grid item /* className={classes.textContainer}*/>
+        <Grid item className={classes.textContainer}>
           <Typography variant="h1" color="secondary" gutterBottom>
             {title}
           </Typography>

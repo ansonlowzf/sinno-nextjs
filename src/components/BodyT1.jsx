@@ -1,5 +1,6 @@
 import {
   Container,
+  Box,
   Grid,
   makeStyles,
   Paper,
@@ -16,16 +17,18 @@ export const BodyT1 = () => {
   const classes = useStyles();
 
   return (
-    <Grid container item className={classes.SectionWrapper}>
-      <Grid item xs={12} md={6}>
-        <Typography component="h2" variant="h3" color="initial">
-          What We Do?
-        </Typography>
-        <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-          possimus aperiam eaque labore nemo vel aliquid assumenda adipisci odit
-          ducimus.
-        </Typography>
+    <Grid container item spacing={5} className={classes.SectionWrapper}>
+      <Grid container item alignItems="center" xs={12} md={6}>
+        <Box px={{ xs: 3, md: 13 }}>
+          <Typography component="h2" variant="h3" gutterBottom>
+            What We Do?
+          </Typography>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+            possimus aperiam eaque labore nemo vel aliquid assumenda adipisci
+            odit ducimus.
+          </Typography>
+        </Box>
       </Grid>
       <Grid item xs={12} md={6}>
         <Paper
