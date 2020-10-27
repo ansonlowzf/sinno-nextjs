@@ -2,33 +2,43 @@ import Head from "next/head";
 import { Layout, siteTitle } from "../components";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
-import Date from "../components/Date";
+import { Date } from "../components";
+import { makeStyles, Container, Typography } from "@material-ui/core";
 
-import utilStyles from "../styles/utils.module.css";
+const useStyles = makeStyles((theme) => ({
+  blogList: {
+    listStyleType: `none`,
+    marginBottom: theme.spacing(1),
+  },
+}));
 
 export default function Home({ allPostsData }) {
+  const classes = useStyles();
+
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>…</section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+      <Container maxWidth="sm">
+        <Typography component="ul">
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className={classes.blogList} key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <Typography
+                component="small"
+                variant="body2"
+                color="textSecondary"
+              >
                 <Date dateString={date} />
-              </small>
+              </Typography>
             </li>
           ))}
-        </ul>
-      </section>
+        </Typography>
+      </Container>
     </Layout>
   );
 }
