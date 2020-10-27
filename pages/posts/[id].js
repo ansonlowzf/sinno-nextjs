@@ -1,23 +1,25 @@
-import { Layout } from "../../components";
+import { BlogLayout, Date } from "../../components";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
-import { Date } from "../../components";
 import utilStyles from "../../styles/utils.module.css";
+import { Typography } from "@material-ui/core";
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <BlogLayout>
       <Head>
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <Typography component="h1" variant="h6" gutterBottom>
+          {postData.title}
+        </Typography>
+        <Typography component="small" variant="body2" color="textSecondary">
           <Date dateString={postData.date} />
-        </div>
+        </Typography>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </Layout>
+    </BlogLayout>
   );
 }
 
