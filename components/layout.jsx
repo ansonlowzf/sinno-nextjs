@@ -3,8 +3,8 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-const name = "Stone Innovations Enterprise";
-export const siteTitle = "Stone Innovations Enterprise Website";
+const name = "Blog";
+export const siteTitle = "Stone Innovations Enterprise Blog";
 
 export function Layout({ children, home }) {
   return (
@@ -27,26 +27,12 @@ export function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
             <h2 className={utilStyles.headingLg}>
-              <Link href="/">
+              <Link href="/blog">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
