@@ -6,7 +6,7 @@ import Link from "next/link";
 const name = "Blog";
 export const siteTitle = "Stone Innovations Enterprise Blog";
 
-export function Layout({ children, home }) {
+export function BlogLayout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>

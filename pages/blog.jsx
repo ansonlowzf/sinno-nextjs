@@ -1,8 +1,7 @@
 import Head from "next/head";
-import { Layout, siteTitle } from "../components";
+import { Date, BlogLayout, siteTitle } from "../components";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
-import { Date } from "../components";
 import { makeStyles, Container, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +20,7 @@ export default function Home({ allPostsData }) {
   const classes = useStyles();
 
   return (
-    <Layout home>
+    <BlogLayout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -44,7 +43,7 @@ export default function Home({ allPostsData }) {
           ))}
         </Typography>
       </Container>
-    </Layout>
+    </BlogLayout>
   );
 }
 
