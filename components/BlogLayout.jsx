@@ -1,16 +1,28 @@
+import * as React from "react";
 import Head from "next/head";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { makeStyles, Container, Typography } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+  containerStyles: {
+    margin: theme.spacing(6, `auto`, 12),
+  },
+  h1Margin: {
+    marginBottom: theme.spacing(5),
+  },
+}));
 
 const name = "Blog";
 export const siteTitle = "Stone Innovations Enterprise Blog";
 
 export function BlogLayout({ children, home }) {
+  const classes = useStyles();
+
   return (
-    <div className={styles.container}>
+    <Container maxWidth="sm" className={classes.containerStyles}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -27,26 +39,32 @@ export function BlogLayout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <Typography
+              component="h1"
+              variant="h4"
+              className={classes.h1Margin}
+            >
+              {name}
+            </Typography>
           </>
         ) : (
           <>
-            <h2 className={utilStyles.headingLg}>
+            <Typography component="h2" variant="h5" paragraph>
               <Link href="/blog">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className={classes.linkStyles}>{name}</a>
               </Link>
-            </h2>
+            </Typography>
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <Typography>
           <Link href="/blog">
             <a>← Back to home</a>
           </Link>
-        </div>
+        </Typography>
       )}
-    </div>
+    </Container>
   );
 }

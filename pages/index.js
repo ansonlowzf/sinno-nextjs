@@ -1,12 +1,14 @@
+import * as React from "react";
 import { Container, Grid } from "@material-ui/core";
-import { BodyT1, Hero, StoneCard } from "../src/components";
+import { BodyT1, StoneCard } from "../src/components";
+import { HeroCTA } from "../components";
 import { Heading2 } from "../src/elements";
 import { SectionWrapper } from "../src/elements/wrapper";
 
 const Home = () => {
   return (
     <>
-      <Hero
+      <HeroCTA
         image="/factory-entrance.jpg"
         imageText="factory entrance"
         title="Stone Kitchen Top Specialist"

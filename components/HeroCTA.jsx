@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Paper, makeStyles, Grid, Typography, Button } from "@material-ui/core";
 // import Link from "next/link";
 
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Hero = ({ image, imageText, title, description }) => {
+export const HeroCTA = ({ image, imageText, title, description }) => {
   const classes = useStyles();
 
   return (

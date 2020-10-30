@@ -1,7 +1,7 @@
+import * as React from "react";
 import { BlogLayout, Date } from "../../components";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
-import utilStyles from "../../styles/utils.module.css";
 import { Typography } from "@material-ui/core";
 
 export default function Post({ postData }) {
@@ -11,13 +11,15 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <Typography component="h1" variant="h6" gutterBottom>
+        <Typography component="h1" variant="h5" gutterBottom>
           {postData.title}
         </Typography>
         <Typography component="small" variant="body2" color="textSecondary">
           <Date dateString={postData.date} />
         </Typography>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <Typography
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
       </article>
     </BlogLayout>
   );
