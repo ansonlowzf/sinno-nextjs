@@ -6,7 +6,9 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core";
+import { SectionWrapper } from "../../elements";
 import Image from "next/image";
+import { PriceTerm } from "../../components";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
@@ -760,6 +762,10 @@ const CaesarstoneColour = () => {
           </Grid>
         </Grid>
       </Grid>
+
+      <SectionWrapper>
+        <PriceTerm />
+      </SectionWrapper>
     </Container>
   );
 };
