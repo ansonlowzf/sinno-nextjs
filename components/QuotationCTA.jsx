@@ -1,5 +1,6 @@
 import * as React from "react";
 import { makeStyles, Container, Typography } from "@material-ui/core";
+import { SinnoButton } from "../components";
 
 const useStyles = makeStyles((theme) => ({
   MB: {
@@ -18,6 +19,7 @@ export const QuotationCTA = ({ stone }) => {
       <Typography component="p" variant="h6" align="center">
         {`Get an estimate quotation for free`}
       </Typography>
+      <SinnoButton linkUrl="/contact-us" buttonText={`CONTACT US`} />
     </Container>
   );
 };

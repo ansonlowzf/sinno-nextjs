@@ -1,0 +1,17 @@
+.link-style:link {
+  font-weight: bold;
+  color: #673ab7;
+  text-decoration: none;
+}
+
+.link-style:visited {
+  color: blue;
+}
+
+.link-style:hover {
+  text-decoration: underline;
+}
+
+.link-style:focus {
+  color: #ffc400;
+}

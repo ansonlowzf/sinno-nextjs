@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box, Grid, makeStyles, Paper, Typography } from "@material-ui/core";
-import { Heading2 } from "../src/elements";
+import { Heading2 } from "../elements";
 
 const useStyles = makeStyles((theme) => ({
   SectionWrapper: {

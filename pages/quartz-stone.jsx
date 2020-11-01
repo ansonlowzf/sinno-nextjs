@@ -1,8 +1,15 @@
 import * as React from "react";
-import { Heading2, SectionWrapper } from "../src/elements";
+import { Heading2, SectionWrapper, TextWrapper } from "../elements";
 import { NextSeo } from "next-seo";
-import { makeStyles, Typography, Container } from "@material-ui/core";
-import { ImageWithDescription } from "../components";
+import {
+  makeStyles,
+  Typography,
+  Container,
+  Grid,
+  Paper,
+} from "@material-ui/core";
+import { QuotationCTA, ImageWithDescription, SinnoButton } from "../components";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
   textPB: {
@@ -23,33 +30,35 @@ const QuartzStonePage = () => {
       <NextSeo title="Quartz Stone Kitchen Top" />
       <SectionWrapper>
         <Heading2>What Is Your Desire Kitchen Top?</Heading2>
-        <Typography component="ul" paragraph>
-          <li>
-            It should be durable when you are using it for cooking every day.
-          </li>
-          <li>
-            Shall not have any scratch mark when you are using it for family
-            cooking.
-          </li>
-          <li>
-            The foods and drink such as carrot, lemon, or coffee should not dim
-            or change the kitchen top colour.
-          </li>
-        </Typography>
-        <Typography component="p" variant="h6" align="center" paragraph>
-          What features are you looking for?
-        </Typography>
-        <Typography>
-          You could read the{" "}
-          <a href="./material-pros-cons" className="link-style">
-            material pros and cons short article
-          </a>{" "}
-          or{" "}
-          <a href="./material-rating" className="link-style">
-            material rating chart
-          </a>{" "}
-          as a reference to choose the material for your kitchen top.
-        </Typography>
+        <TextWrapper>
+          <Typography component="ul" paragraph>
+            <li>
+              It should be durable when you are using it for cooking every day.
+            </li>
+            <li>
+              Shall not have any scratch mark when you are using it for family
+              cooking.
+            </li>
+            <li>
+              The foods and drink such as carrot, lemon, or coffee should not
+              dim or change the kitchen top colour.
+            </li>
+          </Typography>
+          <Typography component="p" variant="h6" align="center" paragraph>
+            What features are you looking for?
+          </Typography>
+          <Typography>
+            You could read the{" "}
+            <a href="./material-pros-cons" className="link-style">
+              material pros and cons short article
+            </a>{" "}
+            or{" "}
+            <a href="./material-rating" className="link-style">
+              material rating chart
+            </a>{" "}
+            as a reference to choose the material for your kitchen top.
+          </Typography>
+        </TextWrapper>
       </SectionWrapper>
 
       <SectionWrapper>
@@ -118,6 +127,61 @@ const QuartzStonePage = () => {
             description="Quartz stone requests minimum effect of maintenance and never need to apply any sealant every few year to protect the surface. It's resilient and non-porous. Natural stone like marble require multiple sealants to maintain luster, extend the lifetime of its beautiful surface and increase its stain resistance level. "
           />
         </Container>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Heading2>Warranty</Heading2>
+        <TextWrapper>
+          <Typography align="center" paragraph>
+            {`What if the quartz countertop you bought from us is crack, chip-off, mildew growth, colour dimming without any impact?`}
+          </Typography>
+          <Typography component="p" variant="body1" align="center" paragraph>
+            {`First, check out the warranty`}
+          </Typography>
+          {/* CTA Button */}
+          <Typography variant="h6" align="center">
+            {`If under warranty, we replace a new set for you - FREE OF CHARGE!`}
+          </Typography>
+        </TextWrapper>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Heading2>Quartz Stone Brands</Heading2>
+        <TextWrapper>
+          <Typography align="center">
+            Each brand has its unique colour. Caesarstone is imported from US,
+            Zenstone is from China. Check them out!
+          </Typography>
+        </TextWrapper>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Container maxWidth="md">
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <Paper>
+                <Image src="/factory-entrance.jpg" width={500} height={300} />
+                <SinnoButton
+                  linkUrl={`/caesarstone-malaysia`}
+                  buttonText={`Caesarstone`}
+                />
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Paper>
+                <Image src="/factory-entrance.jpg" width={500} height={300} />
+                <SinnoButton
+                  linkUrl={`/zenstone-malaysia`}
+                  buttonText={`ZENSTONE`}
+                />
+              </Paper>
+            </Grid>
+          </Grid>
+        </Container>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <QuotationCTA stone="Quartz" />
       </SectionWrapper>
     </>
   );
