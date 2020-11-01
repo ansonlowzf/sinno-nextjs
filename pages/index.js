@@ -1,13 +1,15 @@
 import * as React from "react";
 import { Container, Grid } from "@material-ui/core";
-import { BodyT1, StoneCard } from "../src/components";
-import { HeroCTA } from "../components";
-import { Heading2 } from "../src/elements";
-import { SectionWrapper } from "../src/elements/wrapper";
+import { StoneCard } from "../src/components";
+import { HeroCTA, BodyT1, FaqAccordion } from "../components";
+import { Heading2, SectionWrapper } from "../src/elements";
+import { NextSeo } from "next-seo";
+import { faqHomepage } from "../constants/faq";
 
 const Home = () => {
   return (
     <>
+      <NextSeo title="Stone Mason Malaysia" />
       <HeroCTA
         image="/factory-entrance.jpg"
         imageText="factory entrance"
@@ -29,6 +31,15 @@ const Home = () => {
               <StoneCard stone="Granite" description="Natural Stone" />
             </Grid>
           </Grid>
+        </Container>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Heading2>Frequently Ask Question</Heading2>
+        <Container maxWidth="sm">
+          {faqHomepage.map(({ question, answer, id }) => (
+            <FaqAccordion key={id} question={question} answer={answer} />
+          ))}
         </Container>
       </SectionWrapper>
     </>
