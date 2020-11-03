@@ -54,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const routes = [
-  { name: "home", link: "/" },
   { name: "about us", link: "/about-us" },
   { name: "quartz stone", link: "/quartz-stone" },
   { name: "granite", link: "/granite" },
