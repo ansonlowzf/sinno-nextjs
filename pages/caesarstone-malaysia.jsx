@@ -1,7 +1,15 @@
 import * as React from "react";
 import { NextSeo } from "next-seo";
-import { SectionWrapper, TextWrapper, Heading2 } from "../elements";
+import { SectionWrapper, TextWrapper, FaqWrapper, Heading2 } from "../elements";
 import { Typography } from "@material-ui/core";
+import {
+  CaesarstoneColour,
+  CaesarstoneCommitment,
+  ColourWarning,
+  FaqAccordion,
+  QuotationCTA,
+} from "../components";
+import { faqCaesarstone } from "../constants/faq";
 
 const CaesarstoneMalaysia = () => {
   return (
@@ -31,11 +39,11 @@ const CaesarstoneMalaysia = () => {
         <TextWrapper>
           <Typography>
             You could read the{" "}
-            <a href="./material-pros-cons" className="link-style">
+            <a href="/material-pros-cons" className="link-style">
               material pros and cons short article
             </a>{" "}
             or{" "}
-            <a href="./material-rating" className="link-style">
+            <a href="/material-rating" className="link-style">
               material rating chart
             </a>{" "}
             as a reference to choose the material for your kitchen top.
@@ -44,12 +52,30 @@ const CaesarstoneMalaysia = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>Caesarstone Colour</Heading2>
-        <TextWrapper>
-          <Typography component="p" variant="h6" align="center" gutterBottom>
-            {`Caesarstone's price for all the 32 Caesarstone colours in Malaysia.`}
-          </Typography>
-        </TextWrapper>
+        <Heading2>Colour &amp; Pricing</Heading2>
+        <CaesarstoneColour />
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <ColourWarning />
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Heading2>Caesarstone Commitment</Heading2>
+        <CaesarstoneCommitment />
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <QuotationCTA stone="Quartz" />
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Heading2>Frequently Ask Questions</Heading2>
+        <FaqWrapper>
+          {faqCaesarstone.map(({ question, answer, id }) => (
+            <FaqAccordion key={id} question={question} answer={answer} />
+          ))}
+        </FaqWrapper>
       </SectionWrapper>
     </>
   );

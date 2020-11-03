@@ -6,9 +6,9 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core";
-import { SectionWrapper } from "../../elements";
+import { SectionWrapper, TextWrapper } from "../elements";
 import Image from "next/image";
-import { PriceTerm } from "../../components";
+import { PriceTerm } from "../components";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
@@ -20,11 +20,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CaesarstoneColour = () => {
+export const CaesarstoneColour = () => {
   const classes = useStyles();
 
   return (
     <Container maxWidth="lg">
+      <TextWrapper>
+        <Typography component="p" variant="h6" align="center" gutterBottom>
+          {`Caesarstone's price for all the 34 Caesarstone colours in Malaysia.`}
+        </Typography>
+      </TextWrapper>
       <Grid container spacing={3} justify="center">
         <Grid item xs={12} md={6}>
           <Paper style={{ border: `1px solid grey` }}>
@@ -762,12 +767,6 @@ const CaesarstoneColour = () => {
           </Grid>
         </Grid>
       </Grid>
-
-      <SectionWrapper>
-        <PriceTerm />
-      </SectionWrapper>
     </Container>
   );
 };
-
-export default CaesarstoneColour;

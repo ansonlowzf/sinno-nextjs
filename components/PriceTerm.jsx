@@ -45,8 +45,8 @@ export const PriceTerm = () => {
             applied.
           </li>
           <li>
-            Payment terms: 40% deposit before fabrication, 40% before delivery,
-            &amp; 20% after installation.
+            Payment terms: 40% deposit before fabrication, 40% before
+            installation, &amp; 20% after installation.
           </li>
           <li>
             Additional workmanship, travel cost, accommodation will be applied

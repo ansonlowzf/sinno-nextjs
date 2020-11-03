@@ -172,7 +172,7 @@ const QuartzStonePage = () => {
                 <Image src="/factory-entrance.jpg" width={500} height={300} />
                 <SinnoButton
                   linkUrl={`/zenstone-malaysia`}
-                  buttonText={`ZENSTONE`}
+                  buttonText={`Zenstone`}
                 />
               </Paper>
             </Grid>

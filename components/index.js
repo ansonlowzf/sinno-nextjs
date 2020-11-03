@@ -7,3 +7,6 @@ export * from "./ImageWithDescription";
 export * from "./SinnoButton";
 export * from "./QuotationCTA";
 export * from "./PriceTerm";
+export * from "./CaesarstoneColour";
+export * from "./ColourWarning";
+export * from "./CaesarstoneCommitment";
