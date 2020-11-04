@@ -10,3 +10,4 @@ export * from "./PriceTerm";
 export * from "./CaesarstoneColour";
 export * from "./ColourWarning";
 export * from "./CaesarstoneCommitment";
+export * from "./Hero";

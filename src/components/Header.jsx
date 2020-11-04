@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   linkStyle: {
     marginLeft: theme.spacing(5),
     textDecoration: `none`,
-    textTransform: `Capitalize`,
+    textTransform: `uppercase`,
     color: theme.palette.common.white,
     opacity: 0.7,
     "&.active": {
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(5),
     color: theme.palette.text.primary,
     textDecoration: `none`,
-    textTransform: `Capitalize`,
+    textTransform: `uppercase`,
     opacity: 0.7,
     "&.active": {
       opacity: 1,
