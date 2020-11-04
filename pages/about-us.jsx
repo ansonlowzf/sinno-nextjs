@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Heading2, SectionWrapper } from "../elements";
+import { Heading2, SectionWrapper, FaqWrapper } from "../elements";
 import { NextSeo } from "next-seo";
 import { Container, Typography, Grid, Paper } from "@material-ui/core";
 import { faqAbout } from "../constants/faq";
