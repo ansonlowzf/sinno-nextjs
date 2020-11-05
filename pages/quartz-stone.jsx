@@ -8,7 +8,12 @@ import {
   Grid,
   Paper,
 } from "@material-ui/core";
-import { QuotationCTA, ImageWithDescription, SinnoButton } from "../components";
+import {
+  QuotationCTA,
+  ImageWithDescription,
+  SinnoButton,
+  HeroCenterCTA,
+} from "../components";
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
@@ -28,6 +33,12 @@ const QuartzStonePage = () => {
   return (
     <>
       <NextSeo title="Quartz Stone Kitchen Top" />
+      <HeroCenterCTA
+        imgSrc="/cloudburst1.jpg"
+        imgText="Caesarstone cloudburst"
+        title="Quartz Stone"
+        subtitle="Supply &amp; Install Quartz Stone Kitchen Top"
+      />
       <SectionWrapper>
         <Heading2>What Is Your Desire Kitchen Top?</Heading2>
         <TextWrapper>

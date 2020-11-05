@@ -35,7 +35,13 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(1.75),
     paddingRight: theme.spacing(1.75),
   },
-  titleMB: {
+  titleStyles: {
+    marginBottom: theme.spacing(5),
+    fontWeight: 400,
+  },
+  subtitleStyles: {
+    fontWeight: 400,
+    color: theme.palette.common.white,
     marginBottom: theme.spacing(5),
   },
   btnStyles: {
@@ -48,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const HeroCenterCTA = ({ imgSrc, imgText, title }) => {
+export const HeroCenterCTA = ({ imgSrc, imgText, title, subtitle }) => {
   const classes = useStyles();
 
   return (
@@ -71,20 +77,23 @@ export const HeroCenterCTA = ({ imgSrc, imgText, title }) => {
           variant="h1"
           color="secondary"
           align="center"
-          className={classes.titleMB}
+          className={classes.titleStyles}
         >
           {title}
         </Typography>
-        <Typography component="p" variant="h6" color="secondary">
+        <Typography
+          component="p"
+          variant="h3"
+          align="center"
+          className={classes.subtitleStyles}
+        >
+          {subtitle}
+        </Typography>
+        <Typography component="span" variant="h6" color="secondary">
           Scroll
         </Typography>
-        <IconButton
-          aria-label="explore"
-          color="secondary"
-          className={classes.btnStyles}
-        >
-          <ArrowDownward fontSize="large" />
-        </IconButton>
+
+        <ArrowDownward fontSize="large" color="secondary" />
       </Grid>
     </Paper>
   );
