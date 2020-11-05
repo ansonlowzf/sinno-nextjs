@@ -8,6 +8,8 @@ import {
   ColourWarning,
   FaqAccordion,
   QuotationCTA,
+  QuartzStoneFAB,
+  HeroScrollDown,
 } from "../components";
 import { faqCaesarstone } from "../constants/faq";
 
@@ -15,6 +17,12 @@ const CaesarstoneMalaysia = () => {
   return (
     <>
       <NextSeo title="Caesarstone Malaysia" />
+      <HeroScrollDown
+        imgSrc="/calacatta_nuvo.jpg"
+        imgText="Caesarstone Calacatta Nuvo"
+        title="Caesarstone Malaysia"
+        subtitle="Supply &amp; Install Caesarstone Kitchen Top"
+      />
       <SectionWrapper>
         <Heading2>Caesarstone Quartz Surface</Heading2>
         <TextWrapper>
@@ -77,6 +85,8 @@ const CaesarstoneMalaysia = () => {
           ))}
         </FaqWrapper>
       </SectionWrapper>
+
+      <QuartzStoneFAB />
     </>
   );
 };

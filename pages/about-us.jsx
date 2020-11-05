@@ -3,17 +3,18 @@ import { Heading2, SectionWrapper, FaqWrapper } from "../elements";
 import { NextSeo } from "next-seo";
 import { Container, Typography, Grid, Paper } from "@material-ui/core";
 import { faqAbout } from "../constants/faq";
-import { FaqAccordion, HeroCenterCTA } from "../components";
+import { FaqAccordion, HeroScrollDown } from "../components";
 import Image from "next/image";
 
 const AboutUs = () => {
   return (
     <>
       <NextSeo title="About Us" />
-      <HeroCenterCTA
+      <HeroScrollDown
         imgSrc="/factory-entrance.jpg"
+        imgText="Masonry Factory"
         title="About Us"
-        btnText="Explore"
+        subtitle="Stonemason"
       />
       <SectionWrapper>
         <Heading2>Stone Innovations Enterprise</Heading2>

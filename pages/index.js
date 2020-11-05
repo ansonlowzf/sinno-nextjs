@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Container, Grid } from "@material-ui/core";
 import { StoneCard } from "../src/components";
-import { HeroCTA, BodyT1, FaqAccordion } from "../components";
+import { Hero, BodyT1, FaqAccordion } from "../components";
 import { Heading2, SectionWrapper } from "../elements";
 import { NextSeo } from "next-seo";
 import { faqHomepage } from "../constants/faq";
@@ -10,11 +10,11 @@ const Home = () => {
   return (
     <>
       <NextSeo title="Stone Mason Malaysia" />
-      <HeroCTA
-        image="/factory-entrance.jpg"
-        imageText="factory entrance"
+      <Hero
+        imgSrc="/factory-entrance.jpg"
+        imgText="factory entrance"
         title="Stone Kitchen Top Specialist"
-        description="Specializing In Custom Made Stone Kitchen Top"
+        subtitle="Specializing In Custom Made Stone Kitchen Top"
       />
       <SectionWrapper>
         <BodyT1 title="What We Do?" />

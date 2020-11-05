@@ -1,6 +1,6 @@
 export * from "./BlogLayout";
 export * from "./Date";
-export * from "./HeroCTA";
+export * from "./Hero";
 export * from "./BodyT1";
 export * from "./FaqAccordion";
 export * from "./ImageWithDescription";
@@ -10,4 +10,5 @@ export * from "./PriceTerm";
 export * from "./CaesarstoneColour";
 export * from "./ColourWarning";
 export * from "./CaesarstoneCommitment";
-export * from "./HeroCenterCTA";
+export * from "./HeroScrollDown";
+export * from "./QuartzStoneFAB";

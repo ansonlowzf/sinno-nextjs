@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitleStyles: {
     fontWeight: 400,
-    color: theme.palette.common.white,
+    // color: theme.palette.common.white,
     marginBottom: theme.spacing(5),
   },
   btnStyles: {
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const HeroCenterCTA = ({ imgSrc, imgText, title, subtitle }) => {
+export const HeroScrollDown = ({ imgSrc, imgText, title, subtitle }) => {
   const classes = useStyles();
 
   return (
@@ -85,11 +85,12 @@ export const HeroCenterCTA = ({ imgSrc, imgText, title, subtitle }) => {
           component="p"
           variant="h3"
           align="center"
+          color="inherit"
           className={classes.subtitleStyles}
         >
           {subtitle}
         </Typography>
-        <Typography component="span" variant="h6" color="secondary">
+        <Typography component="span" variant="h5" color="secondary">
           Scroll
         </Typography>
 

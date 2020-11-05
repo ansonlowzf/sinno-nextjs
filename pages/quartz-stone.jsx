@@ -12,7 +12,8 @@ import {
   QuotationCTA,
   ImageWithDescription,
   SinnoButton,
-  HeroCenterCTA,
+  HeroScrollDown,
+  QuartzStoneFAB,
 } from "../components";
 import Image from "next/image";
 
@@ -33,7 +34,7 @@ const QuartzStonePage = () => {
   return (
     <>
       <NextSeo title="Quartz Stone Kitchen Top" />
-      <HeroCenterCTA
+      <HeroScrollDown
         imgSrc="/cloudburst1.jpg"
         imgText="Caesarstone cloudburst"
         title="Quartz Stone"
@@ -194,6 +195,8 @@ const QuartzStonePage = () => {
       <SectionWrapper>
         <QuotationCTA stone="Quartz" />
       </SectionWrapper>
+
+      <QuartzStoneFAB />
     </>
   );
 };

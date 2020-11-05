@@ -32,20 +32,26 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(1.75),
     paddingRight: theme.spacing(1.75),
   },
+  titleStyles: {
+    fontWeight: 400,
+  },
+  subtitleStyles: {
+    marginBottom: theme.spacing(5),
+  },
 }));
 
-export const HeroCTA = ({ image, imageText, title, description }) => {
+export const Hero = ({ imgSrc, imgText, title, subtitle }) => {
   const classes = useStyles();
 
   return (
     <Paper
       className={classes.heroStyle}
       style={{
-        backgroundImage: `url(${image})`,
+        backgroundImage: `url(${imgSrc})`,
       }}
     >
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: "none" }} src={image} alt={imageText} />}
+      {<img style={{ display: "none" }} src={imgSrc} alt={imgText} />}
       <Grid
         container
         justify="center"
@@ -53,16 +59,21 @@ export const HeroCTA = ({ image, imageText, title, description }) => {
         className={classes.overlay}
       >
         <Grid item className={classes.textContainer}>
-          <Typography variant="h1" color="secondary" gutterBottom>
+          <Typography
+            variant="h1"
+            color="secondary"
+            gutterBottom
+            className={classes.titleStyles}
+          >
             {title}
           </Typography>
           <Typography
             variant="h3"
             color="inherit"
             gutterBottom
-            style={{ marginBottom: `48px` }}
+            className={classes.subtitleStyles}
           >
-            {description}
+            {subtitle}
           </Typography>
           <Button
             variant="contained"

@@ -10,7 +10,12 @@ import {
   Container,
 } from "@material-ui/core";
 import Image from "next/image";
-import { ColourWarning, QuotationCTA } from "../components";
+import {
+  ColourWarning,
+  QuotationCTA,
+  HeroScrollDown,
+  QuartzStoneFAB,
+} from "../components";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
@@ -33,6 +38,13 @@ const ZenstoneMalaysia = () => {
   return (
     <>
       <NextSeo title="Zenstone Malaysia" />
+      <HeroScrollDown
+        imgSrc="/calacatta_black.jpg"
+        imgText="Zenstone Calacatta Black"
+        title="Zenstone Malaysia"
+        subtitle="Supply &amp; Install Zenstone Kitchen Top"
+      />
+
       <SectionWrapper>
         <Grid container justify="center">
           <Grid item xs={10} md={2}>
@@ -477,6 +489,8 @@ const ZenstoneMalaysia = () => {
       <SectionWrapper>
         <QuotationCTA stone="Quartz" />
       </SectionWrapper>
+
+      <QuartzStoneFAB />
     </>
   );
 };
