@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ThemeProvider, CssBaseline } from "@material-ui/core";
 import theme from "../src/theme";
-import { Header, Footer } from "../src/components";
+import { Header, Footer } from "../components";
 import Head from "next/head";
 import "../styles/global.css";
 
