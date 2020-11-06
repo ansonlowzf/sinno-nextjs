@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Container, Grid } from "@material-ui/core";
-import { StoneCard } from "../src/components";
-import { Hero, BodyT1, FaqAccordion } from "../components";
+import { Hero, BodyT1, FaqAccordion, StoneCard } from "../components";
 import { Heading2, SectionWrapper } from "../elements";
 import { NextSeo } from "next-seo";
 import { faqHomepage } from "../constants/faq";
