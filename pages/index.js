@@ -13,11 +13,11 @@ const Home = () => {
       <Hero
         imgSrc="/factory-entrance.jpg"
         imgText="factory entrance"
-        title="Stone Kitchen Top Specialist"
-        subtitle="Specializing In Custom Made Stone Kitchen Top"
+        title="Stone Surface Mason"
+        subtitle="Kitchen Top | Wall Cladding | Flooring"
       />
       <SectionWrapper>
-        <BodyT1 title="What We Do?" />
+        <BodyT1 title="What We Do?" imgSrc="/empira_white.jpg" />
       </SectionWrapper>
 
       <SectionWrapper>
@@ -25,10 +25,18 @@ const Home = () => {
         <Container maxWidth="lg">
           <Grid container spacing={5} justify="center" alignItems="center">
             <Grid item xs={12} sm={6} md={5}>
-              <StoneCard stone="Quartz Stone" description="Engineered Stone" />
+              <StoneCard
+                imgSrc="/grey_mirror.jpg"
+                stone="Quartz Stone"
+                description="Engineered Stone"
+              />
             </Grid>
             <Grid item xs={12} sm={6} md={5}>
-              <StoneCard stone="Granite" description="Natural Stone" />
+              <StoneCard
+                imgSrc="/blue_pearl.jpg"
+                stone="Granite"
+                description="Natural Stone"
+              />
             </Grid>
           </Grid>
         </Container>

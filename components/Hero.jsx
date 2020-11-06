@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Paper, makeStyles, Grid, Typography, Button } from "@material-ui/core";
-// import Link from "next/link";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   heroStyle: {
@@ -81,11 +81,15 @@ export const Hero = ({ imgSrc, imgText, title, subtitle }) => {
             size="large"
             className={classes.buttonStyles}
           >
-            Main CTA
+            Explore
           </Button>
-          <Button variant="outlined" color="secondary" size="large">
-            secondary CTA
-          </Button>
+          <Link href="/contact-us">
+            <a>
+              <Button variant="outlined" color="secondary" size="large">
+                Contact Us
+              </Button>
+            </a>
+          </Link>
         </Grid>
       </Grid>
     </Paper>

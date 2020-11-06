@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const BodyT1 = ({ title }) => {
+export const BodyT1 = ({ imgSrc, title }) => {
   const classes = useStyles();
 
   return (
@@ -26,17 +26,21 @@ export const BodyT1 = ({ title }) => {
       <Grid container item alignItems="center" xs={12} md={6}>
         <Box px={{ xs: 3, md: 13 }}>
           <Heading2>{title}</Heading2>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-            possimus aperiam eaque labore nemo vel aliquid assumenda adipisci
-            odit ducimus.
-          </Typography>
+          <Grid container justify="center">
+            <Grid item md={9}>
+              <Typography align="center">
+                We fabricate, supply &amp; install Quartz Stone, Sintered Stone
+                (Porcelain Slab) and Granite for kitchen top, wall cladding or
+                flooring application
+              </Typography>
+            </Grid>
+          </Grid>
         </Box>
       </Grid>
       <Grid item xs={12} md={6}>
         <Paper
           style={{
-            backgroundImage: `url(/factory-entrance.jpg)`,
+            backgroundImage: `url(${imgSrc})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

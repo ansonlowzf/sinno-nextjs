@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const StoneCard = ({ stone, description }) => {
+export const StoneCard = ({ imgSrc, stone, description }) => {
   const classes = useStyles();
 
   return (
@@ -27,7 +27,7 @@ export const StoneCard = ({ stone, description }) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/factory-entrance.jpg"
+          image={imgSrc}
           title="factory entrance"
         />
         <CardContent>
