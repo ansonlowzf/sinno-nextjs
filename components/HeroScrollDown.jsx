@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   heroStyle: {
     position: `relative`,
     width: `100%`,
-    height: `85vh`,
+    height: `100vh`,
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
     backgroundSize: "cover",
