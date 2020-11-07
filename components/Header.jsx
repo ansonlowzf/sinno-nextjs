@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: `space-between`,
   },
   linkStyle: {
-    marginLeft: theme.spacing(5),
     textDecoration: `none`,
     textTransform: `uppercase`,
     color: theme.palette.common.white,
@@ -31,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     "&.active": {
       opacity: 1,
     },
+  },
+  menuLinkStyles: {
+    marginLeft: theme.spacing(4),
   },
   backToTopStyles: {
     position: "fixed",
@@ -42,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
       right: theme.spacing(20),
     },
   },
-  offset: theme.mixins.toolbar,
 }));
 
 const routes = [
@@ -75,7 +76,11 @@ export const Header = () => {
                   {routes.map(({ name, link }, index) => (
                     <Typography variant="button" key={`${name}${index}`}>
                       <ActiveLink activeClassName="active" href={link}>
-                        <a className={classes.linkStyle}>{name}</a>
+                        <a
+                          className={`${classes.linkStyle} ${classes.menuLinkStyles}`}
+                        >
+                          {name}
+                        </a>
                       </ActiveLink>
                     </Typography>
                   ))}

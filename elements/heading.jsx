@@ -5,9 +5,7 @@ const useStyles = makeStyles((theme) => ({
   heading2Styles: {
     margin: theme.spacing(6, 0),
   },
-  underlineStyle: {
-    borderBottom: `2px solid #673ab7`,
-    paddingBottom: theme.spacing(2),
+  textStyles: {
     fontWeight: 600,
   },
 }));
@@ -28,7 +26,7 @@ export const Heading2 = ({ children, idPath }) => {
         align="center"
         color="primary"
         id={idPath}
-        className={classes.underlineStyle}
+        className={classes.textStyles}
       >
         {children}
       </Typography>
