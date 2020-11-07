@@ -38,9 +38,12 @@ const useStyles = makeStyles((theme) => ({
   subtitleStyles: {
     marginBottom: theme.spacing(5),
   },
+  linkStyles: {
+    textDecoration: `none`,
+  },
 }));
 
-export const Hero = ({ imgSrc, imgText, title, subtitle }) => {
+export const Hero = ({ imgSrc, imgText, title, subtitle, idPath }) => {
   const classes = useStyles();
 
   return (
@@ -75,16 +78,18 @@ export const Hero = ({ imgSrc, imgText, title, subtitle }) => {
           >
             {subtitle}
           </Typography>
-          <Button
-            variant="contained"
-            color="primary"
-            size="large"
-            className={classes.buttonStyles}
-          >
-            Explore
-          </Button>
+          <a href={`#${idPath}`} className={classes.linkStyles}>
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              className={classes.buttonStyles}
+            >
+              Explore
+            </Button>
+          </a>
           <Link href="/contact-us">
-            <a>
+            <a className={classes.linkStyles}>
               <Button variant="outlined" color="secondary" size="large">
                 Contact Us
               </Button>

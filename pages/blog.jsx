@@ -7,8 +7,7 @@ import { makeStyles, Container, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   blogList: {
-    listStyleType: `none`,
-    marginBottom: theme.spacing(1),
+    listStyle: `none`,
   },
   linkStyles: {
     textDecoration: `none`,
@@ -28,7 +27,13 @@ export default function Home({ allPostsData }) {
       <Container maxWidth="sm">
         <Typography component="ul">
           {allPostsData.map(({ id, date, title }) => (
-            <li className={classes.blogList} key={id}>
+            <Typography
+              component="li"
+              variant="h6"
+              key={id}
+              gutterBottom
+              className={classes.blogList}
+            >
               <Link href={`/posts/${id}`}>
                 <a className={classes.linkStyles}>{title}</a>
               </Link>
@@ -40,7 +45,7 @@ export default function Home({ allPostsData }) {
               >
                 <Date dateString={date} />
               </Typography>
-            </li>
+            </Typography>
           ))}
         </Typography>
       </Container>

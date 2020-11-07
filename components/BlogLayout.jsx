@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import styles from "./layout.module.css";
 import Link from "next/link";
-import { makeStyles, Container, Typography } from "@material-ui/core";
+import { makeStyles, Container, Typography, Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   containerStyles: {
@@ -10,6 +10,12 @@ const useStyles = makeStyles((theme) => ({
   },
   h1Margin: {
     marginBottom: theme.spacing(5),
+  },
+  linkStyles: {
+    textDecoration: `none`,
+  },
+  buttonStyles: {
+    marginTop: theme.spacing(5),
   },
 }));
 
@@ -41,7 +47,7 @@ export function BlogLayout({ children, home }) {
           <>
             <Typography
               component="h1"
-              variant="h4"
+              variant="h3"
               className={classes.h1Margin}
             >
               {name}
@@ -49,7 +55,7 @@ export function BlogLayout({ children, home }) {
           </>
         ) : (
           <>
-            <Typography component="h2" variant="h5" paragraph>
+            <Typography component="h2" variant="h4" paragraph>
               <Link href="/blog">
                 <a className={classes.linkStyles}>{name}</a>
               </Link>
@@ -59,11 +65,11 @@ export function BlogLayout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <Typography>
+        <Button variant="outlined" className={classes.buttonStyles}>
           <Link href="/blog">
-            <a>← Back to home</a>
+            <a className={classes.linkStyles}>← Back to blog</a>
           </Link>
-        </Typography>
+        </Button>
       )}
     </Container>
   );

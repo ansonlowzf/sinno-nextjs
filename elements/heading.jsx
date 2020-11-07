@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Heading2 = ({ children }) => {
+export const Heading2 = ({ children, idPath }) => {
   const classes = useStyles();
 
   return (
@@ -27,7 +27,7 @@ export const Heading2 = ({ children }) => {
         variant="h3"
         align="center"
         color="primary"
-        fontWeight=""
+        id={idPath}
         className={classes.underlineStyle}
       >
         {children}

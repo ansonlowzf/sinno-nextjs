@@ -14,13 +14,14 @@ const Home = () => {
         imgText="factory entrance"
         title="Stone Surface Mason"
         subtitle="Kitchen Top | Wall Cladding | Flooring"
+        idPath="stones"
       />
       <SectionWrapper>
         <BodyT1 title="What We Do?" imgSrc="/empira_white.jpg" />
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>Stone Product</Heading2>
+        <Heading2 idPath="stones">Stone Product</Heading2>
         <Container maxWidth="lg">
           <Grid container spacing={5} justify="center" alignItems="center">
             <Grid item xs={12} sm={6} md={5}>
