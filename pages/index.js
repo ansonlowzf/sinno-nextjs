@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Container, Grid } from "@material-ui/core";
-import { StoneCard } from "../src/components";
-import { Hero, BodyT1, FaqAccordion } from "../components";
+import { Hero, BodyT1, FaqAccordion, StoneCard } from "../components";
 import { Heading2, SectionWrapper } from "../elements";
 import { NextSeo } from "next-seo";
 import { faqHomepage } from "../constants/faq";
@@ -15,13 +14,14 @@ const Home = () => {
         imgText="factory entrance"
         title="Stone Surface Mason"
         subtitle="Kitchen Top | Wall Cladding | Flooring"
+        idPath="stones"
       />
       <SectionWrapper>
         <BodyT1 title="What We Do?" imgSrc="/empira_white.jpg" />
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>Stone Product</Heading2>
+        <Heading2 idPath="stones">Stone Product</Heading2>
         <Container maxWidth="lg">
           <Grid container spacing={5} justify="center" alignItems="center">
             <Grid item xs={12} sm={6} md={5}>
