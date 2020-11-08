@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 100%;
+}
+
 .link-style:link {
   font-weight: bold;
   color: #673ab7;

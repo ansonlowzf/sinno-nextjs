@@ -18,3 +18,4 @@ export * from "./Footer";
 export * from "./FaqCard";
 export * from "./Header";
 export * from "./StoneCard";
+export * from "./PostBody";

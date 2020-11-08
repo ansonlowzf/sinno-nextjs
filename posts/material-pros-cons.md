@@ -187,7 +187,7 @@ Ten years of limited warranty on material, warranty on discolouration, crack wit
 
 Not recommend using for outdoor purposes. The UV Ray might dim the surface colour. It's not dimming the quartz but the resin used to bond quartz stone. (There are special quartz stone specially designed for outdoor purpose)
 
-![granite](/material/grantie.jpg)
+![granite](/material/granite.jpg)
 
 ### Pros
 

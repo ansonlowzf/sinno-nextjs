@@ -6,7 +6,13 @@ import { makeStyles, Container, Typography, Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   containerStyles: {
-    margin: theme.spacing(6, `auto`, 12),
+    margin: theme.spacing(13, `auto`, 13),
+    [theme.breakpoints.down("md")]: {
+      margin: theme.spacing(8, `auto`, 8),
+    },
+    [theme.breakpoints.down("sm")]: {
+      margin: theme.spacing(6, `auto`, 6),
+    },
   },
   h1Margin: {
     marginBottom: theme.spacing(5),
@@ -42,6 +48,7 @@ export function BlogLayout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+
       <header className={styles.header}>
         {home ? (
           <>
@@ -63,7 +70,9 @@ export function BlogLayout({ children, home }) {
           </>
         )}
       </header>
+
       <main>{children}</main>
+
       {!home && (
         <Button variant="outlined" className={classes.buttonStyles}>
           <Link href="/blog">
