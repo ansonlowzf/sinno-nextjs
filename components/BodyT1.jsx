@@ -1,20 +1,16 @@
 import * as React from "react";
-import { Box, Grid, makeStyles, Paper, Typography } from "@material-ui/core";
-import { Heading2 } from "../elements";
+import {
+  makeStyles,
+  Container,
+  Grid,
+  Paper,
+  Typography,
+} from "@material-ui/core";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
-  SectionWrapper: {
-    height: 600,
-    marginBottom: theme.spacing(13),
-    [theme.breakpoints.down("sm")]: {
-      marginBottom: theme.spacing(5),
-    },
-  },
-  imageStyles: {
-    height: `100%`,
-    [theme.breakpoints.down("sm")]: {
-      height: 300,
-    },
+  bodyStyles: {
+    margin: theme.spacing(6, 0),
   },
 }));
 
@@ -22,12 +18,30 @@ export const BodyT1 = ({ imgSrc, title }) => {
   const classes = useStyles();
 
   return (
-    <Grid container item spacing={5} className={classes.SectionWrapper}>
-      <Grid container item alignItems="center" xs={12} md={6}>
-        <Box px={{ xs: 3, md: 13 }}>
-          <Heading2>{title}</Heading2>
+    <Container maxWidth="xl">
+      <Grid container>
+        <Grid
+          container
+          item
+          direction="column"
+          justify="center"
+          alignItems="center"
+          xs={12}
+          md={6}
+          className={classes.bodyStyles}
+        >
+          <Typography
+            component="h2"
+            variant="h3"
+            color="primary"
+            align="center"
+            gutterBottom
+            style={{ fontWeight: 600 }}
+          >
+            {title}
+          </Typography>
           <Grid container justify="center">
-            <Grid item md={9}>
+            <Grid item md={8}>
               <Typography align="center">
                 We fabricate, supply &amp; install Quartz Stone, Sintered Stone
                 (Porcelain Slab) and Granite for kitchen top, wall cladding or
@@ -35,19 +49,11 @@ export const BodyT1 = ({ imgSrc, title }) => {
               </Typography>
             </Grid>
           </Grid>
-        </Box>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Paper component={Image} src={imgSrc} width={800} height={500} />
+        </Grid>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <Paper
-          style={{
-            backgroundImage: `url(${imgSrc})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-          }}
-          className={classes.imageStyles}
-        />
-      </Grid>
-    </Grid>
+    </Container>
   );
 };

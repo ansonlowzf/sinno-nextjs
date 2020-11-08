@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <Container maxWidth="sm">
-        <Typography component="ul">
+        <Typography>
           {allPostsData.map(({ id, date, title }) => (
             <Typography
               component="li"
