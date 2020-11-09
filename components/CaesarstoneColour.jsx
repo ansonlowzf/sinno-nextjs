@@ -6,9 +6,9 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core";
-import { SectionWrapper, TextWrapper } from "../elements";
+import { TextWrapper } from "../elements";
 import Image from "next/image";
-import { PriceTerm } from "../components";
+import { PriceTerm, CaesarstoneColourCard } from "../components";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
@@ -31,741 +31,209 @@ export const CaesarstoneColour = () => {
         </Typography>
       </TextWrapper>
       <Grid container spacing={3} justify="center">
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs1141.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                1141 Pure White
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 500/FR or RM 260/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs1141.jpg"
+          colourName="1141 Pure White"
+          price="RM 500/FR or RM 260/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs2141.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                2141 Snow
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 400/FR or RM 210/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs2141.jpg"
+          colourName="2141 Snow"
+          price="RM 400/FR or RM 210/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs3100.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                3100 Jet Black
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 400/FR or RM 210/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs3100.jpg"
+          colourName="3100 Jet Black"
+          price="RM 400/FR or RM 210/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs3101.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                3101 Piatto Black
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 410/FR or RM 215/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs3101.jpg"
+          colourName="3101 Piatto Black"
+          price="RM 410/FR or RM 215/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4001.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4001 Fresh Concrete
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 410/FR or RM 215/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4001.jpg"
+          colourName="4001 Fresh Concrete"
+          price="RM 410/FR or RM 215/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4011.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4011 Cloudburst Concrete
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4011.jpg"
+          colourName="4011 Cloudburst Concrete"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4023.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4023 Topus Concrete
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4023.jpg"
+          colourName="4023 Topus Concrete"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4030.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4030 Oyster
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 400/FR or RM 210/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4030.jpg"
+          colourName="4030 Oyster"
+          price="RM 400/FR or RM 210/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4033.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4033 Rugged Concrete
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4033.jpg"
+          colourName="4033 Rugged Concrete"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4044.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4044 Airy Concrete
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4044.jpg"
+          colourName="4044 Airy Concrete"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4120.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4120 Raven
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 410/FR or RM 215/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4044.jpg"
+          colourName="4044 Airy Concrete"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4130.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4130 Clamshell
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 410/FR or RM 215/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4120.jpg"
+          colourName="4120 Raven"
+          price="RM 410/FR or RM 215/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4220.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4220 Buttermilk
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 400/FR or RM 210/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4130.jpg"
+          colourName="4130 Clamshell"
+          price="RM 410/FR or RM 215/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4230.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4230 Shitake
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 410/FR or RM 215/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4130.jpg"
+          colourName="4130 Clamshell"
+          price="RM 410/FR or RM 215/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4330.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4330 Ginger
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 400/FR or RM 210/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4220.jpg"
+          colourName="4220 Buttermilk"
+          price="RM 400/FR or RM 210/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4350.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4350 Mink
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 400/FR or RM 210/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4230.jpg"
+          colourName="4230 Shitake"
+          price="RM 410/FR or RM 215/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4600.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4600 Organic White
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 410/FR or RM 215/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4330.jpg"
+          colourName="4330 Ginger"
+          price="RM 400/FR or RM 210/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4601.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4601 Frozen Terra
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 410/FR or RM 215/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4350.jpg"
+          colourName="4350 Mink"
+          price="RM 400/FR or RM 210/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs4735.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                4735 Oxidian
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 1100/FR or RM 560/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4600.jpg"
+          colourName="4600 Organic White"
+          price="RM 410/FR or RM 215/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5003.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5003 Piatra Grey
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 1100/FR or RM 560/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4601.jpg"
+          colourName="4601 Frozen Terra"
+          price="RM 410/FR or RM 215/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5031.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5031 Statuario Maximus
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 1100/FR or RM 560/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs4735.jpg"
+          colourName="4735 Oxidian"
+          price="RM 1100/FR or RM 560/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5100.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5100 Vanilla Noir
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5003.jpg"
+          colourName="5003 Piatra Grey"
+          price="RM 1100/FR or RM 560/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5101.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5101 Empira Black
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 1100/FR or RM 560/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5031.jpg"
+          colourName="5031 Statuario Maximus"
+          price="RM 1100/FR or RM 560/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5131.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5131 Calacatta Nuvo
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 1100/FR or RM 560/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5100.jpg"
+          colourName="5100 Vanilla Noir"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5133.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5133 Symphony Grey
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5101.jpg"
+          colourName="5101 Empira Black"
+          price="RM 1100/FR or RM 560/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5141.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5141 Frosty Carrina
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5131.jpg"
+          colourName="5131 Calacatta Nuvo"
+          price="RM 1100/FR or RM 560/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5143.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5143 White Attica
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5133.jpg"
+          colourName="5133 Symphony Grey"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs5810.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                5810 Black Tempal
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5141.jpg"
+          colourName="5141 Frosty Carrina"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs6046.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                6046 Moorland Fog
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5143.jpg"
+          colourName="5143 White Attica"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs6131.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                6131 Bianco Drift
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 500/FR or RM 260/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs5810.jpg"
+          colourName="5810 Black Tempal"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs6313.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                6313 Turbine Grey
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 500/FR or RM 260/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs6046.jpg"
+          colourName="6046 Moorland Fog"
+          price="RM 600/FR or RM 310/SF"
+        />
 
-        <Grid item xs={12} md={6}>
-          <Paper style={{ border: `1px solid grey` }}>
-            <Image src="/classico-colour/cs6338.jpg" width={800} height={400} />
-          </Paper>
-          <Grid
-            container
-            item
-            justify="space-between"
-            style={{ marginTop: `0.5em` }}
-          >
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                6338 Woodlands
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <Typography component="p" variant="subtitle2" align="center">
-                RM 600/FR or RM 310/SF
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs6131.jpg"
+          colourName="6131 Bianco Drift"
+          price="RM 500/FR or RM 260/SF"
+        />
+
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs6313.jpg"
+          colourName="6313 Turbine Grey"
+          price="RM 500/FR or RM 260/SF"
+        />
+
+        <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs6338.jpg"
+          colourName="6338 Woodlands"
+          price="RM 600/FR or RM 310/SF"
+        />
       </Grid>
     </Container>
   );

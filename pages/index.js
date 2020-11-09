@@ -30,6 +30,7 @@ const Home = () => {
                 imgSrc="/grey_mirror.jpg"
                 stone="Quartz Stone"
                 description="Engineered Stone"
+                linkUrl="/quartz-stone"
               />
             </Grid>
             <Grid item xs={12} sm={6} md={5}>
@@ -37,6 +38,7 @@ const Home = () => {
                 imgSrc="/blue_pearl.jpg"
                 stone="Granite"
                 description="Natural Stone"
+                linkUrl="/granite-malaysia"
               />
             </Grid>
           </Grid>
