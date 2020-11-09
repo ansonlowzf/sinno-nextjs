@@ -1,21 +1,14 @@
 import * as React from "react";
 import { Heading2, SectionWrapper, TextWrapper } from "../elements";
 import { NextSeo } from "next-seo";
-import {
-  makeStyles,
-  Typography,
-  Container,
-  Grid,
-  Paper,
-} from "@material-ui/core";
+import { makeStyles, Typography, Container, Grid } from "@material-ui/core";
 import {
   QuotationCTA,
   ImageWithDescription,
-  SinnoButton,
   HeroScrollDown,
   QuartzStoneFAB,
+  StoneCard,
 } from "../components";
-import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
   textPB: {
@@ -61,11 +54,11 @@ const QuartzStonePage = () => {
           </Typography>
           <Typography>
             You could read the{" "}
-            <a href="./material-pros-cons" className="link-style">
+            <a href="/material-pros-cons" className="link-style">
               material pros and cons short article
             </a>{" "}
             or{" "}
-            <a href="./material-rating" className="link-style">
+            <a href="/material-rating" className="link-style">
               material rating chart
             </a>{" "}
             as a reference to choose the material for your kitchen top.
@@ -158,35 +151,24 @@ const QuartzStonePage = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>Quartz Stone Brands</Heading2>
-        <TextWrapper>
-          <Typography align="center">
-            Each brand has its unique colour. Caesarstone is imported from US,
-            Zenstone is from China. Check them out!
-          </Typography>
-        </TextWrapper>
-      </SectionWrapper>
-
-      <SectionWrapper>
-        <Container maxWidth="md">
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
-              <Paper>
-                <Image src="/airy_concrete.jpg" width={500} height={300} />
-                <SinnoButton
-                  linkUrl={`/caesarstone-malaysia`}
-                  buttonText={`Caesarstone`}
-                />
-              </Paper>
+        <Container maxWidth="lg">
+          <Heading2>Quartz Stone Brands</Heading2>
+          <Grid container spacing={2} justify="center" alignItems="center">
+            <Grid item xs={12} sm={6} md={5}>
+              <StoneCard
+                imgSrc="/airy_concrete.jpg"
+                stone="Caesarstone"
+                description="Import from US. Top quality and luxury quartz surface with Green Guard and NSF 51 Standard Certified"
+                linkUrl="/caesarstone-malaysia"
+              />
             </Grid>
-            <Grid item xs={12} md={6}>
-              <Paper>
-                <Image src="/grey_mirror.jpg" width={500} height={300} />
-                <SinnoButton
-                  linkUrl={`/zenstone-malaysia`}
-                  buttonText={`Zenstone`}
-                />
-              </Paper>
+            <Grid item xs={12} sm={6} md={5}>
+              <StoneCard
+                imgSrc="/grey_mirror.jpg"
+                stone="Zenstone"
+                description="Import and OEM from China. 93% quartz sand with SGS International Standard"
+                linkUrl="./zenstone-malaysia"
+              />
             </Grid>
           </Grid>
         </Container>
