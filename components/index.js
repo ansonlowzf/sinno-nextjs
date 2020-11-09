@@ -20,3 +20,4 @@ export * from "./Header";
 export * from "./StoneCard";
 export * from "./PostBody";
 export * from "./CaesarstoneColourCard";
+export * from "./MaterialArticle";

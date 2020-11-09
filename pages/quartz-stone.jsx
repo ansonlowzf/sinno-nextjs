@@ -8,6 +8,7 @@ import {
   HeroScrollDown,
   QuartzStoneFAB,
   StoneCard,
+  MaterialArticle,
 } from "../components";
 
 const useStyles = makeStyles((theme) => ({
@@ -52,17 +53,7 @@ const QuartzStonePage = () => {
           <Typography component="p" variant="h6" align="center" paragraph>
             What features are you looking for?
           </Typography>
-          <Typography>
-            You could read the{" "}
-            <a href="/material-pros-cons" className="link-style">
-              material pros and cons short article
-            </a>{" "}
-            or{" "}
-            <a href="/material-rating" className="link-style">
-              material rating chart
-            </a>{" "}
-            as a reference to choose the material for your kitchen top.
-          </Typography>
+          <MaterialArticle />
         </TextWrapper>
       </SectionWrapper>
 

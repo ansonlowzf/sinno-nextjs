@@ -15,6 +15,7 @@ import {
   QuotationCTA,
   HeroScrollDown,
   QuartzStoneFAB,
+  MaterialArticle,
 } from "../components";
 
 const useStyles = makeStyles((theme) => ({
@@ -51,6 +52,9 @@ const ZenstoneMalaysia = () => {
             <Image src="/zenstone_logo.png" width={800} height={600} />
           </Grid>
         </Grid>
+      </SectionWrapper>
+
+      <SectionWrapper>
         <TextWrapper>
           <Typography paragraph>{`
         A Malaysia's quartz stone's developed by Aston Builder in the year 2013 and was acquired by Stone Innovations Enterprise in the first quarter of the year 2017.
@@ -59,17 +63,7 @@ const ZenstoneMalaysia = () => {
             paragraph
           >{`Genuine quartz stone direct import from China which meet international SGS standard. Real quartz stone which comes with ten years limited warranty. More than 60 colours option.
         `}</Typography>
-          <Typography>
-            You could read the{" "}
-            <a href="./material-pros-cons" className="link-style">
-              material pros and cons short article
-            </a>{" "}
-            or{" "}
-            <a href="./material-rating" className="link-style">
-              material rating chart
-            </a>{" "}
-            as a reference to choose the material for your kitchen top.
-          </Typography>
+          <MaterialArticle />
         </TextWrapper>
       </SectionWrapper>
 
