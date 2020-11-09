@@ -26,9 +26,11 @@ export const StoneCard = ({ imgSrc, stone, description }) => {
     <Card>
       <CardActionArea>
         <CardMedia
+          component="img"
           className={classes.media}
           image={imgSrc}
-          title="factory entrance"
+          title={stone}
+          alt={stone}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

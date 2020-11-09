@@ -5,7 +5,13 @@ import Image from "next/image";
 export const CaesarstoneColourCard = ({ imgSrc, colourName, price }) => {
   return (
     <Grid item xs={12} md={6}>
-      <Paper component={Image} src={imgSrc} width={800} height={400} />
+      <Paper
+        component={Image}
+        alt={colourName}
+        src={imgSrc}
+        width={800}
+        height={400}
+      />
 
       <Grid
         container

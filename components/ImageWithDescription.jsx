@@ -6,7 +6,13 @@ export const ImageWithDescription = ({ imgSrc, title, description }) => {
   return (
     <Grid container spacing={3} alignItems="center">
       <Grid item xs={12} sm={5}>
-        <Paper component={Image} src={imgSrc} width={400} height={250} />
+        <Paper
+          component={Image}
+          alt={title}
+          src={imgSrc}
+          width={400}
+          height={250}
+        />
       </Grid>
       <Grid item xs={12} sm={7}>
         <Typography component="h3" variant="h5" gutterBottom>
