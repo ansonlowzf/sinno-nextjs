@@ -172,7 +172,7 @@ const QuartzStonePage = () => {
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <Paper>
-                <Image src="/factory-entrance.jpg" width={500} height={300} />
+                <Image src="/airy_concrete.jpg" width={500} height={300} />
                 <SinnoButton
                   linkUrl={`/caesarstone-malaysia`}
                   buttonText={`Caesarstone`}
@@ -181,7 +181,7 @@ const QuartzStonePage = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Paper>
-                <Image src="/factory-entrance.jpg" width={500} height={300} />
+                <Image src="/grey_mirror.jpg" width={500} height={300} />
                 <SinnoButton
                   linkUrl={`/zenstone-malaysia`}
                   buttonText={`Zenstone`}

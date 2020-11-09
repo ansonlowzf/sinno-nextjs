@@ -31,16 +31,18 @@ const AboutUs = () => {
         </Typography>
       </SectionWrapper>
 
-      <Grid container item justify="center">
-        <Paper
-          component={Image}
-          elevation={4}
-          src="/aboutus/factory2.JPG"
-          alt="Factory"
-          width={800}
-          height={500}
-        />
-      </Grid>
+      <Container maxWidth="md">
+        <Grid container item justify="center">
+          <Paper
+            component={Image}
+            elevation={4}
+            src="/aboutus/factory2.JPG"
+            alt="Factory"
+            width={800}
+            height={500}
+          />
+        </Grid>
+      </Container>
 
       <SectionWrapper>
         <Heading2>Why Choose Us?</Heading2>
@@ -70,16 +72,18 @@ const AboutUs = () => {
         </Container>
       </SectionWrapper>
 
-      <Grid container item justify="center">
-        <Paper
-          component={Image}
-          elevation={4}
-          src="/aboutus/factory3.jpg"
-          alt="Factory"
-          width={800}
-          height={500}
-        />
-      </Grid>
+      <Container maxWidth="md">
+        <Grid container item justify="center">
+          <Paper
+            component={Image}
+            elevation={4}
+            src="/aboutus/factory3.jpg"
+            alt="Factory"
+            width={800}
+            height={500}
+          />
+        </Grid>
+      </Container>
 
       <SectionWrapper>
         <Heading2>Frequently Ask Questions</Heading2>
