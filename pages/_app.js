@@ -4,8 +4,21 @@ import theme from "../src/theme";
 import { Header, Footer } from "../components";
 import Head from "next/head";
 import "../styles/global.css";
+import { useRouter } from "next/router";
+import * as gtag from "../lib/gtag";
 
 const MyApp = ({ Component, pageProps }) => {
+  const router = useRouter();
+  React.useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector("#jss-server-side");
