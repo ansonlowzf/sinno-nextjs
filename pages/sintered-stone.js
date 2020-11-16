@@ -9,6 +9,7 @@ import {
   Grid,
 } from "@material-ui/core";
 import Image from "next/image";
+import { NextSeo } from "next-seo";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
@@ -21,6 +22,7 @@ const graniteMalaysia = () => {
 
   return (
     <>
+      <NextSeo title="Sintered Stone" />
       <HeroScrollDown
         imgSrc="/blue_pearl.jpg"
         imgText="Sintered Stone"

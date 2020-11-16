@@ -4,6 +4,7 @@ import { Date, BlogLayout, siteTitle } from "../components";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import { makeStyles, Container, Typography } from "@material-ui/core";
+import { NextSeo } from "next-seo";
 
 const useStyles = makeStyles((theme) => ({
   blogList: {
@@ -21,9 +22,7 @@ export default function Home({ allPostsData }) {
 
   return (
     <BlogLayout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+      <NextSeo title={siteTitle} />
       <Container maxWidth="sm">
         <Typography>
           {allPostsData.map(({ id, date, title }) => (
