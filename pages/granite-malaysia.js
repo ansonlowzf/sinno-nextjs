@@ -11,14 +11,6 @@ import {
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
-  h1Style: {
-    marginTop: theme.spacing(12),
-    marginBottom: theme.spacing(5),
-  },
-  imgContainer: {
-    marginBottom: theme.spacing(2),
-    border: `1px solid grey`,
-  },
   sectionMargin: {
     marginBottom: theme.spacing(4),
   },
