@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const name = "Blog";
-export const siteTitle = "Stone Innovations Enterprise Blog";
+export const siteTitle = "Blog | Stone Innovations Enterprise";
 
 export function BlogLayout({ children, home }) {
   const classes = useStyles();

@@ -22,17 +22,16 @@ const graniteMalaysia = () => {
 
   return (
     <>
-      <NextSeo title="Granite Malaysia" />
+      <NextSeo title="Sintered Stone" />
       <HeroScrollDown
         imgSrc="/blue_pearl.jpg"
-        imgText="Granite Blue Pearl"
-        title="Granite"
-        subtitle="Supply &amp; Install Granite Kitchen Top"
+        imgText="Sintered Stone"
+        title="Sintered Stone"
+        subtitle="Supply &amp; Install Sintered Stone Kitchen Top"
       />
       <SectionWrapper>
         <TextWrapper>
           <Heading2>Colour</Heading2>
-          <Typography align="center">Thickness: 17mm - 18mm</Typography>
         </TextWrapper>
       </SectionWrapper>
 
@@ -46,72 +45,66 @@ const graniteMalaysia = () => {
           <Grid item xs={12} md={6}>
             <Paper
               component={Image}
-              src="/granite/black-galaxy.JPEG"
-              width={800}
-              height={400}
+              src="/sintered-stone/ps6.jpg"
+              width={900}
+              height={700}
             />
-            <Typography align="center">Black Galaxy</Typography>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/blue-pearl.JPG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">Blue Pearl</Typography>
+            <Typography align="center">QP 2013</Typography>
           </Grid>
 
           <Grid item xs={12} md={6}>
             <Paper
               component={Image}
-              src="/granite/bourbon-grey.JPG"
-              width={800}
-              height={400}
+              src="/sintered-stone/ps4.jpg"
+              width={900}
+              height={700}
             />
-            <Typography align="center">Bourbon Grey</Typography>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/emerald-pearl.JPG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">Emerald Pearl</Typography>
+            <Typography align="center">QP 2031</Typography>
           </Grid>
 
           <Grid item xs={12} md={6}>
             <Paper
               component={Image}
-              src="/granite/imperial-red.JPG"
-              width={800}
-              height={400}
+              src="/sintered-stone/ps5.jpg"
+              width={900}
+              height={700}
             />
-            <Typography align="center">Imperial Red</Typography>
+            <Typography align="center">QP 2032</Typography>
           </Grid>
+
           <Grid item xs={12} md={6}>
             <Paper
               component={Image}
-              src="/granite/white-wave.JPG"
-              width={800}
-              height={400}
+              src="/sintered-stone/ps1.jpg"
+              width={900}
+              height={700}
             />
-            <Typography align="center">White Wave</Typography>
+            <Typography align="center">QP 2033B</Typography>
           </Grid>
+
           <Grid item xs={12} md={6}>
             <Paper
               component={Image}
-              src="/granite/xan-xi-black.JPEG"
-              width={800}
-              height={400}
+              src="/sintered-stone/ps2.jpg"
+              width={900}
+              height={700}
             />
-            <Typography align="center">Xan Xi Black</Typography>
+            <Typography align="center">QP 2034</Typography>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Paper
+              component={Image}
+              src="/sintered-stone/ps3.jpg"
+              width={900}
+              height={700}
+            />
+            <Typography align="center">QP 2035</Typography>
           </Grid>
         </Grid>
       </Container>
 
-      <QuotationCTA stone="Granite" />
+      <QuotationCTA stone="Sintered Stone" />
     </>
   );
 };
