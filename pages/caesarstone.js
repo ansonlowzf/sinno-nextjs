@@ -1,11 +1,11 @@
 import * as React from "react";
 import { NextSeo } from "next-seo";
+import Image from "next/image";
+import Link from "next/link";
 import { SectionWrapper, TextWrapper, FaqWrapper, Heading2 } from "../elements";
-import { Typography } from "@material-ui/core";
+import { makeStyles, Typography, Grid, Button } from "@material-ui/core";
 import {
-  CaesarstoneColour,
   CaesarstoneCommitment,
-  ColourWarning,
   FaqAccordion,
   QuotationCTA,
   QuartzStoneFAB,
@@ -14,7 +14,21 @@ import {
 } from "../components";
 import { faqCaesarstone } from "../constants/faq";
 
+const useStyles = makeStyles((theme) => ({
+  btnStyles: {
+    padding: theme.spacing(2, 6),
+  },
+  linkStyles: {
+    textDecoration: `none`,
+  },
+  pMb: {
+    marginBottom: theme.spacing(10),
+  },
+}));
+
 const CaesarstoneMalaysia = () => {
+  const classes = useStyles();
+
   return (
     <>
       <NextSeo title="Caesarstone Quartz Surfaces Malaysia" />
@@ -50,10 +64,37 @@ const CaesarstoneMalaysia = () => {
         </TextWrapper>
       </SectionWrapper>
 
-      <SectionWrapper>{/* Colour & Pricing Hero */}</SectionWrapper>
-
       <SectionWrapper>
-        <ColourWarning />
+        <Grid container>
+          <Grid item xs={12} md={7}>
+            <Image alt="" src="/calacatta_nuvo.jpg" width={1080} height={810} />
+          </Grid>
+          <Grid
+            container
+            item
+            direction="column"
+            xs={12}
+            md={5}
+            justify="center"
+            alignItems="center"
+          >
+            <Heading2>Colour &amp; Pricing</Heading2>
+            <Typography component="h3" variant="h6" className={classes.pMb}>
+              For all the 34 Caesarstone colours available in Malaysia.
+            </Typography>
+            <Link href="/caesarstone/colour-pricing">
+              <a className={classes.linkStyles}>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className={classes.btnStyles}
+                >
+                  Check Out
+                </Button>
+              </a>
+            </Link>
+          </Grid>
+        </Grid>
       </SectionWrapper>
 
       <SectionWrapper>
