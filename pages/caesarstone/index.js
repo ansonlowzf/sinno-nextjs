@@ -15,6 +15,7 @@ import {
   HeroScrollDown,
   MaterialArticle,
   BodyT1,
+  BodyT2,
 } from "../../components";
 import { faqCaesarstone } from "../../constants/faq";
 
@@ -77,6 +78,16 @@ const CaesarstoneMalaysia = () => {
           linkUrl="/caesarstone/colour-pricing"
         />
       </SectionWrapper>
+
+      {/* <SectionWrapper>
+        <BodyT2
+          title="Caesarstone Commitment"
+          description="For all 34 Caesarstone colours available in Malaysia."
+          btnText="See Colour &amp; Price"
+          imgSrc="/cloudburst1.jpg"
+          linkUrl="/caesarstone/colour-pricing"
+        />
+      </SectionWrapper> */}
 
       <SectionWrapper>
         <Heading2>Caesarstone Commitment</Heading2>

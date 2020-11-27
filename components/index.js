@@ -2,6 +2,7 @@ export * from "./BlogLayout";
 export * from "./Date";
 export * from "./Hero";
 export * from "./BodyT1";
+export * from "./BodyT2";
 export * from "./FaqAccordion";
 export * from "./ImageWithDescription";
 export * from "./SinnoButton";
