@@ -1,9 +1,8 @@
-import * as React from "react";
-import { Box, Grid, Button } from "@material-ui/core";
+import { Button, Grid, makeStyles } from "@material-ui/core";
 import Link from "next/link";
-import { makeStyles } from "@material-ui/core";
+import * as React from "react";
 
-export const useStyles = makeStyles({
+export const useStyles = makeStyles((theme) => ({
   linkStyle: {
     textDecoration: "none",
   },
@@ -11,29 +10,27 @@ export const useStyles = makeStyles({
     backgroundImage: `linear-gradient(45deg, #3854f2, #6f04d9)`,
     color: "white",
     fontWeight: `bold`,
+    padding: theme.spacing(2, 3),
+    letterSpacing: theme.spacing(0.5),
   },
-});
+}));
 
-export const SinnoButton = ({ linkUrl, buttonText }) => {
+export const SinnoButton = ({ linkUrl, btnText }) => {
   const classes = useStyles();
 
   return (
-    <Box py={5}>
-      <Grid container item justify="center">
-        <Link href={linkUrl}>
-          <a className={classes.linkStyle}>
-            <Button
-              variant="contained"
-              aria-label={buttonText}
-              className={classes.buttonStyle}
-            >
-              <Box px={2} py={1} letterSpacing={2}>
-                {buttonText}
-              </Box>
-            </Button>
-          </a>
-        </Link>
-      </Grid>
-    </Box>
+    <Grid container item justify="center">
+      <Link href={linkUrl}>
+        <a className={classes.linkStyle}>
+          <Button
+            variant="contained"
+            aria-label={btnText}
+            className={classes.buttonStyle}
+          >
+            {btnText}
+          </Button>
+        </a>
+      </Link>
+    </Grid>
   );
 };

@@ -7,6 +7,9 @@ const useStyles = makeStyles((theme) => ({
   textMB: {
     marginBottom: theme.spacing(5),
   },
+  h1TopSpacing: {
+    marginTop: theme.spacing(),
+  },
 }));
 
 export const CaesarstoneColour = () => {

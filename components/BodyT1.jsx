@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { Heading2 } from "../elements";
+import { SinnoButton } from "../components";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -50,19 +51,9 @@ export const BodyT1 = ({ imgSrc, title, description, btnText, linkUrl }) => {
           <Typography align="center" className={classes.descriptionStyles}>
             {description}
           </Typography>
-          <Link href={linkUrl}>
-            <a className={classes.linkStyles}>
-              <Button
-                variant="contained"
-                color="primary"
-                className={classes.btnStyles}
-              >
-                {btnText}
-              </Button>
-            </a>
-          </Link>
+          <SinnoButton btnText={btnText} linkUrl={linkUrl} />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid container item xs={12} md={6} alignItems="center">
           <Paper component={Image} src={imgSrc} width={800} height={450} />
         </Grid>
       </Grid>
