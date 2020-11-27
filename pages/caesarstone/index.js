@@ -1,9 +1,12 @@
 import * as React from "react";
 import { NextSeo } from "next-seo";
-import Image from "next/image";
-import Link from "next/link";
-import { SectionWrapper, TextWrapper, FaqWrapper, Heading2 } from "../elements";
-import { makeStyles, Typography, Grid, Button } from "@material-ui/core";
+import {
+  SectionWrapper,
+  TextWrapper,
+  FaqWrapper,
+  Heading2,
+} from "../../elements";
+import { makeStyles, Typography } from "@material-ui/core";
 import {
   CaesarstoneCommitment,
   FaqAccordion,
@@ -11,8 +14,9 @@ import {
   QuartzStoneFAB,
   HeroScrollDown,
   MaterialArticle,
-} from "../components";
-import { faqCaesarstone } from "../constants/faq";
+  BodyT1,
+} from "../../components";
+import { faqCaesarstone } from "../../constants/faq";
 
 const useStyles = makeStyles((theme) => ({
   btnStyles: {
@@ -65,36 +69,13 @@ const CaesarstoneMalaysia = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <Grid container>
-          <Grid item xs={12} md={7}>
-            <Image alt="" src="/calacatta_nuvo.jpg" width={1080} height={810} />
-          </Grid>
-          <Grid
-            container
-            item
-            direction="column"
-            xs={12}
-            md={5}
-            justify="center"
-            alignItems="center"
-          >
-            <Heading2>Colour &amp; Pricing</Heading2>
-            <Typography component="h3" variant="h6" className={classes.pMb}>
-              For all the 34 Caesarstone colours available in Malaysia.
-            </Typography>
-            <Link href="/caesarstone/colour-pricing">
-              <a className={classes.linkStyles}>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className={classes.btnStyles}
-                >
-                  Check Out
-                </Button>
-              </a>
-            </Link>
-          </Grid>
-        </Grid>
+        <BodyT1
+          title="Colour &amp; Pricing"
+          description="For all 34 Caesarstone colours available in Malaysia."
+          btnText="See Colour &amp; Price"
+          imgSrc="/cloudburst1.jpg"
+          linkUrl="/caesarstone/colour-pricing"
+        />
       </SectionWrapper>
 
       <SectionWrapper>

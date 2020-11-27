@@ -1,20 +1,36 @@
 import * as React from "react";
 import {
   makeStyles,
+  Button,
   Container,
   Grid,
   Paper,
   Typography,
 } from "@material-ui/core";
+import { Heading2 } from "../elements";
 import Image from "next/image";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   bodyStyles: {
     margin: theme.spacing(6, 0),
   },
+  descriptionStyles: {
+    maxWidth: theme.spacing(70),
+    marginBottom: theme.spacing(10),
+  },
+  btnStyles: {
+    padding: theme.spacing(2, 6),
+  },
+  linkStyles: {
+    textDecoration: `none`,
+  },
+  pMb: {
+    marginBottom: theme.spacing(10),
+  },
 }));
 
-export const BodyT1 = ({ imgSrc, title }) => {
+export const BodyT1 = ({ imgSrc, title, description, btnText, linkUrl }) => {
   const classes = useStyles();
 
   return (
@@ -30,28 +46,24 @@ export const BodyT1 = ({ imgSrc, title }) => {
           md={6}
           className={classes.bodyStyles}
         >
-          <Typography
-            component="h2"
-            variant="h3"
-            color="primary"
-            align="center"
-            gutterBottom
-            style={{ fontWeight: 600 }}
-          >
-            {title}
+          <Heading2>{title}</Heading2>
+          <Typography align="center" className={classes.descriptionStyles}>
+            {description}
           </Typography>
-          <Grid container justify="center">
-            <Grid item md={8}>
-              <Typography align="center">
-                We fabricate, supply &amp; install Quartz Stone, Sintered Stone
-                (Porcelain Slab) and Granite for kitchen top, wall cladding or
-                flooring application
-              </Typography>
-            </Grid>
-          </Grid>
+          <Link href={linkUrl}>
+            <a className={classes.linkStyles}>
+              <Button
+                variant="contained"
+                color="primary"
+                className={classes.btnStyles}
+              >
+                {btnText}
+              </Button>
+            </a>
+          </Link>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Paper component={Image} src={imgSrc} width={800} height={500} />
+          <Paper component={Image} src={imgSrc} width={800} height={450} />
         </Grid>
       </Grid>
     </Container>
