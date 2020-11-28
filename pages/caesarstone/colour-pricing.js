@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Heading2, SectionWrapper } from "../../elements";
-import { CaesarstoneColour, ColourWarning } from "../../components";
+import { CaesarstoneColour, ColourWarning, PriceTerm } from "../../components";
 
 const ColourPricing = () => {
   return (
@@ -12,6 +12,10 @@ const ColourPricing = () => {
 
       <SectionWrapper>
         <ColourWarning />
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <PriceTerm />
       </SectionWrapper>
     </>
   );
