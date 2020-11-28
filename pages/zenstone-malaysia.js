@@ -440,12 +440,12 @@ const ZenstoneMalaysia = () => {
             <Grid item xs={12} sm={8}>
               <Paper
                 component={Image}
-                src="/zenstone/Q802003.jpg"
+                src="/zenstone/Q802008.jpg"
                 width={800}
                 height={300}
               />
               <Typography align="center" className={classes.textPadding}>
-                De Fantasy
+                Grey Land
               </Typography>
             </Grid>
             <Grid item xs={6} sm={4}>
@@ -457,17 +457,6 @@ const ZenstoneMalaysia = () => {
               />
               <Typography align="center" className={classes.textPadding}>
                 Super White
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={8}>
-              <Paper
-                component={Image}
-                src="/zenstone/Q802008.jpg"
-                width={800}
-                height={300}
-              />
-              <Typography align="center" className={classes.textPadding}>
-                Grey Land
               </Typography>
             </Grid>
           </Grid>

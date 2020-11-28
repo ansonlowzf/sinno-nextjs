@@ -37,6 +37,9 @@ export const BodyT1 = ({ imgSrc, title, description, btnText, linkUrl }) => {
   return (
     <Container maxWidth="xl">
       <Grid container>
+        <Grid container item xs={12} md={6} alignItems="center">
+          <Paper component={Image} src={imgSrc} width={800} height={450} />
+        </Grid>
         <Grid
           container
           item
@@ -52,9 +55,6 @@ export const BodyT1 = ({ imgSrc, title, description, btnText, linkUrl }) => {
             {description}
           </Typography>
           <SinnoButton btnText={btnText} linkUrl={linkUrl} />
-        </Grid>
-        <Grid container item xs={12} md={6} alignItems="center">
-          <Paper component={Image} src={imgSrc} width={800} height={450} />
         </Grid>
       </Grid>
     </Container>

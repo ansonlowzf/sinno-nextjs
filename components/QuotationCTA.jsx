@@ -16,10 +16,15 @@ export const QuotationCTA = ({ stone }) => {
       <Typography variant="h4" component="h3" align="center" paragraph>
         {`Custom Made Your ${stone} Countertop Today`}
       </Typography>
-      <Typography component="p" variant="h6" align="center">
+      <Typography
+        component="p"
+        variant="h6"
+        align="center"
+        className={classes.MB}
+      >
         {`Get an estimate quotation for free`}
       </Typography>
-      <SinnoButton linkUrl="/contact-us" buttonText={`CONTACT US`} />
+      <SinnoButton linkUrl="/contact-us" btnText={`CONTACT US`} />
     </Container>
   );
 };

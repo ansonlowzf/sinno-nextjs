@@ -31,7 +31,7 @@ export const QuartzStoneFAB = () => {
 
   return (
     <div className={classes.root}>
-      <Link href="/caesarstone-malaysia">
+      <Link href="/caesarstone">
         <a className={classes.linkStyle}>
           <Fab color="secondary" variant="extended" aria-label="caesarstone">
             Caesarstone

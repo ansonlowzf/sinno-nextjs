@@ -150,7 +150,7 @@ const QuartzStonePage = () => {
                 imgSrc="/airy_concrete.jpg"
                 stone="Caesarstone"
                 description="Import from US. Top quality and luxury quartz surface with Green Guard and NSF 51 Standard Certified"
-                linkUrl="/caesarstone-malaysia"
+                linkUrl="/caesarstone"
               />
             </Grid>
             <Grid item xs={12} sm={6} md={5}>

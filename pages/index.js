@@ -18,7 +18,15 @@ const Home = () => {
       />
 
       <SectionWrapper>
-        <BodyT1 title="What We Do?" imgSrc="/empira_white.jpg" />
+        <BodyT1
+          title="What We Do?"
+          imgSrc="/empira_white.jpg"
+          description={`We fabricate, supply & install Quartz Stone, Sintered Stone
+                (AKA Porcelain Slab or Ultra-Compact stone) and Granite for kitchen top, wall cladding or
+                flooring application.`}
+          btnText="About Us"
+          linkUrl="/about-us"
+        />
       </SectionWrapper>
 
       <SectionWrapper>

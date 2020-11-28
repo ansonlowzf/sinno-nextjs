@@ -16,13 +16,6 @@
   
   
   <url>
-    <loc>https://www.stoneinnovations.com.my/caesarstone-malaysia</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
     <loc>https://www.stoneinnovations.com.my/contact-us</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -59,6 +52,20 @@
   
   <url>
     <loc>https://www.stoneinnovations.com.my/zenstone-malaysia</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.stoneinnovations.com.my/caesarstone/colour-pricing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.stoneinnovations.com.my/caesarstone/index</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

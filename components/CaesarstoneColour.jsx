@@ -1,22 +1,14 @@
 import * as React from "react";
-import {
-  Container,
-  Grid,
-  makeStyles,
-  Paper,
-  Typography,
-} from "@material-ui/core";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import { TextWrapper } from "../elements";
-import Image from "next/image";
-import { PriceTerm, CaesarstoneColourCard } from "../components";
+import { CaesarstoneColourCard, Back2CaesarstoneButton } from "../components";
 
 const useStyles = makeStyles((theme) => ({
-  sectionMargin: {
-    marginBottom: theme.spacing(2),
-    marginTop: theme.spacing(2),
+  textMB: {
+    marginBottom: theme.spacing(5),
   },
-  textP: {
-    padding: theme.spacing(1),
+  h1TopSpacing: {
+    marginTop: theme.spacing(),
   },
 }));
 
@@ -26,10 +18,17 @@ export const CaesarstoneColour = () => {
   return (
     <Container maxWidth="lg">
       <TextWrapper>
-        <Typography component="p" variant="h6" align="center" gutterBottom>
-          {`Caesarstone's price for all the 34 Caesarstone colours in Malaysia.`}
+        <Typography
+          component="p"
+          variant="h6"
+          align="center"
+          gutterBottom
+          className={classes.textMB}
+        >
+          {`Caesarstone's price for all the 34 Caesarstone colours available in Malaysia.`}
         </Typography>
       </TextWrapper>
+
       <Grid container spacing={3} justify="center">
         <CaesarstoneColourCard
           imgSrc="/classico-colour/cs1141.jpg"
@@ -235,6 +234,7 @@ export const CaesarstoneColour = () => {
           price="RM 600/FR or RM 310/SF"
         />
       </Grid>
+      <Back2CaesarstoneButton navToId="colour" />
     </Container>
   );
 };

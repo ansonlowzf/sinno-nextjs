@@ -1,23 +1,42 @@
 import * as React from "react";
 import { NextSeo } from "next-seo";
-import { SectionWrapper, TextWrapper, FaqWrapper, Heading2 } from "../elements";
-import { Typography } from "@material-ui/core";
 import {
-  CaesarstoneColour,
+  SectionWrapper,
+  TextWrapper,
+  FaqWrapper,
+  Heading2,
+} from "../../elements";
+import { makeStyles, Typography } from "@material-ui/core";
+import {
   CaesarstoneCommitment,
-  ColourWarning,
   FaqAccordion,
   QuotationCTA,
   QuartzStoneFAB,
   HeroScrollDown,
   MaterialArticle,
-} from "../components";
-import { faqCaesarstone } from "../constants/faq";
+  BodyT1,
+  BodyT2,
+} from "../../components";
+import { faqCaesarstone } from "../../constants/faq";
+
+const useStyles = makeStyles((theme) => ({
+  btnStyles: {
+    padding: theme.spacing(2, 6),
+  },
+  linkStyles: {
+    textDecoration: `none`,
+  },
+  pMb: {
+    marginBottom: theme.spacing(10),
+  },
+}));
 
 const CaesarstoneMalaysia = () => {
+  const classes = useStyles();
+
   return (
     <>
-      <NextSeo title="Caesarstone Malaysia" />
+      <NextSeo title="Caesarstone Quartz Surfaces Malaysia" />
       <HeroScrollDown
         imgSrc="/calacatta_nuvo.jpg"
         imgText="Caesarstone Calacatta Nuvo"
@@ -44,20 +63,31 @@ const CaesarstoneMalaysia = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>Should You Use Caesarstone?</Heading2>
+        <Heading2 idPath="colour">Should You Use Caesarstone?</Heading2>
         <TextWrapper>
           <MaterialArticle />
         </TextWrapper>
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>Colour &amp; Pricing</Heading2>
-        <CaesarstoneColour />
+        <BodyT1
+          title="Colour &amp; Pricing"
+          description="For all 34 Caesarstone colours available in Malaysia."
+          btnText="See Colour &amp; Price"
+          imgSrc="/cloudburst1.jpg"
+          linkUrl="/caesarstone/colour-pricing"
+        />
       </SectionWrapper>
 
-      <SectionWrapper>
-        <ColourWarning />
-      </SectionWrapper>
+      {/* <SectionWrapper>
+        <BodyT2
+          title="Caesarstone Commitment"
+          description="For all 34 Caesarstone colours available in Malaysia."
+          btnText="See Colour &amp; Price"
+          imgSrc="/cloudburst1.jpg"
+          linkUrl="/caesarstone/colour-pricing"
+        />
+      </SectionWrapper> */}
 
       <SectionWrapper>
         <Heading2>Caesarstone Commitment</Heading2>
