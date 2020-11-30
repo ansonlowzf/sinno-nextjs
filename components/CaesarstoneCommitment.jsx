@@ -52,7 +52,7 @@ export const CaesarstoneCommitment = () => {
         <Typography component="h3" variant="h4" align="center" gutterBottom>
           {`Volatile Organic Compound (VOC)`}
         </Typography>
-        <Typography>
+        <Typography paragraph>
           {`Have you ever wonder where is the "pungent smell" come
         from after your wardrobe installation is done? It's an air
         release from volatile organic compound (VOC) which is a chemical

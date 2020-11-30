@@ -8,7 +8,7 @@ export const PriceTerm = () => {
       <Heading2>Price Terms</Heading2>
       <TextWrapper>
         <Typography component="p" variant="h6">
-          The Quotation Calculation:-
+          The Calculation:-
         </Typography>
         <Typography component="ul" paragraph>
           <li>

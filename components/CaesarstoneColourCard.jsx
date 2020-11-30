@@ -10,7 +10,7 @@ export const CaesarstoneColourCard = ({ imgSrc, colourName, price }) => {
         alt={colourName}
         src={imgSrc}
         width={800}
-        height={400}
+        height={450}
       />
 
       <Grid

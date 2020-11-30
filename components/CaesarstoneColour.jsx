@@ -1,34 +1,10 @@
+import { Container, Grid } from "@material-ui/core";
 import * as React from "react";
-import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
-import { TextWrapper } from "../elements";
-import { CaesarstoneColourCard, Back2CaesarstoneButton } from "../components";
-
-const useStyles = makeStyles((theme) => ({
-  textMB: {
-    marginBottom: theme.spacing(5),
-  },
-  h1TopSpacing: {
-    marginTop: theme.spacing(),
-  },
-}));
+import { Back2CaesarstoneButton, CaesarstoneColourCard } from "../components";
 
 export const CaesarstoneColour = () => {
-  const classes = useStyles();
-
   return (
     <Container maxWidth="lg">
-      <TextWrapper>
-        <Typography
-          component="p"
-          variant="h6"
-          align="center"
-          gutterBottom
-          className={classes.textMB}
-        >
-          {`Caesarstone's price for all the 34 Caesarstone colours available in Malaysia.`}
-        </Typography>
-      </TextWrapper>
-
       <Grid container spacing={3} justify="center">
         <CaesarstoneColourCard
           imgSrc="/classico-colour/cs1141.jpg"
