@@ -10,6 +10,12 @@ const useStyles = makeStyles((theme) => ({
   imgMT: {
     marginTop: theme.spacing(5),
   },
+  iframeMatchParentWidth: {
+    position: `relative`,
+    width: `100%`,
+    height: 300,
+    marginBottom: theme.spacing(2),
+  },
 }));
 
 const Finishes = () => {
@@ -30,6 +36,19 @@ const Finishes = () => {
             countertop for you.
           </Typography>
         </TextWrapper>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Container maxWidth="sm">
+          <iframe
+            title="test quartz stone scratch resistant"
+            className={classes.iframeMatchParentWidth}
+            src="https://www.youtube.com/embed/EvHfIs0K0ZY"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </Container>
       </SectionWrapper>
 
       <SectionWrapper>

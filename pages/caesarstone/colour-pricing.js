@@ -2,11 +2,13 @@ import * as React from "react";
 import { Heading2, SectionWrapper, TextWrapper } from "../../elements";
 import { CaesarstoneColour, ColourWarning, PriceTerm } from "../../components";
 import { makeStyles, Typography } from "@material-ui/core";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   textMB: {
-    marginBottom: theme.spacing(5),
+    marginBottom: theme.spacing(10),
   },
+  linkStyles: {},
 }));
 
 const ColourPricing = () => {
@@ -17,16 +19,17 @@ const ColourPricing = () => {
       <SectionWrapper>
         <Heading2>Caesarstone Colour &amp; Pricing</Heading2>
         <TextWrapper>
-          <Typography
-            component="p"
-            variant="h6"
-            align="center"
-            gutterBottom
-            className={classes.textMB}
-          >
+          <Typography align="center" paragraph>
             The price shown below is for all the 34 Caesarstone colours
             available in Malaysia in 20mm thick. 13mm is also available for a
             10% lower price.
+          </Typography>
+          <Typography align="center" className={classes.textMB}>
+            What are the different between the 5 type of Caesarstone's finishes?
+            Polished, Natural, Matt, Concrete and Rough. Visit{` `}
+            <Link href="/caesarstone/finishes">
+              <a className="link-style">Caesarstone Finishes</a>
+            </Link>
           </Typography>
         </TextWrapper>
         <CaesarstoneColour />
