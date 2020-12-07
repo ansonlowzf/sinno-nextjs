@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Heading2, SectionWrapper, TextWrapper } from "../elements";
+import { Heading2, SectionWrapper, TextWrapper } from "../../elements";
 import { NextSeo } from "next-seo";
 import { makeStyles, Typography, Container, Grid } from "@material-ui/core";
 import {
@@ -9,7 +9,7 @@ import {
   QuartzStoneFAB,
   StoneCard,
   MaterialArticle,
-} from "../components";
+} from "../../components";
 
 const useStyles = makeStyles((theme) => ({
   textPB: {
