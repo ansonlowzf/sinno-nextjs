@@ -10,6 +10,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+export const Heading1 = ({ children, idPath }) => {
+  const classes = useStyles();
+
+  return (
+    <Box
+      display="flex"
+      flexDirection="row"
+      justifyContent="center"
+      className={classes.heading2Styles}
+    >
+      <Typography
+        component="h1"
+        variant="h2"
+        align="center"
+        color="primary"
+        id={idPath}
+        className={classes.textStyles}
+      >
+        {children}
+      </Typography>
+    </Box>
+  );
+};
+
 export const Heading2 = ({ children, idPath }) => {
   const classes = useStyles();
 
