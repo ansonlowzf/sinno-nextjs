@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Heading2, SectionWrapper, TextWrapper } from "../../elements";
+import { Heading1, SectionWrapper, TextWrapper } from "../../elements";
 import { CaesarstoneColour, ColourWarning, PriceTerm } from "../../components";
 import { makeStyles, Typography } from "@material-ui/core";
 import Link from "next/link";
@@ -17,7 +17,7 @@ const ColourPricing = () => {
   return (
     <>
       <SectionWrapper>
-        <Heading2>Caesarstone Colour &amp; Pricing</Heading2>
+        <Heading1>Caesarstone Colour &amp; Pricing</Heading1>
         <TextWrapper>
           <Typography align="center" paragraph>
             The price shown below is for all the 34 Caesarstone colours
