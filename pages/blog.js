@@ -1,10 +1,9 @@
-import * as React from "react";
-import Head from "next/head";
-import { Date, BlogLayout, siteTitle } from "../components";
-import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import { makeStyles, Container, Typography } from "@material-ui/core";
+import { Container, makeStyles, Typography } from "@material-ui/core";
 import { NextSeo } from "next-seo";
+import Link from "next/link";
+import * as React from "react";
+import { BlogLayout, Date, siteTitle } from "../components";
+import { getSortedPostsData } from "../lib/posts";
 
 const useStyles = makeStyles((theme) => ({
   blogList: {
@@ -33,7 +32,7 @@ export default function Home({ allPostsData }) {
               gutterBottom
               className={classes.blogList}
             >
-              <Link href={`/posts/${id}`}>
+              <Link href={`/blog/${id}`}>
                 <a className={classes.linkStyles}>{title}</a>
               </Link>
               <br />
