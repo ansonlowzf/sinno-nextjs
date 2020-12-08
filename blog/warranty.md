@@ -28,7 +28,7 @@ The warranty starts from the date of installation.
 - All quartz stone countertops installed by Stone Innovations Enterprise are entitled to this warranty automatically.
 - The client is required to cooperate with our service team to inspect and assist us in efforts to perform our obligations under warranty.
 
-## How does the warranty work?
+## Fulfilment
 
 - Report the defect
 - Inspect by the service team
@@ -42,11 +42,11 @@ We will only fulfil the warranty by invoice number, or site address which match 
 
 ## The warranty excluded:-
 
-- Product is used for outdoor purposes (Quartz Surface Only)
+- Product is used for outdoor purposes
 - Product is contacted with UV light (Quartz Surface Only)
-- Product is used for flooring applications (Quartz Surface Only)
-- Product is used exceeded heat level (200°C for Quartz Stone, 250°C for Granite, 300°C for Ultra-Compact Stone or Sintered Stone)
-- Product is exposure to weather condition (Quartz Surface Only)
+- Product is used for flooring applications
+- Product is used exceeded heat level
+- Product is exposure to weather condition
 - Improper care and maintenance
 - Improper purpose uses of the product
 - Damaged by applying any form of chemical foam & liquor on product

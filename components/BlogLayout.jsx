@@ -35,10 +35,7 @@ export function BlogLayout({ children, home }) {
     <Container maxWidth="sm" className={classes.containerStyles}>
       <Head>
         <link rel="icon" href="/favicon.png" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="Stone surfacing related content" />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
