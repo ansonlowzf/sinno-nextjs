@@ -1,16 +1,14 @@
-import * as React from "react";
 import {
-  makeStyles,
-  Button,
   Container,
   Grid,
+  makeStyles,
   Paper,
   Typography,
 } from "@material-ui/core";
-import { Heading2 } from "../elements";
-import { SinnoButton } from "../components";
 import Image from "next/image";
-import Link from "next/link";
+import * as React from "react";
+import { SinnoButton } from "../components";
+import { Heading2 } from "../elements";
 
 const useStyles = makeStyles((theme) => ({
   bodyStyles: {
@@ -51,7 +49,6 @@ export const BodyT1 = ({ imgSrc, title, description, btnText, linkUrl }) => {
           <Typography align="center" className={classes.descriptionStyles}>
             {description}
           </Typography>
-          <SinnoButton btnText={btnText} linkUrl={linkUrl} />
         </Grid>
         <Grid container item xs={12} md={6} alignItems="center">
           <Paper component={Image} src={imgSrc} width={800} height={450} />
