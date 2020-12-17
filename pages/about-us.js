@@ -19,7 +19,7 @@ const AboutUs = () => {
       <SectionWrapper>
         <Heading2>Stone Innovations Enterprise</Heading2>
         <Typography component="p" variant="body1" align="center" paragraph>
-          {`Business Registration No.: 002560776-H`}
+          {`Business Registration No.: 201603220786`}
         </Typography>
         <Typography
           component="p"
@@ -39,7 +39,7 @@ const AboutUs = () => {
             src="/aboutus/factory2.JPG"
             alt="Factory"
             width={800}
-            height={500}
+            height={450}
           />
         </Grid>
       </Container>

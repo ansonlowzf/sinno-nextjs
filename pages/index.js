@@ -1,12 +1,32 @@
 import * as React from "react";
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import {
+  makeStyles,
+  Box,
+  Container,
+  Grid,
+  Typography,
+  Paper,
+} from "@material-ui/core";
 import { Hero, BodyT1, FaqAccordion, StoneCard } from "../components";
 import { Heading2, SectionWrapper, TextWrapper } from "../elements";
 import { NextSeo } from "next-seo";
 import { faqHomepage } from "../constants/faq";
 import Image from "next/image";
 
+const useStyles = makeStyles((theme) => ({
+  videoStyle: {
+    position: `relative`,
+    width: `100%`,
+    height: 450,
+    [theme.breakpoints.down("sm")]: {
+      height: 390,
+    },
+  },
+}));
+
 const Home = () => {
+  const classes = useStyles();
+
   return (
     <>
       <NextSeo title="Stone Mason Malaysia" />
@@ -14,7 +34,7 @@ const Home = () => {
         imgSrc="/factory-entrance.jpg"
         imgText="factory entrance"
         title="Stone Surface Mason"
-        subtitle="Kitchen Top | Wall Cladding | Flooring"
+        subtitle="Supply, Fabricate, Install"
         idPath="stones"
       />
 
@@ -22,7 +42,7 @@ const Home = () => {
         <Heading2>Stone Innovations Enterprise</Heading2>
         <TextWrapper>
           <Typography align="center" paragraph>
-            <Box fontWeight="fontWeightBold">Business Registration No.:</Box>{" "}
+            <Box fontWeight="fontWeightBold">Business Registration No.:-</Box>{" "}
             201603220786
           </Typography>
           <Typography align="center" paragraph>
@@ -30,7 +50,7 @@ const Home = () => {
             Medan Putra 6, Medan Putra Business Center, Bandar Menjalara 52200
             KL
           </Typography>
-          <Typography align="center">
+          <Typography align="center" paragraph>
             <Box fontWeight="fontWeightBold">
               Factory &amp; Warehosue Address:-
             </Box>{" "}
@@ -51,25 +71,61 @@ const Home = () => {
         />
       </SectionWrapper>
 
-      <Container maxWidth="md">
-        <Heading2>Warehouse</Heading2>
+      <SectionWrapper>
+        <Container maxWidth="md">
+          <Heading2>Warehouse</Heading2>
+          <TextWrapper>
+            <Typography
+              component="h3"
+              variant="subtitle1"
+              align="center"
+              paragraph
+            >
+              There are more than 800 slabs quartz stone, granite, sintered
+              stone, marble stock to fulfil your renovation needs.
+            </Typography>
+          </TextWrapper>
+          <Grid container justify="center">
+            <Grid item>
+              <Image
+                src="/aboutus/factory2.JPG"
+                alt="Factory"
+                width={800}
+                height={450}
+              />
+            </Grid>
+          </Grid>
+        </Container>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Heading2>Warehouse Walkthrough</Heading2>
         <TextWrapper>
-          <Typography align="center">
-            More than 800 slabs quartz stone, granite, sintered stone, marble
-            ready stock
+          <Typography
+            component="h3"
+            variant="subtitle1"
+            align="center"
+            paragraph
+          >
+            Showing our available stock for all kinds of surface application
           </Typography>
         </TextWrapper>
-        <Grid container justify="center">
-          <Grid item>
-            <Image
-              src="/aboutus/factory2.JPG"
-              alt="Factory"
-              width={800}
-              height={450}
-            />
-          </Grid>
-        </Grid>
-      </Container>
+        <Container maxWidth="md">
+          <Paper elevation={4}>
+            <Grid container justify="center">
+              <iframe
+                title="stone distributor warehouse walkthrough"
+                className={classes.videoStyle}
+                src="https://www.youtube.com/embed/n_aPfgbuSDA"
+                scrolling="no"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen={true}
+              ></iframe>{" "}
+            </Grid>
+          </Paper>
+        </Container>
+      </SectionWrapper>
 
       <SectionWrapper>
         <Heading2 idPath="stones">Stone Product</Heading2>

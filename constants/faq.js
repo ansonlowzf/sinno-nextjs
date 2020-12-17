@@ -1,43 +1,33 @@
 export const faqHomepage = [
   {
     id: 1,
+    question: `We've own material, do your company fabricate and install for us?`,
+    answer: `We do not provide outsource service at the moment`,
+  },
+  {
+    id: 2,
     question: `Do your company supply solid surface?`,
     answer: `No! we highly recommend you look for the specialist in the field especially solid surface which require a different method of fabrication and installation.`,
   },
   {
-    id: 2,
-    question: `Do your company supply quartz tiles?`,
-    answer: `We do not sell ready-made quartz tiles. But We do cut quartz stone in tiles size based on your request.`,
-  },
-  {
     id: 3,
     question: `Do your company sell stones in cut to size for material only?`,
-    answer: `Yes, with a minimum order of 10 feet (exclude transport).`,
+    answer: `No, we sell stones in slab form only`,
   },
   {
     id: 4,
-    question: `Do your company sell kitchen cabinet and kitchen top in a bundle?`,
-    answer: `No! we focus on stone works only. Best practise is stone supplier cooperate with your carpenter to build your kitchen cabinet. Each of them specializes in their field.`,
+    question: `What stone types your company sell in slab form?`,
+    answer: `We sell granite, quartz stone, sintered stone and marble`,
   },
   {
     id: 5,
-    question: `Why quartz stone's pricing differ dramatically?`,
-    answer: `There are 3 different types of quartz available in Malaysia's market. Genuine quartz stone, artificial quartz and compressed marble pretend as quartz stone. Of course, if you compare compressed marble with genuine quartz, it's almost double the price.`,
+    question: `Do your company sell kitchen cabinet and kitchen top in a bundle?`,
+    answer: `We're stone mason specializing in stone works only. You could hire professional carpenter for kitchen cabinet and hire stone mason for kitchen top.`,
   },
   {
     id: 6,
-    question: `How do you know you are buying compressed marble or genuine quartz stone?`,
-    answer: `If you heard sales rep (if honest) said their quartz stone cannot resist to stain and scratch but sell you a significantly low price. Then you are buying compressed marble.`,
-  },
-  {
-    id: 7,
-    question: `What are the consequences of using compressed marble as a kitchen top?`,
-    answer: `You will see discolouration, stain, scratch, burnt mark sooner or later.`,
-  },
-  {
-    id: 8,
-    question: `What can you do if you do not want to fall into the traps of buying compressed marble pretend to be quartz stone?`,
-    answer: `Drip a drop of acid on the surface. If you see bubble or smoke. Then it's compressed marble or artificial quartz. Genuine quartz stone does not have any reaction. If you do not have acid, you can try with black colour bottle Harpic cleaner, it does not produce smoke but you can see minor bubbling on the surface.`,
+    question: `Why quartz stone's pricing differ dramatically?`,
+    answer: `There are 3 different types of quartz available in Malaysia's market. Genuine quartz stone, artificial quartz and compressed marble pretend as quartz stone. Of course, if you compare compressed marble with genuine quartz, it's almost double the price.`,
   },
 ];
 
