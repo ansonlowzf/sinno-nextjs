@@ -1,6 +1,6 @@
+import { Grid, makeStyles, Typography } from "@material-ui/core";
+import Image from "next/image";
 import * as React from "react";
-import { Paper, makeStyles, Grid, Typography, Button } from "@material-ui/core";
-import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   heroStyle: {
@@ -25,21 +25,20 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     backgroundColor: "rgba(0,0,0,.7)",
   },
-  buttonStyles: {
-    marginRight: theme.spacing(2),
-  },
-  textContainer: {
-    paddingLeft: theme.spacing(1.75),
-    paddingRight: theme.spacing(1.75),
-  },
+
   titleStyles: {
     fontWeight: 400,
   },
   subtitleStyles: {
-    marginBottom: theme.spacing(5),
+    color: theme.palette.common.white,
   },
-  linkStyles: {
-    textDecoration: `none`,
+
+  heroBgContainer: {
+    position: `relative`,
+    height: `90vh`,
+    width: `100vw`,
+    overflow: `hidden`,
+    zIndex: -1,
   },
 }));
 
@@ -47,16 +46,17 @@ export const Hero = ({ imgSrc, imgText, title, subtitle, idPath }) => {
   const classes = useStyles();
 
   return (
-    <Paper
-      className={classes.heroStyle}
-      style={{
-        backgroundImage: `url(${imgSrc})`,
-      }}
-    >
-      {/* Increase the priority of the hero background image */}
-      {<img style={{ display: "none" }} src={imgSrc} alt={imgText} />}
+    <Grid container className={classes.heroBgContainer}>
+      <Image
+        src={imgSrc}
+        alt={imgText}
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+      />
       <Grid
         container
+        item
         justify="center"
         alignItems="center"
         className={classes.overlay}
@@ -65,6 +65,7 @@ export const Hero = ({ imgSrc, imgText, title, subtitle, idPath }) => {
           <Typography
             variant="h1"
             color="secondary"
+            align="center"
             gutterBottom
             className={classes.titleStyles}
           >
@@ -73,30 +74,14 @@ export const Hero = ({ imgSrc, imgText, title, subtitle, idPath }) => {
           <Typography
             variant="h3"
             color="inherit"
+            align="center"
             gutterBottom
             className={classes.subtitleStyles}
           >
             {subtitle}
           </Typography>
-          <a href={`#${idPath}`} className={classes.linkStyles}>
-            <Button
-              variant="contained"
-              color="primary"
-              size="large"
-              className={classes.buttonStyles}
-            >
-              Explore
-            </Button>
-          </a>
-          <Link href="/contact-us">
-            <a className={classes.linkStyles}>
-              <Button variant="outlined" color="secondary" size="large">
-                Contact Us
-              </Button>
-            </a>
-          </Link>
         </Grid>
       </Grid>
-    </Paper>
+    </Grid>
   );
 };
