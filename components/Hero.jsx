@@ -1,22 +1,8 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import Image from "next/image";
-import * as React from "react";
+import { ArrowDownward } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
-  heroStyle: {
-    position: `relative`,
-    width: `100%`,
-    height: `80vh`,
-    backgroundColor: theme.palette.grey[800],
-    color: theme.palette.common.white,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    marginBottom: theme.spacing(13),
-    [theme.breakpoints.down("sm")]: {
-      marginBottom: theme.spacing(5),
-    },
-  },
   overlay: {
     position: "absolute",
     top: 0,
@@ -29,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   titleStyles: {
     fontWeight: 400,
   },
+
   subtitleStyles: {
     color: theme.palette.common.white,
   },
@@ -39,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
     width: `100vw`,
     overflow: `hidden`,
     zIndex: -1,
+    marginBottom: theme.spacing(13),
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: theme.spacing(5),
+    },
   },
 }));
 
@@ -57,6 +48,7 @@ export const Hero = ({ imgSrc, imgText, title, subtitle, idPath }) => {
       <Grid
         container
         item
+        direction="column"
         justify="center"
         alignItems="center"
         className={classes.overlay}
@@ -81,6 +73,10 @@ export const Hero = ({ imgSrc, imgText, title, subtitle, idPath }) => {
             {subtitle}
           </Typography>
         </Grid>
+        <Typography component="span" variant="h5" color="secondary">
+          Scroll
+        </Typography>
+        <ArrowDownward fontSize="large" color="secondary" />
       </Grid>
     </Grid>
   );
