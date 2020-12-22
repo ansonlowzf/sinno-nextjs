@@ -80,7 +80,7 @@ const Home = () => {
               paragraph
             >
               There are more than 800 slabs quartz stone, granite, sintered
-              stone, marble stock to fulfil your renovation needs.
+              stone, marble and onyx available to fulfil your renovation needs.
             </Typography>
           </TextWrapper>
           <Grid container justify="center">
