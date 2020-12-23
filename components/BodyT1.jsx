@@ -1,13 +1,5 @@
-import {
-  Container,
-  Grid,
-  makeStyles,
-  Paper,
-  Typography,
-} from "@material-ui/core";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import Image from "next/image";
-import * as React from "react";
-import { SinnoButton } from "../components";
 import { Heading2 } from "../elements";
 
 const useStyles = makeStyles((theme) => ({
@@ -18,18 +10,9 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: theme.spacing(70),
     marginBottom: theme.spacing(10),
   },
-  btnStyles: {
-    padding: theme.spacing(2, 6),
-  },
-  linkStyles: {
-    textDecoration: `none`,
-  },
-  pMb: {
-    marginBottom: theme.spacing(10),
-  },
 }));
 
-export const BodyT1 = ({ imgSrc, title, description, btnText, linkUrl }) => {
+export const BodyT1 = ({ imgSrc, imgText, title, description }) => {
   const classes = useStyles();
 
   return (
@@ -51,7 +34,7 @@ export const BodyT1 = ({ imgSrc, title, description, btnText, linkUrl }) => {
           </Typography>
         </Grid>
         <Grid container item xs={12} md={6} alignItems="center">
-          <Paper component={Image} src={imgSrc} width={800} height={450} />
+          <Image src={imgSrc} alt={imgText} width={800} height={450} />
         </Grid>
       </Grid>
     </Container>
