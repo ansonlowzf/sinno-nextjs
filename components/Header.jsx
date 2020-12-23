@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
 
 const routes = [
   { name: "quartz stone", link: "/quartz-stone" },
+  { name: "sintered stone", link: "/sintered-stone" },
   { name: "granite", link: "/granite-malaysia" },
   { name: "blog", link: "/blog" },
   { name: "contact us", link: "/contact-us" },

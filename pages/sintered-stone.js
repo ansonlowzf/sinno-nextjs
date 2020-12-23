@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HeroScrollDown, QuotationCTA } from "../components";
+import { QuotationCTA } from "../components";
 import { SectionWrapper, TextWrapper, Heading2 } from "../elements";
 import {
   makeStyles,
@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme) => ({
   sectionMargin: {
     marginBottom: theme.spacing(4),
   },
+
+  h1MT: {
+    marginTop: theme.spacing(10),
+  },
 }));
 
 const graniteMalaysia = () => {
@@ -23,15 +27,30 @@ const graniteMalaysia = () => {
   return (
     <>
       <NextSeo title="Sintered Stone" />
-      <HeroScrollDown
+      {/* <HeroScrollDown
         imgSrc="/blue_pearl.jpg"
         imgText="Sintered Stone"
         title="Sintered Stone"
         subtitle="Supply &amp; Install Sintered Stone Kitchen Top"
-      />
+      /> */}
+
+      <SectionWrapper>
+        <Typography
+          variant="h1"
+          align="center"
+          gutterBottom
+          className={classes.h1MT}
+        >
+          Sintered Stone
+        </Typography>
+        <Typography component="h2" variant="h6" align="center">
+          Supply &amp; Install Sintered Stone Kitchen Top
+        </Typography>
+      </SectionWrapper>
+
       <SectionWrapper>
         <TextWrapper>
-          <Heading2>Colour</Heading2>
+          <Heading2>Colour &amp; Pricing</Heading2>
         </TextWrapper>
       </SectionWrapper>
 
