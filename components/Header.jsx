@@ -63,7 +63,7 @@ export const Header = () => {
         <AppBar position="fixed">
           <Container maxWidth="lg">
             <Toolbar className={classes.navbarDisplayFlex}>
-              <IconButton>
+              <IconButton aria-label="Home">
                 <ActiveLink activeClassName="active" href="/">
                   <a className={classes.linkStyle}>
                     <Home fontSize="large" style={{ color: `white` }} />
