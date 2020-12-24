@@ -43,7 +43,7 @@ const Home = () => {
         <TextWrapper>
           <Typography align="center" paragraph>
             <Box fontWeight="fontWeightBold">Business Registration No.:-</Box>{" "}
-            201603220786
+            201603220786 (002560776-H)
           </Typography>
           <Typography align="center" paragraph>
             <Box fontWeight="fontWeightBold">Sales Office:-</Box> 45-1-1, Jalan
@@ -63,6 +63,7 @@ const Home = () => {
         <BodyT1
           title="What We Do?"
           imgSrc="/empira_white.jpg"
+          imgText="Caesarstone empira white"
           description={`We fabricate, supply & install Quartz Stone, Granite, Sintered Stone
                 (AKA Porcelain Slab or Ultra-Compact stone), Marble and Onyx for kitchen top, wall cladding or
                 flooring application.`}
@@ -87,7 +88,7 @@ const Home = () => {
             <Grid item>
               <Image
                 src="/aboutus/factory2.JPG"
-                alt="Factory"
+                alt="Warehouse"
                 width={800}
                 height={450}
               />
