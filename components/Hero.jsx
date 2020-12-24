@@ -3,6 +3,18 @@ import Image from "next/image";
 import { ArrowDownward } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
+  heroBgContainer: {
+    position: `relative`,
+    height: `90vh`,
+    width: `100vw`,
+    overflow: `hidden`,
+    zIndex: -1,
+    marginBottom: theme.spacing(13),
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: theme.spacing(5),
+    },
+  },
+
   overlay: {
     position: "absolute",
     top: 0,
@@ -18,22 +30,15 @@ const useStyles = makeStyles((theme) => ({
 
   subtitleStyles: {
     color: theme.palette.common.white,
+    marginBottom: theme.spacing(10),
   },
 
-  heroBgContainer: {
-    position: `relative`,
-    height: `90vh`,
-    width: `100vw`,
-    overflow: `hidden`,
-    zIndex: -1,
-    marginBottom: theme.spacing(13),
-    [theme.breakpoints.down("sm")]: {
-      marginBottom: theme.spacing(5),
-    },
+  arrowMargin: {
+    marginTop: theme.spacing(1),
   },
 }));
 
-export const Hero = ({ imgSrc, imgText, title, subtitle, idPath }) => {
+export const Hero = ({ imgSrc, imgText, title, subtitle }) => {
   const classes = useStyles();
 
   return (
@@ -76,7 +81,11 @@ export const Hero = ({ imgSrc, imgText, title, subtitle, idPath }) => {
         <Typography component="span" variant="h5" color="secondary">
           Scroll
         </Typography>
-        <ArrowDownward fontSize="large" color="secondary" />
+        <ArrowDownward
+          fontSize="large"
+          color="secondary"
+          className={classes.arrowMargin}
+        />
       </Grid>
     </Grid>
   );
