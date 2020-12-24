@@ -77,7 +77,7 @@ const graniteMalaysia = () => {
                   QP 2013 (12mm) Smooth Matt
                 </Typography>
                 <Typography align="center">
-                  RM 220 per FR / RM 120 per SF
+                  RM 300 per FR / RM 150 per SF
                 </Typography>
               </Grid>
             </Grid>
@@ -94,7 +94,7 @@ const graniteMalaysia = () => {
                   QP 2031 (12mm) Smooth Matt
                 </Typography>
                 <Typography align="center">
-                  RM 220 per FR / RM 120 per SF
+                  RM 300 per FR / RM 150 per SF
                 </Typography>
               </Grid>
             </Grid>
@@ -111,7 +111,7 @@ const graniteMalaysia = () => {
                   QP 2032 (12mm) Smooth Matt
                 </Typography>
                 <Typography align="center">
-                  RM 220 per FR / RM 120 per SF
+                  RM 300 per FR / RM 150 per SF
                 </Typography>
               </Grid>
             </Grid>
@@ -128,7 +128,7 @@ const graniteMalaysia = () => {
                   QP 2033B (12mm) Smooth Matt
                 </Typography>
                 <Typography align="center">
-                  RM 220 per FR / RM 120 per SF
+                  RM 300 per FR / RM 150 per SF
                 </Typography>
               </Grid>
             </Grid>
@@ -145,7 +145,7 @@ const graniteMalaysia = () => {
                   QP 2034 (12mm) Smooth Matt
                 </Typography>
                 <Typography align="center">
-                  RM 220 per FR / RM 120 per SF
+                  RM 300 per FR / RM 150 per SF
                 </Typography>
               </Grid>
             </Grid>
@@ -162,7 +162,7 @@ const graniteMalaysia = () => {
                   QP 2035 (12mm) Smooth Matt
                 </Typography>
                 <Typography align="center">
-                  RM 220 per FR / RM 120 per SF
+                  RM 300 per FR / RM 150 per SF
                 </Typography>
               </Grid>
             </Grid>
@@ -179,7 +179,7 @@ const graniteMalaysia = () => {
                   QP 2036A (12mm) Smooth Matt
                 </Typography>
                 <Typography align="center">
-                  RM 220 per FR / RM 120 per SF
+                  RM 300 per FR / RM 150 per SF
                 </Typography>
               </Grid>
             </Grid>
