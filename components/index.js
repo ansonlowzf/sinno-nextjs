@@ -23,3 +23,4 @@ export * from "./PostBody";
 export * from "./CaesarstoneColourCard";
 export * from "./MaterialArticle";
 export * from "./Back2CaesarstoneButton";
+export * from "./ProductDisplay";
