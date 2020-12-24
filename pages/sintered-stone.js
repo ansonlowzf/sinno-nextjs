@@ -1,15 +1,15 @@
-import * as React from "react";
-import { QuotationCTA } from "../components";
-import { SectionWrapper, TextWrapper, Heading2 } from "../elements";
 import {
-  makeStyles,
   Container,
+  Grid,
+  makeStyles,
   Typography,
   Paper,
-  Grid,
 } from "@material-ui/core";
-import Image from "next/image";
 import { NextSeo } from "next-seo";
+import * as React from "react";
+import { ProductDisplay, QuotationCTA } from "../components";
+import { Heading2, SectionWrapper, TextWrapper } from "../elements";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
@@ -43,9 +43,12 @@ const graniteMalaysia = () => {
         >
           Sintered Stone
         </Typography>
-        <Typography component="h2" variant="h6" align="center">
-          Supply &amp; Install Sintered Stone Kitchen Top
-        </Typography>
+        <TextWrapper>
+          <Typography component="h2" variant="h6" align="center">
+            Supply &amp; Install Sintered Stone (AKA Porcelain Slab or Porcelain
+            Surface) Kitchen Top
+          </Typography>
+        </TextWrapper>
       </SectionWrapper>
 
       <SectionWrapper>
@@ -54,76 +57,139 @@ const graniteMalaysia = () => {
         </TextWrapper>
       </SectionWrapper>
 
-      <Container maxWidth="md">
-        <Grid
-          container
-          spacing={3}
-          className={classes.sectionMargin}
-          justify="center"
-        >
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/sintered-stone/ps6.jpg"
-              width={900}
-              height={700}
-            />
-            <Typography align="center">QP 2013</Typography>
-          </Grid>
+      <SectionWrapper>
+        <Container maxWidth="lg">
+          <Grid
+            container
+            spacing={3}
+            className={classes.sectionMargin}
+            justify="center"
+          >
+            <Grid item xs={12} md={6}>
+              <Paper
+                component={Image}
+                src="/sintered-stone/ps6.jpg"
+                width={800}
+                height={600}
+              />
+              <Grid container item justify="space-evenly">
+                <Typography align="center">
+                  QP 2013 (12mm) Smooth Matt
+                </Typography>
+                <Typography align="center">
+                  RM 220 per FR / RM 120 per SF
+                </Typography>
+              </Grid>
+            </Grid>
 
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/sintered-stone/ps4.jpg"
-              width={900}
-              height={700}
-            />
-            <Typography align="center">QP 2031</Typography>
-          </Grid>
+            <Grid item xs={12} md={6}>
+              <Paper
+                component={Image}
+                src="/sintered-stone/ps4.jpg"
+                width={800}
+                height={600}
+              />
+              <Grid container item justify="space-evenly">
+                <Typography align="center">
+                  QP 2031 (12mm) Smooth Matt
+                </Typography>
+                <Typography align="center">
+                  RM 220 per FR / RM 120 per SF
+                </Typography>
+              </Grid>
+            </Grid>
 
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/sintered-stone/ps5.jpg"
-              width={900}
-              height={700}
-            />
-            <Typography align="center">QP 2032</Typography>
-          </Grid>
+            <Grid item xs={12} md={6}>
+              <Paper
+                component={Image}
+                src="/sintered-stone/ps5.jpg"
+                width={800}
+                height={600}
+              />
+              <Grid container item justify="space-evenly">
+                <Typography align="center">
+                  QP 2032 (12mm) Smooth Matt
+                </Typography>
+                <Typography align="center">
+                  RM 220 per FR / RM 120 per SF
+                </Typography>
+              </Grid>
+            </Grid>
 
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/sintered-stone/ps1.jpg"
-              width={900}
-              height={700}
-            />
-            <Typography align="center">QP 2033B</Typography>
-          </Grid>
+            <Grid item xs={12} md={6}>
+              <Paper
+                component={Image}
+                src="/sintered-stone/ps1.jpg"
+                width={800}
+                height={600}
+              />
+              <Grid container item justify="space-evenly">
+                <Typography align="center">
+                  QP 2033B (12mm) Smooth Matt
+                </Typography>
+                <Typography align="center">
+                  RM 220 per FR / RM 120 per SF
+                </Typography>
+              </Grid>
+            </Grid>
 
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/sintered-stone/ps2.jpg"
-              width={900}
-              height={700}
-            />
-            <Typography align="center">QP 2034</Typography>
-          </Grid>
+            <Grid item xs={12} md={6}>
+              <Paper
+                component={Image}
+                src="/sintered-stone/ps2.jpg"
+                width={800}
+                height={600}
+              />
+              <Grid container item justify="space-evenly">
+                <Typography align="center">
+                  QP 2034 (12mm) Smooth Matt
+                </Typography>
+                <Typography align="center">
+                  RM 220 per FR / RM 120 per SF
+                </Typography>
+              </Grid>
+            </Grid>
 
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/sintered-stone/ps3.jpg"
-              width={900}
-              height={700}
-            />
-            <Typography align="center">QP 2035</Typography>
-          </Grid>
-        </Grid>
-      </Container>
+            <Grid item xs={12} md={6}>
+              <Paper
+                component={Image}
+                src="/sintered-stone/ps3.jpg"
+                width={800}
+                height={600}
+              />
+              <Grid container item justify="space-evenly">
+                <Typography align="center">
+                  QP 2035 (12mm) Smooth Matt
+                </Typography>
+                <Typography align="center">
+                  RM 220 per FR / RM 120 per SF
+                </Typography>
+              </Grid>
+            </Grid>
 
-      <QuotationCTA stone="Sintered Stone" />
+            <Grid item xs={12} md={6}>
+              <Paper
+                component={Image}
+                src="/sintered-stone/qp2036a.jpg"
+                width={800}
+                height={600}
+              />
+              <Grid container item justify="space-evenly">
+                <Typography align="center">
+                  QP 2036A (12mm) Smooth Matt
+                </Typography>
+                <Typography align="center">
+                  RM 220 per FR / RM 120 per SF
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Container>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <QuotationCTA stone="Sintered Stone" />
+      </SectionWrapper>
     </>
   );
 };
