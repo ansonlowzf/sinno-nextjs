@@ -40,238 +40,238 @@ const Silestone = () => {
         <Container maxWidth="lg">
           <Grid container spacing={3} justify="center">
             <ProductDisplay
-              imgSrc="/silestone/blanco_city_0.jpg"
-              stoneName="Blanco City (Polished / Suede)"
+              imgSrc="/silestone/blanco-city-0.jpg"
+              stoneName="Blanco City (Polished / Suede) 20mm"
               price="RM 350 /FR or RM 210 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/gris_expo_0.jpg"
-              stoneName="Gris Expo (Polished / Suede)"
+              imgSrc="/silestone/gris-expo-0.jpg"
+              stoneName="Gris Expo (Polished / Suede) 20mm"
               price="RM 350 /FR or RM 210 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/marengo_0.jpg"
-              stoneName="Marengo (Polished / Suede / N-Boost)"
+              imgSrc="/silestone/marengo-0.jpg"
+              stoneName="Marengo (Polished / Suede / N-Boost) 20mm"
               price="RM 350 /FR or RM 210 /SF "
             />
 
             <ProductDisplay
-              imgSrc="/silestone/arden_blue_0.jpg"
-              stoneName="Arden Blue (Polished / Suede)"
+              imgSrc="/silestone/arden-blue-0.jpg"
+              stoneName="Arden Blue (Polished / Suede) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/blanco_maple14_0.jpg"
-              stoneName="Blanco Maple 14 (Polished / Suede)"
+              imgSrc="/silestone/blanco-maple14-0.jpg"
+              stoneName="Blanco Maple 14 (Polished / Suede) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/blanco_norte14_0.jpg"
-              stoneName="Blanco Norte 14 (Polished / Suede)"
+              imgSrc="/silestone/blanco-norte14-0.png"
+              stoneName="Blanco Norte 14 (Polished / Suede) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/camden_0.jpg"
-              stoneName="Camden (Suede)"
+              imgSrc="/silestone/camden-0.jpg"
+              stoneName="Camden (Suede) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/cemento_spa_0.jpg"
-              stoneName="Cemento Spa (Polished / Suede)"
+              imgSrc="/silestone/cemento-spa-0.jpg"
+              stoneName="Cemento Spa (Polished / Suede) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/coral_clay_0.jpg"
-              stoneName="Coral Clay (Polished / Suede)"
+              imgSrc="/silestone/coral-clay-0.jpg"
+              stoneName="Coral Clay (Polished / Suede) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/ironbark_0.jpg"
-              stoneName="Ironbark (Polished / Suede)"
+              imgSrc="/silestone/ironbark-0.jpg"
+              stoneName="Ironbark (Polished / Suede) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/tebas_black18_0.jpg"
-              stoneName="Negro Tebas 18 (Polished / Suede / N-boost)"
+              stoneName="Negro Tebas 18 (Polished / Suede / N-boost) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/royal_reef_0.jpg"
-              stoneName="Royal Reef (Polished / Suede)"
+              imgSrc="/silestone/royal-reef-0.jpg"
+              stoneName="Royal Reef (Polished / Suede) 20mm"
               price="RM 390 /FR or RM 230 /SF "
             />
 
             <ProductDisplay
-              imgSrc="/silestone/blanco_rivers_0.jpg"
-              stoneName="Blanco Rivers (Polished / Suede)"
+              imgSrc="/silestone/blanco-rivers-0.jpg"
+              stoneName="Blanco Rivers (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/blanco_stellar13_0.jpg"
-              stoneName="Blanco Stellar 13 (Polished / Suede)"
+              imgSrc="/silestone/blanco-stellar13-0.jpg"
+              stoneName="Blanco Stellar 13 (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/desert_silver_0.jpg"
-              stoneName="Desert Silver (Polished / Suede)"
+              imgSrc="/silestone/desert-silver-0.jpg"
+              stoneName="Desert Silver (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/miami_vena_0.jpg"
-              stoneName="Miami Vena (Polished / Suede)"
+              imgSrc="/silestone/miami-vena-0.jpg"
+              stoneName="Miami Vena (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/negro_stellar_0.jpg"
-              stoneName="Negro Stellar (Polished / Suede / N-Boost)"
+              imgSrc="/silestone/negro-stellar-0.jpg"
+              stoneName="Negro Stellar (Polished / Suede / N-Boost) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/silken_pearl_0.jpg"
-              stoneName="Silken Pearl (Polished / Suede)"
+              imgSrc="/silestone/silken-pearl-0.jpg"
+              stoneName="Silken Pearl (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/snowy_ibiza_0.jpg"
-              stoneName="Snowy Ibiza (Polished / Suede)"
+              imgSrc="/silestone/snowy-ibiza-0.jpg"
+              stoneName="Snowy Ibiza (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/tigris_sand_0.jpg"
-              stoneName="Tigris Sand (Polished / Suede)"
+              imgSrc="/silestone/tigris-sand-0.jpg"
+              stoneName="Tigris Sand (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/white_arabesque_0.jpg"
-              stoneName="White Arabesque (Polished / Suede)"
+              imgSrc="/silestone/white-arabesque-0.jpg"
+              stoneName="White Arabesque (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/white_storm14_0.jpg"
-              stoneName="White Storm 14 (Polished / Suede)"
+              imgSrc="/silestone/white-storm14-0.jpg"
+              stoneName="White Storm 14 (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/yukon_0.jpg"
-              stoneName="Yukon (Polished / Suede)"
+              imgSrc="/silestone/yukon-0.jpg"
+              stoneName="Yukon (Polished / Suede) 20mm"
               price="RM 420 /FR or RM 250 /SF "
             />
 
             <ProductDisplay
-              imgSrc="/silestone/blanco_zeus_0.jpg"
-              stoneName="Blanco Zeus (Polished / Suede)"
+              imgSrc="/silestone/blanco-zeus-0.jpg"
+              stoneName="Blanco Zeus (Polished / Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/blanco_orion_0.jpg"
-              stoneName="Blanco Orion (Polished / Suede)"
+              imgSrc="/silestone/blanco-orion-0.jpg"
+              stoneName="Blanco Orion (Polished / Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/charcoal_soapstone_0.jpg"
-              stoneName="Charcoal Soapstone (Polished / Suede / N-Boost)"
-              price="RM 550 /FR or RM 320 /SF "
+              stoneName="Charcoal Soapstone (Polished / Suede / N-Boost) 20mm "
+              price=" RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/corktown_0.jpg"
-              stoneName="Corktown (Suede)"
+              imgSrc="/silestone/corktown-0.jpg"
+              stoneName="Corktown (Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/eternal_serena_0.jpg"
-              stoneName="Eternal Serena (Polished / Suede)"
+              stoneName="Eternal Serena (Polished / Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/iconic_black_0.jpg"
-              stoneName="Iconic Black (Polished / Suede / N-Boost)"
+              stoneName="Iconic Black (Polished / Suede / N-Boost) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/kensho_0.jpg"
-              stoneName="Kensho (Polished / Suede)"
+              imgSrc="/silestone/kensho-0.jpg"
+              stoneName="Kensho (Polished / Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/lagoon_0.jpg"
-              stoneName="Lagoon (Polished / Suede)"
+              imgSrc="/silestone/lagoon-0.jpg"
+              stoneName="Lagoon (Polished / Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/lyra_0.jpg"
-              stoneName="Lyra (Polished / Suede)"
+              imgSrc="/silestone/lyra-0.jpg"
+              stoneName="Lyra (Polished / Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/nolita_0.jpg"
-              stoneName="Nolita (Suede)"
+              imgSrc="/silestone/nolita-0.jpg"
+              stoneName="Nolita (Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/pearl_jasmine_0.jpg"
-              stoneName="Pearl Jasmine (Polished / Suede)"
+              imgSrc="/silestone/pearl-jasmine-0.png"
+              stoneName="Pearl Jasmine (Polished / Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/poblenou_0.jpg"
-              stoneName="Poblenou (Suede)"
+              imgSrc="/silestone/poblenou-0.jpg"
+              stoneName="Poblenou (Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/seaport_0.jpg"
-              stoneName="Seaport (Suede)"
+              imgSrc="/silestone/seaport-0.jpg"
+              stoneName="Seaport (Suede) 20mm"
               price="RM 550 /FR or RM 320 /SF "
             />
 
             <ProductDisplay
-              imgSrc="/silestone/ariel_0.jpg"
-              stoneName="Ariel (Polished / Suede)"
+              imgSrc="/silestone/ariel-0.jpg"
+              stoneName="Ariel (Polished / Suede) 20mm"
               price="RM 590 /FR or RM 350 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/calypso_0.jpg"
-              stoneName="Calypso (Polished / Suede)"
+              imgSrc="/silestone/calypso-0.jpg"
+              stoneName="Calypso (Polished / Suede) 20mm"
               price="RM 590 /FR or RM 350 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/eternal_bella_0.jpg"
-              stoneName="Eternal Bella (Polished / Suede)"
+              stoneName="Eternal Bella (Polished / Suede) 20mm"
               price="RM 590 /FR or RM 350 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/eternal_dor_0.jpg"
-              stoneName="Eternal D'or (Polished / Suede)"
+              stoneName="Eternal D'or (Polished / Suede) 20mm"
               price="RM 590 /FR or RM 350 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/eternal_marquina_0.jpg"
-              stoneName="Eternal Marquina (Polished / Suede / N-Boost)"
+              stoneName="Eternal Marquina (Polished / Suede / N-Boost) 20mm"
               price="RM 590 /FR or RM 350 /SF "
             />
             <ProductDisplay
-              imgSrc="/silestone/eternal_statuario_0.jpg"
-              stoneName="Eternal Statuario (Polished / Suede)"
+              imgSrc="/silestone/eternal-statuario-0.jpg"
+              stoneName="Eternal Statuario (Polished / Suede) 20mm"
               price="RM 590 /FR or RM 350 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/iconic_white_0.jpg"
-              stoneName="Iconic White (Polished / Suede / N-Boost)"
+              stoneName="Iconic White (Polished / Suede / N-Boost) 20mm"
               price="RM 590 /FR or RM 350 /SF "
             />
 
             <ProductDisplay
               imgSrc="/silestone/eternal_noir_0.jpg"
-              stoneName="Eternal Noir (Polished / Suede / N-Boost)"
+              stoneName="Eternal Noir (Polished / Suede / N-Boost) 20mm"
               price="RM 780 /FR or RM 350 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/eternal_calacatta_gold_0.jpg"
-              stoneName="Eternal Calacatta Gold (Polished / Suede)"
+              stoneName="Eternal Calacatta Gold (Polished / Suede) 20mm"
               price="RM 780 /FR or RM 350 /SF "
             />
             <ProductDisplay
               imgSrc="/silestone/polaris_0.jpg"
-              stoneName="Polaris (Polished)"
+              stoneName="Polaris (Polished) 20mm"
               price="RM 780 /FR or RM 350 /SF "
             />
           </Grid>
