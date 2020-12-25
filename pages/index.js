@@ -7,7 +7,7 @@ import {
   Typography,
   Paper,
 } from "@material-ui/core";
-import { Hero, BodyT1, FaqAccordion, StoneCard } from "../components";
+import { Hero, FaqAccordion, StoneCard } from "../components";
 import { Heading2, SectionWrapper, TextWrapper } from "../elements";
 import { NextSeo } from "next-seo";
 import { faqHomepage } from "../constants/faq";
@@ -20,6 +20,12 @@ const useStyles = makeStyles((theme) => ({
     height: 450,
     [theme.breakpoints.down("sm")]: {
       height: 390,
+    },
+  },
+
+  descriptionStyles: {
+    [theme.breakpoints.down("md")]: {
+      marginBottom: theme.spacing(5),
     },
   },
 }));
@@ -60,14 +66,40 @@ const Home = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <BodyT1
-          title="What We Do?"
-          imgSrc="/empira_white.jpg"
-          imgText="Caesarstone empira white"
-          description={`We fabricate, supply & install Quartz Stone, Granite, Sintered Stone
-                (AKA Porcelain Slab or Ultra-Compact stone), Marble and Onyx for kitchen top, wall cladding or
-                flooring application.`}
-        />
+        <Container maxWidth="xl">
+          <Grid container>
+            <Grid
+              container
+              item
+              direction="column"
+              justify="center"
+              alignItems="center"
+              xs={12}
+              md={6}
+            >
+              <Heading2>What We Do?</Heading2>
+              <TextWrapper>
+                <Typography
+                  align="center"
+                  className={classes.descriptionStyles}
+                >
+                  We fabricate, supply &amp; install Quartz Stone, Granite,
+                  Sintered Stone (AKA Porcelain Slab or Ultra-Compact stone),
+                  Marble and Onyx for kitchen top, wall cladding or flooring
+                  application.{" "}
+                </Typography>
+              </TextWrapper>
+            </Grid>
+            <Grid container item xs={12} md={6} alignItems="center">
+              <Image
+                src="/empira_white.jpg"
+                alt="Caesarstone Empira White"
+                width={800}
+                height={450}
+              />
+            </Grid>
+          </Grid>
+        </Container>
       </SectionWrapper>
 
       <SectionWrapper>
