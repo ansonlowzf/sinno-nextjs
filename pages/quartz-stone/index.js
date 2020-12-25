@@ -145,19 +145,27 @@ const QuartzStonePage = () => {
         <Container maxWidth="lg">
           <Heading2>Quartz Stone Brands</Heading2>
           <Grid container spacing={2} justify="center" alignItems="center">
-            <Grid item xs={12} sm={6} md={5}>
+            <Grid item xs={12} sm={4}>
               <StoneCard
                 imgSrc="/airy_concrete.jpg"
                 stone="Caesarstone"
-                description="Import from US. Top quality and luxury quartz surface with Green Guard and NSF 51 Standard Certified"
+                description="US Brand Quartz Surface"
                 linkUrl="/caesarstone"
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={5}>
+            <Grid item xs={12} sm={4}>
+              <StoneCard
+                imgSrc="/poblenou_1.jpg"
+                stone="Silestone"
+                description="Spain Brand Quartz Surface"
+                linkUrl="/silestone"
+              />
+            </Grid>
+            <Grid item xs={12} sm={4}>
               <StoneCard
                 imgSrc="/grey_mirror.jpg"
                 stone="Zenstone"
-                description="Import and OEM from China. 93% quartz sand with SGS International Standard"
+                description="Malaysia Brand Quartz Surface"
                 linkUrl="./zenstone-malaysia"
               />
             </Grid>

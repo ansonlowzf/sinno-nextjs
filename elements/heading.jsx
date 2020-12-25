@@ -3,7 +3,10 @@ import { makeStyles, Box, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   heading2Styles: {
-    margin: theme.spacing(6, 0),
+    margin: theme.spacing(5, 0),
+    [theme.breakpoints.down("md")]: {
+      marginBottom: theme.spacing(3),
+    },
   },
   textStyles: {
     fontWeight: 600,
