@@ -38,7 +38,7 @@ const Silestone = () => {
 
       <SectionWrapper>
         <Container maxWidth="lg">
-          <Grid container spacing={3} justify="center">
+          <Grid container spacing={2} justify="center">
             <ProductDisplay
               imgSrc="/silestone/blanco-city-0.jpg"
               stoneName="Blanco City (Polished / Suede) 20mm"
