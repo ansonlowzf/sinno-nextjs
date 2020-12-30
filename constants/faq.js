@@ -17,45 +17,12 @@ export const faqHomepage = [
   {
     id: 4,
     question: `What stone types your company sell in slab form?`,
-    answer: `We sell granite, quartz stone, sintered stone and marble`,
+    answer: `We sell granite, quartz stone, sintered stone, marble and onyx`,
   },
   {
     id: 5,
     question: `Do your company sell kitchen cabinet and kitchen top in a bundle?`,
-    answer: `We're stone mason specializing in stone works only. You could hire professional carpenter for kitchen cabinet and hire stone mason for kitchen top.`,
-  },
-  {
-    id: 6,
-    question: `Why quartz stone's pricing differ dramatically?`,
-    answer: `There are 3 different types of quartz available in Malaysia's market. Genuine quartz stone, artificial quartz and compressed marble pretend as quartz stone. Of course, if you compare compressed marble with genuine quartz, it's almost double the price.`,
-  },
-];
-
-export const faqAbout = [
-  {
-    id: 1,
-    question: `We have our material, do your company fabricate and install for us?`,
-    answer: `We do not provide outsource service at the moment`,
-  },
-  {
-    id: 2,
-    question: `How do you joint the side edging?`,
-    answer: `Mostly 45 degrees to hide the joining line`,
-  },
-  {
-    id: 3,
-    question: `How about rounding stone?`,
-    answer: `We do have the machine to cut the stone in round`,
-  },
-  {
-    id: 4,
-    question: `Could your company provide fabrication to curve the stone?`,
-    answer: `Yes, we do provide curve and bend the stone fabrication. So far, only Caesarstone giving the best result`,
-  },
-  {
-    id: 5,
-    question: `Do your company provide other types of side edging such as bullnose or ogee?`,
-    answer: `Yes, we provide more than 12 types of side edging`,
+    answer: `We're stone mason specializing in stone works only. You could hire professional carpenter for kitchen cabinet and hire stone mason for stone kitchen top.`,
   },
 ];
 
@@ -95,7 +62,17 @@ export const faqCaesarstone = [
 export const faqQuartzStone = [
   {
     id: 1,
-    question: `How do determine quartz stone grade and quality?`,
-    answer: `This is our own perspective used to determine quartz stone's grade. Grade A = 89% - 93% contains of quartz. Grade B = 83% - 88% contains of quartz`,
+    question: `How do determine genuine quartz stone?`,
+    answer: `Drip a drop of Harpic Black or Acid on the surface, geunie quartz stone has no chemical reaction`,
+  },
+  {
+    id: 2,
+    question: `Is there any warranty for quartz stone`,
+    answer: `10 years warranty on crack and discolouration without any impact`,
+  },
+  {
+    id: 3,
+    question: `Why quartz stone's pricing differ dramatically?`,
+    answer: `There are 3 different types of quartz available in Malaysia's market. Genuine quartz stone, artificial quartz and compressed marble pretend as quartz stone. Of course, if you compare compressed marble with genuine quartz, it's almost double the price.`,
   },
 ];
