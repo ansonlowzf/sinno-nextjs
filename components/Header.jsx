@@ -36,8 +36,8 @@ const useStyles = makeStyles((theme) => ({
   },
   backToTopStyles: {
     position: "fixed",
-    bottom: theme.spacing(5),
-    right: theme.spacing(5),
+    bottom: theme.spacing(4),
+    right: theme.spacing(4),
     zIndex: 999,
     [theme.breakpoints.up("md")]: {
       bottom: theme.spacing(13),
