@@ -1,7 +1,12 @@
 import { NextSeo } from "next-seo";
-import { SectionWrapper, TextWrapper, Heading2 } from "../elements";
+import {
+  SectionWrapper,
+  TextWrapper,
+  Heading2,
+  Heading1,
+} from "../../elements";
 import { Typography, Container, Grid, makeStyles } from "@material-ui/core";
-import { ProductDisplay } from "../components";
+import { ProductDisplay } from "../../components";
 
 const useStyles = makeStyles((theme) => ({
   h1MT: {
@@ -16,14 +21,7 @@ const DektonPage = () => {
     <>
       <NextSeo title="Dekton | Stone Innovations Enterprise" />
       <SectionWrapper>
-        <Typography
-          variant="h1"
-          align="center"
-          gutterBottom
-          className={classes.h1MT}
-        >
-          Dekton
-        </Typography>
+        <Heading1>Dekton</Heading1>
         <TextWrapper>
           <Typography component="h2" variant="h6" align="center">
             Supply &amp; Install Dekton Ultra-Compact Surface Kitchen Top
