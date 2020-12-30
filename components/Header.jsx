@@ -1,4 +1,3 @@
-import * as React from "react";
 import {
   AppBar,
   Container,
@@ -10,6 +9,7 @@ import {
   useScrollTrigger,
   Fab,
   Zoom,
+  Slide,
 } from "@material-ui/core";
 import { Home, KeyboardArrowUp } from "@material-ui/icons";
 import { SideDrawer, ActiveLink } from ".";
@@ -59,7 +59,7 @@ export const Header = () => {
 
   return (
     <>
-      <ElevationScroll>
+      <HideOnScroll>
         <AppBar position="fixed">
           <Container maxWidth="lg">
             <Toolbar className={classes.navbarDisplayFlex}>
@@ -93,7 +93,7 @@ export const Header = () => {
             </Toolbar>
           </Container>
         </AppBar>
-      </ElevationScroll>
+      </HideOnScroll>
       <Toolbar id="back-to-top-anchor" className={classes.toolbarContainer} />
 
       <BackToTop>
@@ -133,12 +133,12 @@ export const BackToTop = ({ children }) => {
   );
 };
 
-export const ElevationScroll = ({ children }) => {
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0,
-  });
-  return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
-  });
+export const HideOnScroll = ({ children }) => {
+  const trigger = useScrollTrigger();
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
 };
