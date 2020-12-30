@@ -24,3 +24,4 @@ export * from "./CaesarstoneColourCard";
 export * from "./MaterialArticle";
 export * from "./Back2CaesarstoneButton";
 export * from "./ProductDisplay";
+export * from "./SubNavBar";
