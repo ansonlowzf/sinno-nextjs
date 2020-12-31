@@ -13,6 +13,7 @@ import {
   SubNavBar,
 } from "../../components";
 import { faqQuartzStone } from "../../constants/faq";
+import { qsRoutes } from "../../constants/route";
 
 const useStyles = makeStyles((theme) => ({
   textPB: {
@@ -37,7 +38,9 @@ const QuartzStonePage = () => {
         title="Quartz Stone"
         subtitle="Supply &amp; Install Quartz Stone Kitchen Top"
       />
-      <SubNavBar />
+
+      <SubNavBar routes={qsRoutes} />
+
       <SectionWrapper>
         <Heading2>What Is Your Desire Kitchen Top?</Heading2>
         <TextWrapper>

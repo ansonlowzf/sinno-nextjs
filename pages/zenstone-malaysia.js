@@ -15,7 +15,9 @@ import {
   Hero,
   MaterialArticle,
   SubNavBar,
+  PriceTerm,
 } from "../components";
+import { qsRoutes } from "../constants/route";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
@@ -45,7 +47,7 @@ const ZenstoneMalaysia = () => {
         subtitle="Supply &amp; Install Zenstone Quartz Surface Kitchen Top"
       />
 
-      <SubNavBar />
+      <SubNavBar routes={qsRoutes} />
 
       <SectionWrapper>
         <Grid container justify="center">
@@ -582,6 +584,10 @@ const ZenstoneMalaysia = () => {
 
       <SectionWrapper>
         <ColourWarning />
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <PriceTerm />
       </SectionWrapper>
 
       <SectionWrapper>

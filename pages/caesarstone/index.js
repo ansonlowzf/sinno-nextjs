@@ -1,4 +1,4 @@
-import { makeStyles, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import { NextSeo } from "next-seo";
 import {
   BodyT1,
@@ -10,6 +10,7 @@ import {
   SubNavBar,
 } from "../../components";
 import { faqCaesarstone } from "../../constants/faq";
+import { qsRoutes } from "../../constants/route";
 import {
   FaqWrapper,
   Heading2,
@@ -17,21 +18,7 @@ import {
   TextWrapper,
 } from "../../elements";
 
-const useStyles = makeStyles((theme) => ({
-  btnStyles: {
-    padding: theme.spacing(2, 6),
-  },
-  linkStyles: {
-    textDecoration: `none`,
-  },
-  pMb: {
-    marginBottom: theme.spacing(10),
-  },
-}));
-
 const CaesarstoneMalaysia = () => {
-  const classes = useStyles();
-
   return (
     <>
       <NextSeo title="Caesarstone Quartz Surfaces Malaysia" />
@@ -41,7 +28,9 @@ const CaesarstoneMalaysia = () => {
         title="Caesarstone Malaysia"
         subtitle="Supply &amp; Install Caesarstone Quartz Surface Kitchen Top"
       />
-      <SubNavBar />
+
+      <SubNavBar routes={qsRoutes} />
+
       <SectionWrapper>
         <Heading2>Caesarstone Quartz Surface</Heading2>
         <TextWrapper>
