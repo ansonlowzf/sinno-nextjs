@@ -40,7 +40,7 @@ const Home = () => {
         imgSrc="/factory-entrance.jpg"
         imgText="factory entrance"
         title="Stone Surface Mason"
-        subtitle="Quartz Stone | Granite | Sintered Stone | Marble | Onyx"
+        subtitle="Quartz Stone | Sintered Stone | Granite | Marble | Onyx"
         idPath="stones"
       />
 

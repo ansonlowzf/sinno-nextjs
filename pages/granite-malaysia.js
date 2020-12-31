@@ -1,15 +1,13 @@
-import * as React from "react";
-import { Hero, QuotationCTA } from "../components";
-import { SectionWrapper, TextWrapper, Heading2 } from "../elements";
-import {
-  makeStyles,
-  Container,
-  Typography,
-  Paper,
-  Grid,
-} from "@material-ui/core";
-import Image from "next/image";
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import { NextSeo } from "next-seo";
+import {
+  ColourWarning,
+  Hero,
+  PriceTerm,
+  ProductDisplay,
+  QuotationCTA,
+} from "../components";
+import { Heading2, SectionWrapper, TextWrapper } from "../elements";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
@@ -32,7 +30,7 @@ const graniteMalaysia = () => {
 
       <SectionWrapper>
         <TextWrapper>
-          <Heading2>Colour</Heading2>
+          <Heading2>Colour &amp; Pricing</Heading2>
           <Typography align="center">Thickness: 17mm - 18mm</Typography>
         </TextWrapper>
       </SectionWrapper>
@@ -40,77 +38,55 @@ const graniteMalaysia = () => {
       <Container maxWidth="md">
         <Grid
           container
-          spacing={3}
+          spacing={2}
           className={classes.sectionMargin}
           justify="center"
         >
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/black-galaxy.JPEG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">Black Galaxy</Typography>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/blue-pearl.JPG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">Blue Pearl</Typography>
-          </Grid>
-
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/bourbon-grey.JPG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">Bourbon Grey</Typography>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/emerald-pearl.JPG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">Emerald Pearl</Typography>
-          </Grid>
-
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/imperial-red.JPG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">Imperial Red</Typography>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/white-wave.JPG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">White Wave</Typography>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Paper
-              component={Image}
-              src="/granite/xan-xi-black.JPEG"
-              width={800}
-              height={400}
-            />
-            <Typography align="center">Xan Xi Black</Typography>
-          </Grid>
+          <ProductDisplay
+            imgSrc="/granite/black-galaxy.JPEG"
+            stoneName="Black Galaxy"
+            price="RM 220 /FR or RM 120 /SF"
+          />
+          <ProductDisplay
+            imgSrc="/granite/blue-pearl.JPG"
+            stoneName="Blue Pearl"
+            price="RM 250 /FR or RM 135 /SF"
+          />
+          <ProductDisplay
+            imgSrc="/granite/bourbon-grey.JPG"
+            stoneName="Bourbon Grey"
+            price="RM 220 /FR or RM 120 /SF"
+          />
+          <ProductDisplay
+            imgSrc="/granite/emerald-pearl.JPG"
+            stoneName="Emerald Pearl"
+            price="RM 250 /FR or RM 135 /SF"
+          />
+          <ProductDisplay
+            imgSrc="/granite/imperial-red.JPG"
+            stoneName="Imperial Red"
+            price="RM 340 /FR or RM 180 /SF"
+          />
+          <ProductDisplay
+            imgSrc="/granite/white-wave.JPG"
+            stoneName="White Wave"
+            price="RM 310 /FR or RM 165 /SF"
+          />
+          <ProductDisplay
+            imgSrc="/granite/xan-xi-black.JPEG"
+            stoneName="Shan Xi Black"
+            price="RM 310 /FR or RM 165 /SF"
+          />
         </Grid>
       </Container>
+
+      <SectionWrapper>
+        <ColourWarning />
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <PriceTerm />
+      </SectionWrapper>
 
       <QuotationCTA stone="Granite" />
     </>
