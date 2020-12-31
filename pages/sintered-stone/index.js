@@ -32,28 +32,25 @@ const SinteredStone = () => {
             Also known as Porcelain Slab, Porcelain Surface, Compact Surface or
             Ultra-Compact Surface
           </Typography>
-          <Typography align="center">
-            We supply and install sintered stone for kitchent top application.
-          </Typography>
         </TextWrapper>
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2 idPath="stones">{`Brands We Supply & Install`}</Heading2>
+        <Heading2 idPath="stones">{`Products & Brands`}</Heading2>
         <Container maxWidth="lg">
           <Grid container spacing={2} justify="center" alignItems="center">
             <Grid item xs={12} sm={6} md={5}>
               <StoneCard
-                imgSrc="/grey_mirror.jpg"
-                stone="Dekton"
+                imgSrc="/bergen_1.jpg"
+                stone="Dekton Ultra-Compact Stone"
                 description="Product of Spain"
                 linkUrl="/sintered-stone/dekton"
               />
             </Grid>
             <Grid item xs={12} sm={6} md={5}>
               <StoneCard
-                imgSrc="/blue_pearl.jpg"
-                stone="Granite"
+                imgSrc="/qp2013-1.jpg"
+                stone="Moca Compact Stone"
                 description="Local Brand OEM China Sintered Stone Product"
                 linkUrl="/sintered-stone/mocastone"
               />

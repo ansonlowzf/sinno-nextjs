@@ -1,33 +1,21 @@
+import { Container, Grid } from "@material-ui/core";
 import { NextSeo } from "next-seo";
-import {
-  SectionWrapper,
-  TextWrapper,
-  Heading2,
-  Heading1,
-} from "../../elements";
-import { Typography, Container, Grid, makeStyles } from "@material-ui/core";
-import { ProductDisplay } from "../../components";
-
-const useStyles = makeStyles((theme) => ({
-  h1MT: {
-    marginTop: theme.spacing(10),
-  },
-}));
+import { Hero, ProductDisplay, SubNavBar } from "../../components";
+import { Heading2, SectionWrapper, TextWrapper } from "../../elements";
+import { ssRoutes } from "../../constants/route";
 
 const DektonPage = () => {
-  const classes = useStyles();
-
   return (
     <>
       <NextSeo title="Dekton | Stone Innovations Enterprise" />
-      <SectionWrapper>
-        <Heading1>Dekton</Heading1>
-        <TextWrapper>
-          <Typography component="h2" variant="h6" align="center">
-            Supply &amp; Install Dekton Ultra-Compact Surface Kitchen Top
-          </Typography>
-        </TextWrapper>
-      </SectionWrapper>
+      <Hero
+        imgSrc="/kelya_8.jpg"
+        imgText="Dekton Kelya Kitchen Top"
+        title="Dekton"
+        subtitle="Supply &amp; Install Dekton Ultra-Compact Surface Kitchen Top"
+      />
+
+      <SubNavBar routes={ssRoutes} />
 
       <SectionWrapper>
         <TextWrapper>

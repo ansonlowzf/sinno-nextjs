@@ -1,20 +1,17 @@
-import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Container, Grid, makeStyles } from "@material-ui/core";
 import { NextSeo } from "next-seo";
-import { ProductDisplay, QuotationCTA } from "../../components";
 import {
-  Heading1,
-  Heading2,
-  SectionWrapper,
-  TextWrapper,
-} from "../../elements";
+  Hero,
+  ProductDisplay,
+  QuotationCTA,
+  SubNavBar,
+} from "../../components";
+import { Heading2, SectionWrapper, TextWrapper } from "../../elements";
+import { ssRoutes } from "../../constants/route";
 
 const useStyles = makeStyles((theme) => ({
   sectionMargin: {
     marginBottom: theme.spacing(4),
-  },
-
-  h1MT: {
-    marginTop: theme.spacing(10),
   },
 }));
 
@@ -24,21 +21,14 @@ const MocaCompactSurface = () => {
   return (
     <>
       <NextSeo title="Moca Compact Surface" />
-      {/* <HeroScrollDown
-        imgSrc="/blue_pearl.jpg"
-        imgText="Sintered Stone"
-        title="Sintered Stone"
-        subtitle="Supply &amp; Install Sintered Stone Kitchen Top"
-      /> */}
+      <Hero
+        imgSrc="/qp2013-1.jpg"
+        imgText="Mocasotne QP2013 Table Top"
+        title="Moca Compact Surface"
+        subtitle="Supply &amp; Install Moca Compact Surface Kitchen Top"
+      />
 
-      <SectionWrapper>
-        <Heading1>Moca Compact Surface</Heading1>
-        <TextWrapper>
-          <Typography component="h2" variant="h6" align="center">
-            Supply &amp; Install Moca Compact Surface Kitchen Top
-          </Typography>
-        </TextWrapper>
-      </SectionWrapper>
+      <SubNavBar routes={ssRoutes} />
 
       <SectionWrapper>
         <TextWrapper>
