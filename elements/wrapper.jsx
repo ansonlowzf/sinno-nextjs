@@ -2,7 +2,7 @@ import * as React from "react";
 import { Box, Container } from "@material-ui/core";
 
 export const SectionWrapper = ({ children }) => {
-  return <Box mb={{ xs: 5, sm: 8, md: 13 }}>{children}</Box>;
+  return <Box my={{ xs: 5, sm: 8, md: 13 }}>{children}</Box>;
 };
 
 export const TextWrapper = ({ children }) => {
