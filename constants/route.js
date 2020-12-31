@@ -6,5 +6,5 @@ export const qsRoutes = [
 
 export const ssRoutes = [
   { name: "dekton", link: "/sintered-stone/dekton" },
-  { name: "mocastone", link: "/sintered-stone/mocastone" },
+  { name: "moca", link: "/sintered-stone/moca-compact-surface" },
 ];
