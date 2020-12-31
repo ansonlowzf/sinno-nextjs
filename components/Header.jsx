@@ -12,7 +12,7 @@ import {
   Slide,
 } from "@material-ui/core";
 import { Home, KeyboardArrowUp } from "@material-ui/icons";
-import { SideDrawer, ActiveLink } from ".";
+import { SideDrawer, ActiveLink } from "../components";
 
 const useStyles = makeStyles((theme) => ({
   toolbarContainer: {
