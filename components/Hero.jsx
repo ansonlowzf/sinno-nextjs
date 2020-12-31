@@ -5,16 +5,11 @@ import { ArrowDownward } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
   heroBgContainer: {
     position: `relative`,
-    height: `90vh`,
+    height: `100vh`,
     width: `100vw`,
     overflow: `hidden`,
     zIndex: -1,
-    marginBottom: theme.spacing(13),
-    [theme.breakpoints.down("sm")]: {
-      marginBottom: theme.spacing(5),
-    },
   },
-
   overlay: {
     position: "absolute",
     top: 0,
@@ -23,16 +18,13 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     backgroundColor: "rgba(0,0,0,.7)",
   },
-
   titleStyles: {
     fontWeight: 400,
   },
-
   subtitleStyles: {
     color: theme.palette.common.white,
     marginBottom: theme.spacing(10),
   },
-
   arrowMargin: {
     marginTop: theme.spacing(1),
   },

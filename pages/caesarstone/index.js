@@ -1,23 +1,21 @@
-import * as React from "react";
+import { makeStyles, Typography } from "@material-ui/core";
 import { NextSeo } from "next-seo";
 import {
-  SectionWrapper,
-  TextWrapper,
-  FaqWrapper,
-  Heading2,
-} from "../../elements";
-import { makeStyles, Typography } from "@material-ui/core";
-import {
+  BodyT1,
   CaesarstoneCommitment,
   FaqAccordion,
-  QuotationCTA,
-  QuartzStoneFAB,
-  HeroScrollDown,
+  Hero,
   MaterialArticle,
-  BodyT1,
-  BodyT2,
+  QuotationCTA,
+  SubNavBar,
 } from "../../components";
 import { faqCaesarstone } from "../../constants/faq";
+import {
+  FaqWrapper,
+  Heading2,
+  SectionWrapper,
+  TextWrapper,
+} from "../../elements";
 
 const useStyles = makeStyles((theme) => ({
   btnStyles: {
@@ -37,12 +35,13 @@ const CaesarstoneMalaysia = () => {
   return (
     <>
       <NextSeo title="Caesarstone Quartz Surfaces Malaysia" />
-      <HeroScrollDown
+      <Hero
         imgSrc="/calacatta_nuvo.jpg"
         imgText="Caesarstone Calacatta Nuvo"
         title="Caesarstone Malaysia"
-        subtitle="Supply &amp; Install Caesarstone Kitchen Top"
+        subtitle="Supply &amp; Install Caesarstone Quartz Surface Kitchen Top"
       />
+      <SubNavBar />
       <SectionWrapper>
         <Heading2>Caesarstone Quartz Surface</Heading2>
         <TextWrapper>
@@ -106,8 +105,6 @@ const CaesarstoneMalaysia = () => {
           ))}
         </FaqWrapper>
       </SectionWrapper>
-
-      <QuartzStoneFAB />
     </>
   );
 };

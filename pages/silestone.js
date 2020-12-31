@@ -1,7 +1,7 @@
 import { SectionWrapper, TextWrapper, Heading2 } from "../elements";
 import { makeStyles, Container, Grid, Typography } from "@material-ui/core";
 import { NextSeo } from "next-seo";
-import { ProductDisplay } from "../components";
+import { ProductDisplay, Hero, SubNavBar } from "../components";
 
 const useStyles = makeStyles((theme) => ({
   h1MT: {
@@ -14,21 +14,14 @@ const Silestone = () => {
   return (
     <>
       <NextSeo title="Silestone Malaysia" />
-      <SectionWrapper>
-        <Typography
-          variant="h1"
-          align="center"
-          gutterBottom
-          className={classes.h1MT}
-        >
-          Silestone
-        </Typography>
-        <TextWrapper>
-          <Typography component="h2" variant="h6" align="center">
-            Supply &amp; Install 20mm Thick Silestone Quartz Surface Kitchen Top
-          </Typography>
-        </TextWrapper>
-      </SectionWrapper>
+      <Hero
+        imgSrc="/poblenou_1.jpg"
+        imgText="Silestone Poblenou"
+        title="Silestone"
+        subtitle="Supply &amp; Install Silestone Quartz Surface Kitchen Top"
+      />
+
+      <SubNavBar />
 
       <SectionWrapper>
         <TextWrapper>

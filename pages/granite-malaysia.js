@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HeroScrollDown, QuotationCTA } from "../components";
+import { Hero, QuotationCTA } from "../components";
 import { SectionWrapper, TextWrapper, Heading2 } from "../elements";
 import {
   makeStyles,
@@ -23,12 +23,13 @@ const graniteMalaysia = () => {
   return (
     <>
       <NextSeo title="Granite Malaysia" />
-      <HeroScrollDown
+      <Hero
         imgSrc="/blue_pearl.jpg"
         imgText="Granite Blue Pearl"
         title="Granite"
         subtitle="Supply &amp; Install Granite Kitchen Top"
       />
+
       <SectionWrapper>
         <TextWrapper>
           <Heading2>Colour</Heading2>

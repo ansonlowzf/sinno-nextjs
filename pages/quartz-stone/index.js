@@ -5,11 +5,14 @@ import { makeStyles, Typography, Container, Grid } from "@material-ui/core";
 import {
   QuotationCTA,
   ImageWithDescription,
-  HeroScrollDown,
-  QuartzStoneFAB,
+  Hero,
   StoneCard,
   MaterialArticle,
+  SinnoButton,
+  FaqAccordion,
+  SubNavBar,
 } from "../../components";
+import { faqQuartzStone } from "../../constants/faq";
 
 const useStyles = makeStyles((theme) => ({
   textPB: {
@@ -28,12 +31,13 @@ const QuartzStonePage = () => {
   return (
     <>
       <NextSeo title="Quartz Stone Kitchen Top" />
-      <HeroScrollDown
+      <Hero
         imgSrc="/cloudburst1.jpg"
         imgText="Caesarstone cloudburst"
         title="Quartz Stone"
         subtitle="Supply &amp; Install Quartz Stone Kitchen Top"
       />
+      <SubNavBar />
       <SectionWrapper>
         <Heading2>What Is Your Desire Kitchen Top?</Heading2>
         <TextWrapper>
@@ -134,7 +138,9 @@ const QuartzStonePage = () => {
           <Typography component="p" variant="body1" align="center" paragraph>
             {`First, check out the warranty`}
           </Typography>
-          {/* CTA Button */}
+          <SectionWrapper>
+            <SinnoButton linkUrl="/blog/warranty" btnText="Warranty" />
+          </SectionWrapper>
           <Typography variant="h6" align="center">
             {`If under warranty, we replace a new set for you - FREE OF CHARGE!`}
           </Typography>
@@ -177,7 +183,14 @@ const QuartzStonePage = () => {
         <QuotationCTA stone="Quartz" />
       </SectionWrapper>
 
-      <QuartzStoneFAB />
+      <SectionWrapper>
+        <Heading2>Frequently Ask Question</Heading2>
+        <Container maxWidth="sm">
+          {faqQuartzStone.map(({ question, answer, id }) => (
+            <FaqAccordion key={id} question={question} answer={answer} />
+          ))}
+        </Container>
+      </SectionWrapper>
     </>
   );
 };

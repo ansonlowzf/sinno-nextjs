@@ -1,4 +1,3 @@
-import * as React from "react";
 import { NextSeo } from "next-seo";
 import { SectionWrapper, TextWrapper, Heading2 } from "../elements";
 import {
@@ -13,9 +12,9 @@ import Image from "next/image";
 import {
   ColourWarning,
   QuotationCTA,
-  HeroScrollDown,
-  QuartzStoneFAB,
+  Hero,
   MaterialArticle,
+  SubNavBar,
 } from "../components";
 
 const useStyles = makeStyles((theme) => ({
@@ -39,12 +38,14 @@ const ZenstoneMalaysia = () => {
   return (
     <>
       <NextSeo title="Zenstone Malaysia" />
-      <HeroScrollDown
+      <Hero
         imgSrc="/calacatta_black.jpg"
         imgText="Zenstone Calacatta Black"
         title="Zenstone Malaysia"
-        subtitle="Supply &amp; Install Zenstone Kitchen Top"
+        subtitle="Supply &amp; Install Zenstone Quartz Surface Kitchen Top"
       />
+
+      <SubNavBar />
 
       <SectionWrapper>
         <Grid container justify="center">
@@ -586,8 +587,6 @@ const ZenstoneMalaysia = () => {
       <SectionWrapper>
         <QuotationCTA stone="Quartz" />
       </SectionWrapper>
-
-      <QuartzStoneFAB />
     </>
   );
 };
