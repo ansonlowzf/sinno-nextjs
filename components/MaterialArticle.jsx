@@ -6,11 +6,11 @@ export const MaterialArticle = () => {
   return (
     <Typography>
       You could read the{" "}
-      <Link href="/posts/material-pros-cons">
+      <Link href="/blog/material-pros-cons">
         <a className="link-style">material pros and cons short article</a>
-      </Link>
+      </Link>{" "}
       or{" "}
-      <Link href="/posts/material-rating">
+      <Link href="/blog/material-rating">
         <a className="link-style">material rating chart</a>
       </Link>
       as a reference to choose the material for your kitchen top.

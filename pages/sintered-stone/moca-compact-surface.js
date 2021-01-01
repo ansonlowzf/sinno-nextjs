@@ -20,7 +20,7 @@ const MocaCompactSurface = () => {
 
   return (
     <>
-      <NextSeo title="Moca Compact Surface" />
+      <NextSeo title="Moca Compact Surface | Stone Innovations Enterprise" />
       <Hero
         imgSrc="/qp2013-1.jpg"
         imgText="Mocasotne QP2013 Table Top"

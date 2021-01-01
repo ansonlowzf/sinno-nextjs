@@ -13,6 +13,7 @@ import {
 } from "@material-ui/core";
 import { Home, KeyboardArrowUp } from "@material-ui/icons";
 import { SideDrawer, ActiveLink } from "../components";
+import { mainRoutes } from "../constants/route";
 
 const useStyles = makeStyles((theme) => ({
   toolbarContainer: {
@@ -46,14 +47,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const routes = [
-  { name: "quartz stone", link: "/quartz-stone" },
-  { name: "sintered stone", link: "/sintered-stone" },
-  { name: "granite", link: "/granite-malaysia" },
-  { name: "blog", link: "/blog" },
-  { name: "contact us", link: "/contact-us" },
-];
-
 export const Header = () => {
   const classes = useStyles();
 
@@ -73,7 +66,7 @@ export const Header = () => {
 
               <Hidden smDown>
                 <Toolbar component="nav" className={classes.navContainer}>
-                  {routes.map(({ name, link }, index) => (
+                  {mainRoutes.map(({ name, link }, index) => (
                     <Typography variant="button" key={`${name}${index}`}>
                       <ActiveLink activeClassName="active" href={link}>
                         <a
@@ -88,7 +81,7 @@ export const Header = () => {
               </Hidden>
 
               <Hidden mdUp>
-                <SideDrawer routes={routes} />
+                <SideDrawer routes={mainRoutes} />
               </Hidden>
             </Toolbar>
           </Container>

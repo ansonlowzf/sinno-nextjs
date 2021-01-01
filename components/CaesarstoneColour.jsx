@@ -198,6 +198,7 @@ export const CaesarstoneColour = () => {
           price="RM 600 /FR or RM 310 /SF"
         />
       </Grid>
+
       <Back2CaesarstoneButton navToId="colour" />
     </Container>
   );

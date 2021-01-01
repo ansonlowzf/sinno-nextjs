@@ -16,13 +16,6 @@
   
   
   <url>
-    <loc>https://www.stoneinnovations.com.my/granite-malaysia</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
     <loc>https://www.stoneinnovations.com.my</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -30,35 +23,14 @@
   
   
   <url>
-    <loc>https://www.stoneinnovations.com.my/silestone</loc>
+    <loc>https://www.stoneinnovations.com.my/granite/index</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   
   <url>
-    <loc>https://www.stoneinnovations.com.my/zenstone-malaysia</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
-    <loc>https://www.stoneinnovations.com.my/caesarstone/colour-pricing</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
-    <loc>https://www.stoneinnovations.com.my/caesarstone/finishes</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
-    <loc>https://www.stoneinnovations.com.my/caesarstone/index</loc>
+    <loc>https://www.stoneinnovations.com.my/granite/sensa</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -66,6 +38,20 @@
   
   <url>
     <loc>https://www.stoneinnovations.com.my/quartz-stone/index</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.stoneinnovations.com.my/quartz-stone/silestone</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.stoneinnovations.com.my/quartz-stone/zenstone</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -86,7 +72,28 @@
   
   
   <url>
-    <loc>https://www.stoneinnovations.com.my/sintered-stone/mocastone</loc>
+    <loc>https://www.stoneinnovations.com.my/sintered-stone/moca-compact-surface</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.stoneinnovations.com.my/quartz-stone/caesarstone/colour-pricing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.stoneinnovations.com.my/quartz-stone/caesarstone/finishes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.stoneinnovations.com.my/quartz-stone/caesarstone/index</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

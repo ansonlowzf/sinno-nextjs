@@ -16,7 +16,7 @@ export const Back2CaesarstoneButton = ({ navToId }) => {
 
   return (
     <Box align="center" mt={10}>
-      <Link href={`/caesarstone#${navToId}`}>
+      <Link href={`/quartz-stone/caesarstone#${navToId}`}>
         <a className={classes.linkStyle}>
           <Button
             variant="outlined"

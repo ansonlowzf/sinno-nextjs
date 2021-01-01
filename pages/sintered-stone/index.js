@@ -23,7 +23,7 @@ const SinteredStone = () => {
 
   return (
     <>
-      <NextSeo title="Sintered Stone" />
+      <NextSeo title="Sintered Stone | Stone Innovations Enteprise" />
 
       <SectionWrapper>
         <Heading1>Sintered Stone</Heading1>
@@ -50,9 +50,9 @@ const SinteredStone = () => {
             <Grid item xs={12} sm={6} md={5}>
               <StoneCard
                 imgSrc="/qp2013-1.jpg"
-                stone="Moca Compact Stone"
+                stone="Moca Compact Surface"
                 description="Local Brand OEM China Sintered Stone Product"
-                linkUrl="/sintered-stone/mocastone"
+                linkUrl="/sintered-stone/moca-compact-surface"
               />
             </Grid>
           </Grid>

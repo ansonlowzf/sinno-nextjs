@@ -31,7 +31,7 @@ const QuartzStonePage = () => {
   const classes = useStyles();
   return (
     <>
-      <NextSeo title="Quartz Stone Kitchen Top" />
+      <NextSeo title="Quartz Stone | Stone Innovations Enterprsie" />
       <Hero
         imgSrc="/cloudburst1.jpg"
         imgText="Caesarstone cloudburst"
@@ -60,6 +60,7 @@ const QuartzStonePage = () => {
           <Typography component="p" variant="h6" align="center" paragraph>
             What features are you looking for?
           </Typography>
+
           <MaterialArticle />
         </TextWrapper>
       </SectionWrapper>
@@ -159,7 +160,7 @@ const QuartzStonePage = () => {
                 imgSrc="/airy_concrete.jpg"
                 stone="Caesarstone"
                 description="US Brand Quartz Surface"
-                linkUrl="/caesarstone"
+                linkUrl="/quartz-stone/caesarstone"
               />
             </Grid>
             <Grid item xs={12} sm={4}>
@@ -167,7 +168,7 @@ const QuartzStonePage = () => {
                 imgSrc="/poblenou_1.jpg"
                 stone="Silestone"
                 description="Spain Brand Quartz Surface"
-                linkUrl="/silestone"
+                linkUrl="/quartz-stone/silestone"
               />
             </Grid>
             <Grid item xs={12} sm={4}>
@@ -175,7 +176,7 @@ const QuartzStonePage = () => {
                 imgSrc="/grey_mirror.jpg"
                 stone="Zenstone"
                 description="Malaysia Brand Quartz Surface"
-                linkUrl="./zenstone-malaysia"
+                linkUrl="/quartz-stone/zenstone"
               />
             </Grid>
           </Grid>

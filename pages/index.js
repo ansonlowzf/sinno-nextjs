@@ -1,4 +1,3 @@
-import * as React from "react";
 import {
   makeStyles,
   Box,
@@ -83,10 +82,20 @@ const Home = () => {
                   align="center"
                   className={classes.descriptionStyles}
                 >
-                  We fabricate, supply &amp; install Quartz Stone, Granite,
-                  Sintered Stone (AKA Porcelain Slab or Ultra-Compact stone),
-                  Marble and Onyx for kitchen top, wall cladding or flooring
-                  application.{" "}
+                  We fabricate, supply &amp; install{" "}
+                  <span className="highlight">Quartz Stone</span>,{" "}
+                  <span className="highlight">Granite</span>,{" "}
+                  <span className="highlight">Sintered Stone</span> (AKA
+                  Porcelain Slab or Ultra-Compact stone),{" "}
+                  <span className="highlight">Marble</span> and{" "}
+                  <span className="highlight">Onyx</span> for{" "}
+                  <span className="highlight">kitchen top</span>,
+                  <span className="highlight">vanity top</span>,{" "}
+                  <span className="highlight">tabletop</span>,{" "}
+                  <span className="highlight">countertop</span>,{" "}
+                  <span className="highlight">wall cladding</span>,{" "}
+                  <span className="highlight">fascades</span> or{" "}
+                  <span className="highlight">flooring</span> application.
                 </Typography>
               </TextWrapper>
             </Grid>
@@ -112,8 +121,8 @@ const Home = () => {
               align="center"
               paragraph
             >
-              There are more than 800 slabs quartz stone, granite, sintered
-              stone, marble and onyx available to fulfil your renovation needs.
+              There are more than 800 slabs surfacing ready stock available to
+              fulfil your renovation needs.
             </Typography>
           </TextWrapper>
           <Grid container justify="center">
@@ -175,7 +184,7 @@ const Home = () => {
                 imgSrc="/blue_pearl.jpg"
                 stone="Granite"
                 description="Natural Stone"
-                linkUrl="/granite-malaysia"
+                linkUrl="/granite"
               />
             </Grid>
           </Grid>
