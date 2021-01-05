@@ -36,6 +36,7 @@ const ColourPricing = () => {
             </Link>
           </Typography>
         </TextWrapper>
+
         <CaesarstoneColour />
       </SectionWrapper>
 
