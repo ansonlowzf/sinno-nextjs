@@ -11,9 +11,13 @@ export const ProductDisplay = ({ imgSrc, stoneName, price }) => {
         width={800}
         height={600}
       />
-      <Grid container item justify="space-evenly">
-        <Typography>{stoneName}</Typography>
-        <Typography>{price}</Typography>
+      <Grid container>
+        <Grid item sm={8}>
+          <Typography align="center">{stoneName}</Typography>
+        </Grid>
+        <Grid item sm={4}>
+          <Typography align="center">{price}</Typography>
+        </Grid>
       </Grid>
     </Grid>
   );

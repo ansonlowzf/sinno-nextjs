@@ -2,19 +2,19 @@ import { Container, Grid } from "@material-ui/core";
 import { Back2CaesarstoneButton, CaesarstoneColourCard } from "../components";
 import { caesarstonePricing } from "../constants";
 
-export const CaesarstoneColour = () => {
-  const {
-    standard,
-    deluxe,
-    premium,
-    supernatural,
-    supernaturalUltra,
-    standardJumbo,
-    deluxeJumbo,
-    supernaturalJumbo,
-    supernaturalUltraJumbo,
-  } = caesarstonePricing;
+const {
+  standard,
+  deluxe,
+  premium,
+  supernatural,
+  supernaturalUltra,
+  standardJumbo,
+  deluxeJumbo,
+  supernaturalJumbo,
+  supernaturalUltraJumbo,
+} = caesarstonePricing;
 
+export const CaesarstoneColour = () => {
   return (
     <Container maxWidth="lg">
       <Grid container spacing={3} justify="center">
@@ -199,15 +199,21 @@ export const CaesarstoneColour = () => {
         />
 
         <CaesarstoneColourCard
+          imgSrc="/classico-colour/cs6011.jpg"
+          colourName="6011 Intense White (Polished)"
+          price={standard}
+        />
+
+        <CaesarstoneColourCard
           imgSrc="/classico-colour/cs6131.jpg"
           colourName="6131 Bianco Drift (Polished)"
-          price="RM 500 /FR or RM 260 /SF"
+          price={premium}
         />
 
         <CaesarstoneColourCard
           imgSrc="/classico-colour/cs6313.jpg"
           colourName="6313 Turbine Grey (Polished)"
-          price="RM 500 /FR or RM 260 /SF"
+          price={premium}
         />
 
         <CaesarstoneColourCard
