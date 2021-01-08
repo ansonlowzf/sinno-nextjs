@@ -14,9 +14,8 @@ import {
   silestoneJumboPricing20,
 } from "../../constants";
 
-const { group1, group2, group3, group4, group5 } = silestonePricing20;
-
-const { group6 } = silestoneJumboPricing20;
+const { group1, group2, group3, group4 } = silestonePricing20;
+const { group5, group6 } = silestoneJumboPricing20;
 
 const Silestone = () => {
   return (

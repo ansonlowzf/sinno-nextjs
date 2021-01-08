@@ -9,13 +9,13 @@ export const ProductDisplay = ({ imgSrc, stoneName, price }) => {
         src={imgSrc}
         alt={stoneName}
         width={800}
-        height={600}
+        height={450}
       />
-      <Grid container>
-        <Grid item sm={8}>
+      <Grid container justify="center">
+        <Grid item xs={12} sm={6}>
           <Typography align="center">{stoneName}</Typography>
         </Grid>
-        <Grid item sm={4}>
+        <Grid item xs={12} sm={6}>
           <Typography align="center">{price}</Typography>
         </Grid>
       </Grid>

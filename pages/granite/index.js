@@ -39,7 +39,7 @@ const graniteMalaysia = () => {
         </TextWrapper>
       </SectionWrapper>
 
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Grid
           container
           spacing={2}

@@ -187,6 +187,14 @@ const Home = () => {
                 linkUrl="/granite"
               />
             </Grid>
+            <Grid item xs={12} sm={6} md={5}>
+              <StoneCard
+                imgSrc="/bergen_1.jpg"
+                stone="Sintered Stone"
+                description="Engineered Stone"
+                linkUrl="/sintered-stone"
+              />
+            </Grid>
           </Grid>
         </Container>
       </SectionWrapper>

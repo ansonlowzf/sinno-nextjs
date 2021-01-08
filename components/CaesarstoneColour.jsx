@@ -1,5 +1,5 @@
 import { Container, Grid } from "@material-ui/core";
-import { Back2CaesarstoneButton, CaesarstoneColourCard } from "../components";
+import { Back2CaesarstoneButton, ProductDisplay } from "../components";
 import { caesarstonePricing } from "../constants";
 
 const {
@@ -17,208 +17,208 @@ const {
 export const CaesarstoneColour = () => {
   return (
     <Container maxWidth="lg">
-      <Grid container spacing={3} justify="center">
-        <CaesarstoneColourCard
+      <Grid container spacing={2} justify="center">
+        <ProductDisplay
           imgSrc="/classico-colour/cs1141.jpg"
-          colourName="1141 Pure White (Polished)"
+          stoneName="1141 Pure White (Polished)"
           price={premium}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs2141.jpg"
-          colourName="2141 Snow (Polished)"
+          stoneName="2141 Snow (Polished)"
           price={standard}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs3100.jpg"
-          colourName="3100 Jet Black (Polished)"
+          stoneName="3100 Jet Black (Polished)"
           price={standard}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs3101.jpg"
-          colourName="3101 Piatto Black (Natural)"
+          stoneName="3101 Piatto Black (Natural)"
           price={deluxe}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4001.jpg"
-          colourName="4001 Fresh Concrete (Matt)"
+          stoneName="4001 Fresh Concrete (Matt)"
           price={deluxe}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4011.jpg"
-          colourName="4011 Cloudburst Concrete (Rough)"
+          stoneName="4011 Cloudburst Concrete (Rough)"
           price={supernaturalJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4023.jpg"
-          colourName="4023 Topus Concrete (Rough)"
+          stoneName="4023 Topus Concrete (Rough)"
           price={supernaturalJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4030.jpg"
-          colourName="4030 Oyster (Polished)"
+          stoneName="4030 Oyster (Polished)"
           price={standard}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4033.jpg"
-          colourName="4033 Rugged Concrete (Rough)"
+          stoneName="4033 Rugged Concrete (Rough)"
           price={supernaturalJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4044.jpg"
-          colourName="4044 Airy Concrete (Rough)"
+          stoneName="4044 Airy Concrete (Rough)"
           price={supernaturalJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4120.jpg"
-          colourName="4120 Raven (Polished)"
+          stoneName="4120 Raven (Polished)"
           price={deluxeJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4130.jpg"
-          colourName="4130 Clamshell (Polished)"
+          stoneName="4130 Clamshell (Polished)"
           price={standardJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4220.jpg"
-          colourName="4220 Buttermilk (Polished)"
+          stoneName="4220 Buttermilk (Polished)"
           price={standard}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4230.jpg"
-          colourName="4230 Shitake (Polished)"
+          stoneName="4230 Shitake (Polished)"
           price={deluxe}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4330.jpg"
-          colourName="4330 Ginger (Polished)"
+          stoneName="4330 Ginger (Polished)"
           price={standard}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4350.jpg"
-          colourName="4350 Mink (Polished)"
+          stoneName="4350 Mink (Polished)"
           price={standard}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4600.jpg"
-          colourName="4600 Organic White (Polished)"
+          stoneName="4600 Organic White (Polished)"
           price={deluxe}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4601.jpg"
-          colourName="4601 Frozen Terra (Matt)"
+          stoneName="4601 Frozen Terra (Matt)"
           price={deluxe}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs4735.jpg"
-          colourName="4735 Oxidian (Natural)"
+          stoneName="4735 Oxidian (Natural)"
           price={supernaturalUltraJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5003.jpg"
-          colourName="5003 Piatra Grey (Polished)"
+          stoneName="5003 Piatra Grey (Polished)"
           price={supernaturalUltra}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5031.jpg"
-          colourName="5031 Statuario Maximus (Polished)"
+          stoneName="5031 Statuario Maximus (Polished)"
           price={supernaturalUltra}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5100.jpg"
-          colourName="5100 Vanilla Noir (Polished)"
+          stoneName="5100 Vanilla Noir (Polished)"
           price={supernatural}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5101.jpg"
-          colourName="5101 Empira Black (Polished/Natural)"
+          stoneName="5101 Empira Black (Polished/Natural)"
           price={supernaturalUltra}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5131.jpg"
-          colourName="5131 Calacatta Nuvo (Polished)"
+          stoneName="5131 Calacatta Nuvo (Polished)"
           price={supernaturalUltra}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5133.jpg"
-          colourName="5133 Symphony Grey (Polished)"
+          stoneName="5133 Symphony Grey (Polished)"
           price={supernatural}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5141.jpg"
-          colourName="5141 Frosty Carrina (Polished)"
+          stoneName="5141 Frosty Carrina (Polished)"
           price={supernatural}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5143.jpg"
-          colourName="5143 White Attica (Polished)"
+          stoneName="5143 White Attica (Polished)"
           price={supernatural}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5151.jpg"
-          colourName="5151 Empira White (Polished)"
+          stoneName="5151 Empira White (Polished)"
           price={supernaturalUltraJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs5810.jpg"
-          colourName="5810 Black Tempal (Natural)"
+          stoneName="5810 Black Tempal (Natural)"
           price={supernaturalJumbo}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs6046.jpg"
-          colourName="6046 Moorland Fog (Polished)"
+          stoneName="6046 Moorland Fog (Polished)"
           price={supernatural}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs6011.jpg"
-          colourName="6011 Intense White (Polished)"
+          stoneName="6011 Intense White (Polished)"
           price={standard}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs6131.jpg"
-          colourName="6131 Bianco Drift (Polished)"
+          stoneName="6131 Bianco Drift (Polished)"
           price={premium}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs6313.jpg"
-          colourName="6313 Turbine Grey (Polished)"
+          stoneName="6313 Turbine Grey (Polished)"
           price={premium}
         />
 
-        <CaesarstoneColourCard
+        <ProductDisplay
           imgSrc="/classico-colour/cs6338.jpg"
-          colourName="6338 Woodlands (Polished)"
+          stoneName="6338 Woodlands (Polished)"
           price={supernatural}
         />
       </Grid>
