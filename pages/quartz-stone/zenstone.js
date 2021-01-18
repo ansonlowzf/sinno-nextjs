@@ -1,44 +1,20 @@
+import { Container, Grid, Typography } from "@material-ui/core";
 import { NextSeo } from "next-seo";
-import { SectionWrapper, TextWrapper, Heading2 } from "../../elements";
-import {
-  makeStyles,
-  Grid,
-  Typography,
-  Box,
-  Paper,
-  Container,
-} from "@material-ui/core";
 import Image from "next/image";
 import {
   ColourWarning,
-  QuotationCTA,
   Hero,
   MaterialArticle,
-  SubNavBar,
   PriceTerm,
   ProductDisplay,
+  QuotationCTA,
   SlabDisplay,
+  SubNavBar,
 } from "../../components";
 import { qsRoutes } from "../../constants/route";
-
-const useStyles = makeStyles((theme) => ({
-  sectionMargin: {
-    marginBottom: theme.spacing(4),
-  },
-  headingStyle: {
-    padding: theme.spacing(2),
-  },
-  imageBorder: {
-    border: `1px solid grey`,
-  },
-  textPadding: {
-    paddingTop: theme.spacing(1),
-  },
-}));
+import { Heading2, SectionWrapper, TextWrapper } from "../../elements";
 
 const ZenstoneMalaysia = () => {
-  const classes = useStyles();
-
   return (
     <>
       <NextSeo title="Zenstone | Stone Innovations Enterprise" />
