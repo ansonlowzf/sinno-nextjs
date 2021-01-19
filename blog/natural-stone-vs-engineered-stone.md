@@ -1,5 +1,5 @@
 ---
-title: "Natural Stone VS Engineered Stone"
+title: "Natural stone VS engineered stone"
 date: "2021-01-11"
 ---
 

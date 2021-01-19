@@ -1,5 +1,5 @@
 ---
-title: "The Warranty Of Stone And Services"
+title: "The warranty of stone"
 date: "2020-12-07"
 ---
 

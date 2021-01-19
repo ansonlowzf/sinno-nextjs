@@ -1,5 +1,5 @@
 ---
-title: "How To Test Quartz Stone And Determine Its Quality?"
+title: "How to test whether it's genuine quartz stone?"
 date: "2020-11-13"
 ---
 

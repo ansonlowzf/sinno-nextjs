@@ -1,5 +1,5 @@
 ---
-title: "Kitchen Top Material Rating Chart"
+title: "Kitchen top material rating chart"
 date: "2020-11-07"
 ---
 
