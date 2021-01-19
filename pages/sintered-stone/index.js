@@ -28,22 +28,25 @@ const SinteredStone = () => {
       <SectionWrapper>
         <Heading1>Sintered Stone</Heading1>
         <TextWrapper>
-          <Typography component="h2" variant="h6" align="center">
+          <Typography component="p" variant="h6" align="center" gutterBottom>
             Also known as Porcelain Slab, Porcelain Surface, Compact Surface or
             Ultra-Compact Surface
+          </Typography>
+          <Typography align="center">
+            All the name refer to the same stone - Sintered Stone.
           </Typography>
         </TextWrapper>
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2 idPath="stones">{`Products & Brands`}</Heading2>
+        <Heading2 idPath="stones">Stone Brands</Heading2>
         <Container maxWidth="lg">
           <Grid container spacing={2} justify="center" alignItems="center">
             <Grid item xs={12} sm={6} md={5}>
               <StoneCard
                 imgSrc="/bergen_1.jpg"
                 stone="Dekton Ultra-Compact Stone"
-                description="Product of Spain"
+                description="Product of Spain. All colours available in Malaysia. Subject to stock availability."
                 linkUrl="/sintered-stone/dekton"
               />
             </Grid>
@@ -51,12 +54,16 @@ const SinteredStone = () => {
               <StoneCard
                 imgSrc="/qp2013-1.jpg"
                 stone="Moca Compact Surface"
-                description="Local Brand OEM China Sintered Stone Product"
+                description="Local Brand OEM China Sintered Stone. All colours available in Malaysia. Subject to stock availability."
                 linkUrl="/sintered-stone/moca-compact-surface"
               />
             </Grid>
           </Grid>
         </Container>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Heading2>Usages</Heading2>
       </SectionWrapper>
     </>
   );
