@@ -1,5 +1,4 @@
-import * as React from "react";
-import { BlogLayout, Date, PostBody } from "../../components";
+import { BlogLayout, Date } from "../../components";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import { Typography } from "@material-ui/core";
@@ -10,14 +9,20 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
+
       <article>
         <Typography component="h1" variant="h5" gutterBottom>
           {postData.title}
         </Typography>
+
         <Typography component="small" variant="body2" color="textSecondary">
           <Date dateString={postData.date} />
         </Typography>
-        <PostBody content={postData.contentHtml} />
+
+        <Typography
+          component="div"
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
       </article>
     </BlogLayout>
   );
