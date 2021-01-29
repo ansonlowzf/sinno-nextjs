@@ -42,43 +42,43 @@ const MocaCompactSurface = () => {
             <SlabDisplay
               imgSrc="/sintered-stone/ps6.jpg"
               stoneName="QP 2013 (12mm) Smooth Matt"
-              price="RM 300 per FR / RM 150 per SF"
+              price="RM 300 per FR / RM 160 per SF"
             />
 
             <SlabDisplay
               imgSrc="/sintered-stone/ps4.jpg"
               stoneName="QP 2031 (12mm) Smooth Matt"
-              price="RM 300 per FR / RM 150 per SF"
+              price="RM 300 per FR / RM 160 per SF"
             />
 
             <SlabDisplay
               imgSrc="/sintered-stone/ps5.jpg"
               stoneName="QP 2032 (12mm) Smooth Matt"
-              price="RM 300 per FR / RM 150 per SF"
+              price="RM 300 per FR / RM 160 per SF"
             />
 
             <SlabDisplay
               imgSrc="/sintered-stone/ps1.jpg"
               stoneName="QP 2033B (12mm) Smooth Matt"
-              price="RM 300 per FR / RM 150 per SF"
+              price="RM 300 per FR / RM 160 per SF"
             />
 
             <SlabDisplay
               imgSrc="/sintered-stone/ps2.jpg"
               stoneName="QP 2034 (12mm) Smooth Matt"
-              price="RM 300 per FR / RM 150 per SF"
+              price="RM 300 per FR / RM 160 per SF"
             />
 
             <SlabDisplay
               imgSrc="/sintered-stone/ps3.jpg"
               stoneName="QP 2035 (12mm) Smooth Matt"
-              price="RM 300 per FR / RM 150 per SF"
+              price="RM 300 per FR / RM 160 per SF"
             />
 
             <SlabDisplay
               imgSrc="/sintered-stone/qp2036a.jpg"
               stoneName="QP 2036A (12mm) Smooth Matt"
-              price="RM 300 per FR / RM 150 per SF"
+              price="RM 300 per FR / RM 160 per SF"
             />
           </Grid>
         </Container>
