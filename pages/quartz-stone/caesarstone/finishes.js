@@ -23,7 +23,7 @@ const Finishes = () => {
 
   return (
     <>
-      <NextSeo title="Caesarstone Finish| Stone Innovations Enterprise" />
+      <NextSeo title="Caesarstone Finish | Stone Innovations Enterprise" />
       <SectionWrapper>
         <Heading2>Finishes</Heading2>
         <TextWrapper>

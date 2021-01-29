@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <>
-      <NextSeo title="Stone Mason Malaysia" />
+      <NextSeo title="Stone Mason Malaysia | Stone Innovations Enterprise" />
       <Hero
         imgSrc="/factory-entrance.jpg"
         imgText="factory entrance"

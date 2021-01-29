@@ -43,7 +43,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <NextSeo title="Contact Us" />
+      <NextSeo title="Contact Us | Stone Innovations Enterprise" />
 
       <SectionWrapper>
         <Container maxWidth="lg" className={classes.containerStyles}>
