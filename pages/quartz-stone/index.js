@@ -31,7 +31,7 @@ const QuartzStonePage = () => {
   const classes = useStyles();
   return (
     <>
-      <NextSeo title="Quartz Stone | Stone Innovations Enterprsie" />
+      <NextSeo title="Quartz Stone | Stone Innovations Enterprise" />
       <Hero
         imgSrc="/cloudburst1.jpg"
         imgText="Caesarstone cloudburst"
