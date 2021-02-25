@@ -6,7 +6,7 @@ import {
   FaqAccordion,
   Hero,
   MaterialArticle,
-  QuotationCTA,
+  CaesarstoneCTA,
   SubNavBar,
 } from "../../../components";
 import { faqCaesarstone } from "../../../constants/faq";
@@ -73,7 +73,7 @@ const CaesarstoneMalaysia = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <QuotationCTA stone="Quartz" />
+        <CaesarstoneCTA />
       </SectionWrapper>
 
       <SectionWrapper>

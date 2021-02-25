@@ -23,3 +23,4 @@ export * from "./MaterialArticle";
 export * from "./Back2CaesarstoneButton";
 export * from "./ProductDisplay";
 export * from "./SubNavBar";
+export * from "./CaesarstoneCTA";

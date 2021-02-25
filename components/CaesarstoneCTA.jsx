@@ -5,15 +5,25 @@ const useStyles = makeStyles((theme) => ({
   MB: {
     marginBottom: theme.spacing(10),
   },
+  headerStyle: {
+    textDecoration: "bold",
+  },
 }));
 
-export const QuotationCTA = ({ stone }) => {
+export const CaesarstoneCTA = () => {
   const classes = useStyles();
 
   return (
     <Container maxWidth="sm" className={classes.MB}>
-      <Typography variant="h4" component="h3" align="center" paragraph>
-        {`Custom Made Your ${stone} Countertop Today`}
+      <Typography
+        variant="h4"
+        component="h3"
+        color="primary"
+        align="center"
+        paragraph
+        className={classes.headerStyle}
+      >
+        {`Custom Made Your Caesarstone Kitchen Top Today!`}
       </Typography>
       <Typography
         component="p"
@@ -21,9 +31,12 @@ export const QuotationCTA = ({ stone }) => {
         align="center"
         className={classes.MB}
       >
-        {`Get an estimate quotation for free`}
+        {`Get an estimate quotation for free!`}
       </Typography>
-      <SinnoButton linkUrl="/contact-us" btnText={`CONTACT US`} />
+      <SinnoButton
+        linkUrl="/quartz-stone/caesarstone/contact-us"
+        btnText={`CONTACT US`}
+      />
     </Container>
   );
 };

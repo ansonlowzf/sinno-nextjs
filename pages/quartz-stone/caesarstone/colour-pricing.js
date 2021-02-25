@@ -3,6 +3,7 @@ import {
   CaesarstoneColour,
   ColourWarning,
   PriceTerm,
+  CaesarstoneCTA,
 } from "../../../components";
 import { makeStyles, Typography } from "@material-ui/core";
 import Link from "next/link";
@@ -46,6 +47,10 @@ const ColourPricing = () => {
 
       <SectionWrapper>
         <PriceTerm />
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <CaesarstoneCTA />
       </SectionWrapper>
     </>
   );
