@@ -62,9 +62,9 @@ const SinteredStone = () => {
         </Container>
       </SectionWrapper>
 
-      <SectionWrapper>
+      {/* <SectionWrapper>
         <Heading2>Usages</Heading2>
-      </SectionWrapper>
+      </SectionWrapper> */}
     </>
   );
 };
