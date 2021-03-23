@@ -40,6 +40,24 @@ const MocaCompactSurface = () => {
             justify="center"
           >
             <SlabDisplay
+              imgSrc="/sintered-stone/QP02.jpeg"
+              stoneName="QP 02 (11mm) Smooth Matt"
+              price="RM 200 per FR / RM 110 per SF"
+            />
+
+            <SlabDisplay
+              imgSrc="/sintered-stone/QP03.jpeg"
+              stoneName="QP 03 (11mm) Smooth Matt"
+              price="RM 200 per FR / RM 110 per SF"
+            />
+
+            <SlabDisplay
+              imgSrc="/sintered-stone/QP104.jpeg"
+              stoneName="QP104  (11mm) Smooth Matt"
+              price="RM 200 per FR / RM 110 per SF"
+            />
+
+            <SlabDisplay
               imgSrc="/sintered-stone/ps6.jpg"
               stoneName="QP 2013 (12mm) Smooth Matt"
               price="RM 300 per FR / RM 160 per SF"
@@ -85,7 +103,7 @@ const MocaCompactSurface = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <QuotationCTA stone="Mocastone" />
+        <QuotationCTA stone="Moca Compact Stone" />
       </SectionWrapper>
     </>
   );
