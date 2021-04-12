@@ -1,11 +1,4 @@
-import {
-  makeStyles,
-  AppBar,
-  Container,
-  Grid,
-  Toolbar,
-  Typography,
-} from "@material-ui/core";
+import { makeStyles, AppBar, Container, Grid, Button } from "@material-ui/core";
 import { ActiveLink } from "../components";
 
 const useStyles = makeStyles((theme) => ({
@@ -15,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
   },
   linkStyle: {
     textDecoration: `none`,
-    textTransform: `uppercase`,
     color: theme.palette.common.black,
     opacity: 0.5,
     "&.active": {
@@ -48,41 +40,13 @@ export const SubNavBar = ({ routes }) => {
               sm={4}
             >
               <ActiveLink activeClassName="active" href={link}>
-                <Typography
-                  component="a"
-                  variant="button"
-                  align="center"
-                  className={classes.linkStyle}
-                >
-                  {name}
-                </Typography>
+                <Button>
+                  <a className={classes.linkStyle}>{name}</a>
+                </Button>
               </ActiveLink>
             </Grid>
           ))}
         </Grid>
-        {/* <Toolbar className={classes.toolbarContainer}>
-          {routes.map(({ name, link }, index) => (
-            <Grid
-              container
-              justify="space-evenly"
-              alignItems="center"
-              spacing={2}
-            >
-              <Grid item key={`${name}${index}`} xs={12}>
-                <ActiveLink activeClassName="active" href={link}>
-                  <Typography
-                    component="a"
-                    variant="button"
-                    align="center"
-                    className={classes.linkStyle}
-                  >
-                    {name}
-                  </Typography>
-                </ActiveLink>
-              </Grid>
-            </Grid>
-          ))}
-        </Toolbar> */}
       </Container>
     </AppBar>
   );
