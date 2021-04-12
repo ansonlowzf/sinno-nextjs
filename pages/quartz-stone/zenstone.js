@@ -233,6 +233,11 @@ const ZenstoneMalaysia = () => {
               stoneName="Black Ice Bloom"
               price="RM 310 /FR or RM 165 /SF"
             />
+            <SlabDisplay
+              imgSrc="/zenstone/Q801535.jpg"
+              stoneName="Black Marquina"
+              price="RM 310 /FR or RM 165 /SF"
+            />
 
             <SlabDisplay
               imgSrc="/zenstone/Q802021.jpg"
