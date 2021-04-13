@@ -36,8 +36,7 @@ export const SubNavBar = ({ routes }) => {
               justify="space-evenly"
               alignItems="center"
               key={`${name}${index}`}
-              xs={12}
-              sm={4}
+              xs={4}
             >
               <ActiveLink activeClassName="active" href={link}>
                 <Button>
