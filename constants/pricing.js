@@ -43,3 +43,11 @@ export const silestoneJumboPricing20 = {
   group5: "RM 779 /FR or RM 390 /SF",
   group6: "RM 923 /FR or RM 461 /SF",
 };
+
+export const dekton12 = {
+  group0: "RM 431 /FR or RM 215 /SF",
+  group1: "RM 492 /FR or RM 246 /SF",
+  group2: "RM 554 /FR or RM 277 /SF",
+  group3: "RM 615 /FR or RM 308 /SF",
+  group4: "RM 697 /FR or RM 349 /SF",
+};
