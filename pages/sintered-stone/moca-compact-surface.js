@@ -52,6 +52,18 @@ const MocaCompactSurface = () => {
             />
 
             <SlabDisplay
+              imgSrc="/sintered-stone/qp07-matt.jpeg"
+              stoneName="QP 07 (12mm) Smooth Matt"
+              price="RM 300 per FR / RM 160 per SF"
+            />
+
+            <SlabDisplay
+              imgSrc="/sintered-stone/qp12-matt.jpeg"
+              stoneName="QP 12 (12mm) Smooth Matt"
+              price="RM 300 per FR / RM 160 per SF"
+            />
+
+            <SlabDisplay
               imgSrc="/sintered-stone/QP104.jpeg"
               stoneName="QP104  (11mm) Smooth Matt"
               price="RM 200 per FR / RM 110 per SF"
