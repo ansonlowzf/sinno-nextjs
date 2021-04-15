@@ -54,6 +54,12 @@ const DektonPage = () => {
             />
 
             <ProductDisplay
+              imgSrc="/dekton/bromo-0.jpg"
+              stoneName="Bromo (Smooth Matt) 12mm"
+              price={group1}
+            />
+
+            <ProductDisplay
               imgSrc="/dekton/danae-0.jpg"
               stoneName="Danae (Smooth Matt) 12mm"
               price={group0}
@@ -171,6 +177,12 @@ const DektonPage = () => {
               imgSrc="/dekton/lunar-0.jpg"
               stoneName="Lunar (Smooth Matt) 12mm"
               price={group2}
+            />
+
+            <ProductDisplay
+              imgSrc="/dekton/milar-0.jpg"
+              stoneName="Milar (Smooth Matt) 12mm"
+              price={group0}
             />
 
             <ProductDisplay
