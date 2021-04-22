@@ -51,3 +51,10 @@ export const dekton12 = {
   group3: "RM 615 /FR or RM 308 /SF",
   group4: "RM 697 /FR or RM 349 /SF",
 };
+
+export const zenstone = {
+  classic: "RM 220 /FR or RM 120 /SF",
+  premium: "RM 250 /FR or RM 135 /SF",
+  noble: "RM 280 /FR or RM 150 /SF",
+  marble: "RM 310 /FR or RM 165 /SF",
+};

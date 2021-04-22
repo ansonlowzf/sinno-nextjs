@@ -13,6 +13,9 @@ import {
 } from "../../components";
 import { qsRoutes } from "../../constants/route";
 import { Heading2, SectionWrapper, TextWrapper } from "../../elements";
+import { zenstone } from "../../constants";
+
+const { classic, premium, noble, marble } = zenstone;
 
 const ZenstoneMalaysia = () => {
   return (
@@ -53,168 +56,188 @@ const ZenstoneMalaysia = () => {
         <Container maxWidth="lg">
           <Grid container spacing={2} justify="center">
             <ProductDisplay
-              imgSrc="/zenstone/Q101521.JPEG"
-              stoneName="White Mirror"
-              price="RM 220 /FR or RM 120 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q101523.jpg"
-              stoneName="Snow White"
-              price="RM 220 /FR or RM 120 /SF"
+              imgSrc="/zenstone/Q101503.jpg"
+              stoneName="Smoothie White"
+              price={classic}
             />
 
             <ProductDisplay
-              imgSrc="/zenstone/Q101503.jpg"
-              stoneName="Smoothie White"
-              price="RM 220 /FR or RM 120 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q101522.JPEG"
-              stoneName="Black Mirror"
-              price="RM 220 /FR or RM 120 /SF"
+              imgSrc="/zenstone/Q101506.JPEG"
+              stoneName="Smoothie Grey"
+              price={classic}
             />
 
             <ProductDisplay
               imgSrc="/zenstone/Q101508.JPEG"
               stoneName="Smoothie Beige"
-              price="RM 220 /FR or RM 120 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q3015.jpg"
-              stoneName="Shell King"
-              price="RM 220 /FR or RM 120 /SF"
+              price={classic}
             />
 
             <ProductDisplay
               imgSrc="/zenstone/Q101509.jpg"
               stoneName="Red Mirror"
-              price="RM 220 /FR or RM 120 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q101506.JPEG"
-              stoneName="Smoothie Grey"
-              price="RM 220 /FR or RM 120 /SF"
-            />
-
-            <ProductDisplay
-              imgSrc="/zenstone/Q101525.jpg"
-              stoneName="Beige Mirror"
-              price="RM 220 /FR or RM 120 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q101511.jpg"
-              stoneName="Blue Mirror"
-              price="RM 220 /FR or RM 120 /SF"
+              price={classic}
             />
 
             <ProductDisplay
               imgSrc="/zenstone/Q101510.jpg"
               stoneName="Brown Mirror"
-              price="RM 220 /FR or RM 120 /SF"
+              price={classic}
             />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q101511.jpg"
+              stoneName="Blue Mirror"
+              price={classic}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q101521.JPEG"
+              stoneName="White Mirror"
+              price={classic}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q101522.JPEG"
+              stoneName="Black Mirror"
+              price={classic}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q101523.jpg"
+              stoneName="Snow White"
+              price={classic}
+            />
+
             <ProductDisplay
               imgSrc="/zenstone/Q101524.JPEG"
               stoneName="Grey Mirror"
-              price="RM 220 /FR or RM 120 /SF"
+              price={classic}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q101525.jpg"
+              stoneName="Beige Mirror"
+              price={classic}
             />
 
             <ProductDisplay
               imgSrc="/zenstone/Q101526.JPEG"
               stoneName="Crystal White"
-              price="RM 220 /FR or RM 120 /SF"
+              price={classic}
             />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q101527.jpg"
+              stoneName="White Planet"
+              price={classic}
+            />
+
             <ProductDisplay
               imgSrc="/zenstone/Q101528.JPEG"
               stoneName="Icy White"
-              price="RM 220 /FR or RM 120 /SF"
+              price={classic}
             />
 
             <ProductDisplay
-              imgSrc="/zenstone/Q601504.jpg"
-              stoneName="Cameo"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q601509.jpg"
-              stoneName="Golden Coffee"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-
-            <ProductDisplay
-              imgSrc="/zenstone/Q601501.jpg"
-              stoneName="Blue Sapphire"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q201506.jpg"
-              stoneName="Grey Forest"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-
-            <ProductDisplay
-              imgSrc="/zenstone/Q202032.jpg"
-              stoneName="Pure Grey"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q401501.jpg"
-              stoneName="Black Ruby"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-
-            <ProductDisplay
-              imgSrc="/zenstone/Q601503.jpg"
-              stoneName="White Gold"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q601502.JPEG"
-              stoneName="Beige Gold"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-
-            <ProductDisplay
-              imgSrc="/zenstone/Q601507.JPEG"
-              stoneName="Beige Gold Medium"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q601505.jpg"
-              stoneName="Black Gold"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-
-            <ProductDisplay
-              imgSrc="/zenstone/Q4015.jpg"
-              stoneName="Purple Galaxy"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q201504.jpg"
-              stoneName="Pure White"
-              price="RM 250 /FR or RM 135 /SF"
+              imgSrc="/zenstone/Q3015.jpg"
+              stoneName="Shell King"
+              price={classic}
             />
 
             <ProductDisplay
               imgSrc="/zenstone/Q201501.jpg"
               stoneName="Brown Cream"
-              price="RM 250 /FR or RM 135 /SF"
-            />
-            <ProductDisplay
-              imgSrc="/zenstone/Q201505.jpg"
-              stoneName="Pure Black"
-              price="RM 250 /FR or RM 135 /SF"
+              price={premium}
             />
 
             <ProductDisplay
-              imgSrc="/zenstone/Q802008.jpg"
-              stoneName="Grey Land"
-              price="RM 280 /FR or RM 150 /SF"
+              imgSrc="/zenstone/Q201505.jpg"
+              stoneName="Pure Black"
+              price={premium}
             />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q201506.jpg"
+              stoneName="Grey Forest"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q202032.jpg"
+              stoneName="Pure Grey"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q4015.jpg"
+              stoneName="Purple Galaxy"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601501.jpg"
+              stoneName="Blue Sapphire"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601502.JPEG"
+              stoneName="Beige Gold"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601503.jpg"
+              stoneName="White Gold"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601504.jpg"
+              stoneName="Cameo"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601505.jpg"
+              stoneName="Black Gold"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601506.jpg"
+              stoneName="White Gold Sand"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601507.jpg"
+              stoneName="Beige Gold Medium"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601508.jpg"
+              stoneName="Coffee Gold Sand"
+              price={premium}
+            />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q601509.jpg"
+              stoneName="Golden Coffee"
+              price={premium}
+            />
+
             <ProductDisplay
               imgSrc="/zenstone/Q201541.jpg"
               stoneName="Super White"
-              price="RM 280 /FR or RM 150 /SF"
+              price={noble}
+            />
+            <ProductDisplay
+              imgSrc="/zenstone/Q802008.jpg"
+              stoneName="Grey Land"
+              price={noble}
             />
           </Grid>
         </Container>
@@ -226,55 +249,55 @@ const ZenstoneMalaysia = () => {
             <SlabDisplay
               imgSrc="/zenstone/Q801501slab.jpg"
               stoneName="Cararra White"
-              price="RM 310 /FR or RM 165 /SF"
+              price={marble}
             />
+
             <SlabDisplay
               imgSrc="/zenstone/Q801534.jpg"
               stoneName="Black Ice Bloom"
-              price="RM 310 /FR or RM 165 /SF"
+              price={marble}
             />
+
             <SlabDisplay
               imgSrc="/zenstone/Q801535.jpg"
-              stoneName="Black Marquina"
-              price="RM 310 /FR or RM 165 /SF"
+              stoneName="Black Marquina S"
+              price={marble}
             />
 
             <SlabDisplay
               imgSrc="/zenstone/Q802021.jpg"
               stoneName="Snow Flower"
-              price="RM 310 /FR or RM 165 /SF"
-            />
-            <SlabDisplay
-              imgSrc="/zenstone/Q802022.jpg"
-              stoneName="Calacatta Black"
-              price="RM 310 /FR or RM 165 /SF"
+              price={marble}
             />
 
             <SlabDisplay
               imgSrc="/zenstone/Q802023.jpg"
               stoneName="Arabescato Corchia"
-              price="RM 310 /FR or RM 165 /SF"
+              price={marble}
             />
+
             <SlabDisplay
               imgSrc="/zenstone/Q802025.jpeg"
               stoneName="Black Marquina"
-              price="RM 310 /FR or RM 165 /SF"
+              price={marble}
             />
 
             <SlabDisplay
               imgSrc="/zenstone/Q802026.jpg"
               stoneName="Fabricator White"
-              price="RM 310 /FR or RM 165 /SF"
+              price={marble}
             />
+
             <SlabDisplay
               imgSrc="/zenstone/Q802027.jpg"
               stoneName="Staturio White"
-              price="RM 310 /FR or RM 165 /SF"
+              price={marble}
             />
+
             <SlabDisplay
               imgSrc="/zenstone/Q802031-slab.jpg"
               stoneName="Calacatta Venato"
-              price="RM 310 /FR or RM 165 /SF"
+              price={marble}
             />
           </Grid>
         </Container>

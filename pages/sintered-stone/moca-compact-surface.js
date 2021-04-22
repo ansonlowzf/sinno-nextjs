@@ -18,7 +18,7 @@ const MocaCompactSurface = () => {
       <NextSeo title="Moca Compact Surface | Stone Innovations Enterprise" />
       <Hero
         imgSrc="/qp2013-1.jpg"
-        imgText="Mocasotne QP2013 Table Top"
+        imgText="Mocastone QP2013 Table Top"
         title="Moca Compact Surface"
         subtitle="Supply &amp; Install Moca Compact Surface Kitchen Top"
       />
@@ -49,6 +49,18 @@ const MocaCompactSurface = () => {
               imgSrc="/sintered-stone/QP03.jpeg"
               stoneName="QP 03 (11mm) Smooth Matt"
               price="RM 200 per FR / RM 110 per SF"
+            />
+
+            <SlabDisplay
+              imgSrc="/sintered-stone/qp07-matt.jpeg"
+              stoneName="QP 07 (12mm) Smooth Matt"
+              price="RM 300 per FR / RM 160 per SF"
+            />
+
+            <SlabDisplay
+              imgSrc="/sintered-stone/qp12-matt.jpeg"
+              stoneName="QP 12 (12mm) Smooth Matt"
+              price="RM 300 per FR / RM 160 per SF"
             />
 
             <SlabDisplay
