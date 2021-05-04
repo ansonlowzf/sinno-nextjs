@@ -89,7 +89,7 @@ const Home = () => {
                   Porcelain Slab or Ultra-Compact stone),{" "}
                   <span className="highlight">Marble</span> and{" "}
                   <span className="highlight">Onyx</span> for{" "}
-                  <span className="highlight">kitchen top</span>,
+                  <span className="highlight">kitchen top</span>,{" "}
                   <span className="highlight">vanity top</span>,{" "}
                   <span className="highlight">tabletop</span>,{" "}
                   <span className="highlight">countertop</span>,{" "}

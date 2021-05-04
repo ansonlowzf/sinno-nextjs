@@ -234,6 +234,13 @@ const ZenstoneMalaysia = () => {
               stoneName="Super White"
               price={noble}
             />
+
+            <ProductDisplay
+              imgSrc="/zenstone/Q802003.jpg"
+              stoneName="De Fantasy"
+              price={noble}
+            />
+
             <ProductDisplay
               imgSrc="/zenstone/Q802008.jpg"
               stoneName="Grey Land"
