@@ -2,6 +2,13 @@
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
   <url>
+    <loc>https://www.stoneinnovations.com.my/404</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
     <loc>https://www.stoneinnovations.com.my/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -17,20 +24,6 @@
   
   <url>
     <loc>https://www.stoneinnovations.com.my</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
-    <loc>https://www.stoneinnovations.com.my/granite/index</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
-    <loc>https://www.stoneinnovations.com.my/granite/sensa</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -58,6 +51,20 @@
   
   
   <url>
+    <loc>https://www.stoneinnovations.com.my/granite/index</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://www.stoneinnovations.com.my/granite/sensa</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
     <loc>https://www.stoneinnovations.com.my/sintered-stone/dekton</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -73,13 +80,6 @@
   
   <url>
     <loc>https://www.stoneinnovations.com.my/sintered-stone/moca-compact-surface</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
-    <loc>https://www.stoneinnovations.com.my/quartz-stone/caesarstone/colour-pricing</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

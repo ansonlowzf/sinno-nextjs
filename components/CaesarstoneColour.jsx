@@ -1,5 +1,5 @@
 import { Container, Grid } from "@material-ui/core";
-import { Back2CaesarstoneButton, ProductDisplay } from "../components";
+import { ProductDisplay } from "../components";
 import { caesarstonePricing } from "../constants";
 
 const {
@@ -222,8 +222,6 @@ export const CaesarstoneColour = () => {
           price={supernatural}
         />
       </Grid>
-
-      <Back2CaesarstoneButton navToId="colour" />
     </Container>
   );
 };
