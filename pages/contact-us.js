@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import { Smartphone, WhatsApp } from "@material-ui/icons";
 import * as React from "react";
-import { SectionWrapper } from "../elements";
+import { SectionWrapper, Heading1, Heading2, TextWrapper } from "../elements";
 import { NextSeo } from "next-seo";
 
 const useStyles = makeStyles((theme) => ({
@@ -46,16 +46,37 @@ const ContactUs = () => {
       <NextSeo title="Contact Us | Stone Innovations Enterprise" />
 
       <SectionWrapper>
-        <Container maxWidth="lg" className={classes.containerStyles}>
-          <Typography
-            component="h1"
-            variant="h2"
-            align="center"
-            className={classes.h1Styles}
-          >
-            Contact Us
-          </Typography>
+        <Heading1>Contact Us</Heading1>
+      </SectionWrapper>
 
+      <SectionWrapper>
+        <Heading2>Stone Innovations Enterprise</Heading2>
+        <TextWrapper>
+          <Typography align="center" paragraph>
+            <Box fontWeight="fontWeightBold">Business Registration No.:-</Box>{" "}
+            201603220786 (002560776-H)
+          </Typography>
+          <Typography align="center" paragraph>
+            <Box fontWeight="fontWeightBold">Sales Office:-</Box> 45-1-1, Jalan
+            Medan Putra 6, Medan Putra Business Center, Bandar Menjalara 52200
+            KL
+          </Typography>
+          <Typography align="center" paragraph>
+            <Box fontWeight="fontWeightBold">Warehouse:-</Box> Lot 2201, Jalan
+            Industri 10, Kampung Baru Sungai Buloh, 40160 Shah Alam, Selangor
+          </Typography>
+          <Typography align="center" color="error">
+            <Box fontWeight="fontWeightBold">
+              Please make an appointment before visiting the sales office or
+              warehouse. Apology for any inconvenience caused, we have to
+              control the numbers of visitors.
+            </Box>
+          </Typography>
+        </TextWrapper>
+      </SectionWrapper>
+
+      <SectionWrapper>
+        <Container maxWidth="lg" className={classes.containerStyles}>
           <Grid container>
             <Grid
               container
