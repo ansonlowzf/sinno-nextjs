@@ -1,12 +1,15 @@
-import { Typography } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 import { NextSeo } from "next-seo";
+import Link from "next/link";
 import {
-  BodyT1,
+  CaesarstoneColour,
   CaesarstoneCommitment,
+  CaesarstoneCTA,
+  ColourWarning,
   FaqAccordion,
   Hero,
   MaterialArticle,
-  CaesarstoneCTA,
+  PriceTerm,
   SubNavBar,
 } from "../../../components";
 import { faqCaesarstone } from "../../../constants/faq";
@@ -18,7 +21,15 @@ import {
   TextWrapper,
 } from "../../../elements";
 
+const useStyles = makeStyles((theme) => ({
+  textMB: {
+    marginBottom: theme.spacing(10),
+  },
+}));
+
 const CaesarstoneMalaysia = () => {
+  const classes = useStyles();
+
   return (
     <>
       <NextSeo title="Caesarstone | Stone Innovations Enterprise" />
@@ -35,17 +46,24 @@ const CaesarstoneMalaysia = () => {
         <Heading2>Caesarstone Quartz Surface</Heading2>
         <TextWrapper>
           <Typography paragraph>
-            {`Caesarstone is one of the highest quality quartz stone you could find in
-            the market right now.`}
+            Caesarstone is one of the highest quality quartz stone you could
+            find in the market right now.
           </Typography>
           <Typography paragraph>
-            {`It's designed to mimic the colour of natural stone yet maintain the benefit of quartz stone and provide natural and premium feeling to your home design.`}
+            It's designed to mimic the colour of natural stone while maintaining
+            the benefit of quartz stone and providing a natural and premium
+            feeling to your home design.
           </Typography>
           <Typography paragraph>
-            {`Imagine you have a beautiful kitchen top which no need to worry about scratches, heat burnt mark, and so easy to maintain. Cooking feels so free now.`}
+            Imagine you have a beautiful kitchen top which no need to worry
+            about scratches, heat burnt mark, and so easy to maintain. Cooking
+            feels so accessible now.
           </Typography>
           <Typography>
-            {`Caesarstone Malaysia's distributor import Caesarstone from Caesarstone South East Asia's branch in Singapore to Malaysia, then fabricate, supply and install for Malaysia's homeowner.`}
+            Stone Innovations Enterprise is Caesarstone Malaysia's distributor.
+            We distribute Caesarstone slabs and fabricate, supply &amp; install
+            Caesarstone products such as kitchen top, island top, vanity top and
+            wall cladding.
           </Typography>
         </TextWrapper>
       </SectionWrapper>
@@ -58,13 +76,35 @@ const CaesarstoneMalaysia = () => {
       </SectionWrapper>
 
       <SectionWrapper>
-        <BodyT1
-          title="Colour &amp; Pricing"
-          description="For all 34 Caesarstone colours available in Malaysia."
-          btnText="See Colour &amp; Price"
-          imgSrc="/cloudburst1.jpg"
-          linkUrl="/quartz-stone/caesarstone/colour-pricing"
-        />
+        <Heading2>Colour &amp; Pricing</Heading2>
+        <TextWrapper>
+          <Typography align="center" paragraph>
+            The price shown below is for all the 34 Caesarstone colours
+            available in Malaysia in 20mm thick. 13mm is also available for a
+            10% lower price.
+          </Typography>
+          <Typography align="center" className={classes.textMB}>
+            What are the different between the 5 type of Caesarstone's finishes?
+            Polished, Natural, Matt, Concrete and Rough. Visit{` `}
+            <Link href="/quartz-stone/caesarstone/finishes">
+              <a className="link-style">Caesarstone Finishes</a>
+            </Link>
+          </Typography>
+        </TextWrapper>
+
+        <CaesarstoneColour />
+
+        <SectionWrapper>
+          <ColourWarning />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <PriceTerm />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <CaesarstoneCTA />
+        </SectionWrapper>
       </SectionWrapper>
 
       <SectionWrapper>

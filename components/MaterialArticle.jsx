@@ -12,8 +12,8 @@ export const MaterialArticle = () => {
       or{" "}
       <Link href="/blog/material-rating">
         <a className="link-style">material rating chart</a>
-      </Link>
-      as a reference to choose the material for your kitchen top.
+      </Link>{" "}
+      to know more about the benefit or quartz stone.
     </Typography>
   );
 };

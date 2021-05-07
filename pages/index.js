@@ -38,31 +38,9 @@ const Home = () => {
       <Hero
         imgSrc="/factory-entrance.jpg"
         imgText="factory entrance"
-        title="Stone Surface Mason"
-        subtitle="Quartz Stone | Sintered Stone | Granite | Marble | Onyx"
-        idPath="stones"
+        title="Stone Innovations Enterprise"
+        subtitle="Stone Surface Mason"
       />
-
-      <SectionWrapper>
-        <Heading2>Stone Innovations Enterprise</Heading2>
-        <TextWrapper>
-          <Typography align="center" paragraph>
-            <Box fontWeight="fontWeightBold">Business Registration No.:-</Box>{" "}
-            201603220786 (002560776-H)
-          </Typography>
-          <Typography align="center" paragraph>
-            <Box fontWeight="fontWeightBold">Sales Office:-</Box> 45-1-1, Jalan
-            Medan Putra 6, Medan Putra Business Center, Bandar Menjalara 52200
-            KL
-          </Typography>
-          <Typography align="center" paragraph>
-            <Box fontWeight="fontWeightBold">
-              Factory &amp; Warehosue Address:-
-            </Box>{" "}
-            944E, Kampung Baru Sungai Buloh, 47000, Sungai Buloh, Selangor D.E
-          </Typography>
-        </TextWrapper>
-      </SectionWrapper>
 
       <SectionWrapper>
         <Container maxWidth="xl">

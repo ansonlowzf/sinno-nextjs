@@ -1,4 +1,5 @@
 export const mainRoutes = [
+  { name: "Home", link: "/" },
   { name: "quartz stone", link: "/quartz-stone" },
   { name: "sintered stone", link: "/sintered-stone" },
   { name: "granite", link: "/granite" },
