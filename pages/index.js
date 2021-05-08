@@ -149,15 +149,15 @@ const Home = () => {
         <Heading2 idPath="stones">Stone Product</Heading2>
         <Container maxWidth="lg">
           <Grid container spacing={2} justify="center" alignItems="center">
-            <Grid item xs={12} sm={6} md={5}>
+            <Grid item xs={12} sm={6} md={4}>
               <StoneCard
                 imgSrc="/grey_mirror.jpg"
                 stone="Quartz Stone"
-                description="Engineered Stone"
+                description="Engineered Stone with More Than 90% Quartz Sand"
                 linkUrl="/quartz-stone"
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={5}>
+            <Grid item xs={12} sm={6} md={4}>
               <StoneCard
                 imgSrc="/blue_pearl.jpg"
                 stone="Granite"
@@ -165,11 +165,11 @@ const Home = () => {
                 linkUrl="/granite"
               />
             </Grid>
-            <Grid item xs={12} sm={6} md={5}>
+            <Grid item xs={12} sm={6} md={4}>
               <StoneCard
                 imgSrc="/bergen_1.jpg"
                 stone="Sintered Stone"
-                description="Engineered Stone"
+                description="Engineered Stone with Porcelain and Sintered Technology"
                 linkUrl="/sintered-stone"
               />
             </Grid>
