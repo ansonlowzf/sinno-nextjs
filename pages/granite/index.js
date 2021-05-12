@@ -22,7 +22,10 @@ const graniteMalaysia = () => {
 
   return (
     <>
-      <NextSeo title="Granite | Stone Innovations Enterprise" />
+      <NextSeo
+        title="Granite | Stone Innovations Enterprise"
+        description="Supply &amp; Install Granite Surfacing for All Kinds Of Countertops Application."
+      />
       <Hero
         imgSrc="/blue_pearl.jpg"
         imgText="Granite Blue Pearl"

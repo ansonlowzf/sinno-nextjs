@@ -31,7 +31,10 @@ const QuartzStonePage = () => {
   const classes = useStyles();
   return (
     <>
-      <NextSeo title="Quartz Stone | Stone Innovations Enterprise" />
+      <NextSeo
+        title="Quartz Stone | Stone Innovations Enterprise"
+        description="Supply &amp; Install Quartz Stone for All Kinds of Countertops Application."
+      />
       <Hero
         imgSrc="/cloudburst1.jpg"
         imgText="Caesarstone cloudburst"

@@ -13,7 +13,10 @@ import { graniteRoutes } from "../../constants/route";
 const Sensa = () => {
   return (
     <>
-      <NextSeo title="Sensa | Stone Innovations Enterprise" />
+      <NextSeo
+        title="Sensa | Stone Innovations Enterprise"
+        description="Supply &amp; Install Sensa Granite Surfacing for All Kinds Of Countertops Application."
+      />
       <Hero
         imgSrc="/sensa/orinoco-1.jpg"
         imgText="Sensa Granite Orinoco"

@@ -20,7 +20,10 @@ const { group5, group6 } = silestoneJumboPricing20;
 const Silestone = () => {
   return (
     <>
-      <NextSeo title="Silestone | Stone Innovations Enterprise" />
+      <NextSeo
+        title="Silestone | Stone Innovations Enterprise"
+        description="Supply &amp; Install Silestone Quartz Surface for All Kinds of Countertops Applications."
+      />
       <Hero
         imgSrc="/poblenou_1.jpg"
         imgText="Silestone Poblenou"
