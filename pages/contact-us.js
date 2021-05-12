@@ -6,7 +6,7 @@ import {
   IconButton,
   Typography,
 } from "@material-ui/core";
-import { Smartphone, WhatsApp } from "@material-ui/icons";
+import { Smartphone, WhatsApp, EmailOutlined } from "@material-ui/icons";
 import * as React from "react";
 import { SectionWrapper, Heading1, Heading2, TextWrapper } from "../elements";
 import { NextSeo } from "next-seo";
@@ -43,7 +43,10 @@ const ContactUs = () => {
 
   return (
     <>
-      <NextSeo title="Contact Us | Stone Innovations Enterprise" />
+      <NextSeo
+        title="Contact Us | Stone Innovations Enterprise"
+        description="Contact us by WhatsApp, Call or Email for all kinds of stone surfacing inquiries."
+      />
 
       <SectionWrapper>
         <Heading1>Contact Us</Heading1>
@@ -82,7 +85,7 @@ const ContactUs = () => {
               container
               item
               xs={12}
-              md={6}
+              md={4}
               direction="column"
               className={classes.mobileIconStyles}
             >
@@ -108,7 +111,7 @@ const ContactUs = () => {
               </a>
             </Grid>
 
-            <Grid container item xs={12} md={6} direction="column">
+            <Grid container item xs={12} md={4} direction="column">
               <Grid container item justify="center">
                 <IconButton
                   component="a"
@@ -126,6 +129,28 @@ const ContactUs = () => {
                   <Box py={2} color="text.primary">
                     Anson Low @ 019-310 9773 <br />
                     Call
+                  </Box>
+                </Typography>
+              </a>
+            </Grid>
+
+            <Grid container item xs={12} md={4} direction="column">
+              <Grid container item justify="center">
+                <IconButton
+                  component="a"
+                  href="mailto:contact@stoneinnovations.com.my"
+                  color="primary"
+                >
+                  <EmailOutlined style={{ fontSize: 60 }} />
+                </IconButton>
+              </Grid>
+              <a
+                href="mailto:contact@stoneinnovations.com.my"
+                style={{ textDecoration: `none` }}
+              >
+                <Typography align="center">
+                  <Box py={2} color="text.primary">
+                    contact@stoneinnovations.com.my
                   </Box>
                 </Typography>
               </a>
