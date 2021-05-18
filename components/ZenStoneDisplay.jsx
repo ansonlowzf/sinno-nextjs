@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const ZenStoneDisplay = ({ imgSrc, stoneName, price }) => {
+export const ZenstoneDisplay = ({ imgSrc, stoneName, price }) => {
   const classes = useStyles();
 
   return (

@@ -9,7 +9,7 @@ import {
   QuotationCTA,
   SlabDisplay,
   SubNavBar,
-  ZenStoneDisplay,
+  ZenstoneDisplay,
 } from "../../components";
 import { qsRoutes } from "../../constants/route";
 import { Heading2, SectionWrapper, TextWrapper } from "../../elements";
@@ -58,205 +58,205 @@ const ZenstoneMalaysia = () => {
         <Heading2>Colour &amp; Pricing</Heading2>
         <Container maxWidth="lg">
           <Grid container spacing={2} justify="center">
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101503.png"
               stoneName="Smoothie White"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101506.png"
               stoneName="Smoothie Grey"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101508.png"
               stoneName="Smoothie Beige"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101509.png"
               stoneName="Red Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101510.png"
               stoneName="Brown Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101511.png"
               stoneName="Blue Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101512.png"
               stoneName="Purple Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101513.png"
               stoneName="Orange Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101521.png"
               stoneName="White Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101522.png"
               stoneName="Black Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101523.png"
               stoneName="Snow White"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101524.png"
               stoneName="Grey Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101525.png"
               stoneName="Beige Mirror"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101526.png"
               stoneName="Crystal White"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101527.png"
               stoneName="White Planet"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q101528.png"
               stoneName="Icy White"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q3015.png"
               stoneName="Shell King"
               price={classic}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q201501.png"
               stoneName="Brown Cream"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q201502.png"
               stoneName="Yellow Hill"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q201503.png"
               stoneName="England Coffee"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q201505.png"
               stoneName="Pure Black"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q201506.png"
               stoneName="Grey Forest"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q202032.png"
               stoneName="Pure Grey"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q4015.png"
               stoneName="Purple Galaxy"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601501.png"
               stoneName="Blue Sapphire"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601502.png"
               stoneName="Beige Gold"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601503.png"
               stoneName="White Gold"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601504.png"
               stoneName="Cameo"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601505.png"
               stoneName="Black Gold"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601506.png"
               stoneName="White Gold Sand"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601507.png"
               stoneName="Beige Gold Medium"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601508.png"
               stoneName="Coffee Gold Sand"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q601509.png"
               stoneName="Golden Coffee"
               price={premium}
             />
 
-            <ZenStoneDisplay
+            <ZenstoneDisplay
               imgSrc="/qs/Q201541.png"
               stoneName="Super White"
               price={noble}
