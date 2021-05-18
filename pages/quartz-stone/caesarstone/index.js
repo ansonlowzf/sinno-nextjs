@@ -32,7 +32,10 @@ const CaesarstoneMalaysia = () => {
 
   return (
     <>
-      <NextSeo title="Caesarstone | Stone Innovations Enterprise" />
+      <NextSeo
+        title="Caesarstone | Stone Innovations Enterprise"
+        description="Supply &amp; Install Caesarstone Quartz Surface for All Kinds Of Countertops Application."
+      />
       <Hero
         imgSrc="/calacatta_nuvo.jpg"
         imgText="Caesarstone Calacatta Nuvo"

@@ -34,7 +34,10 @@ const Home = () => {
 
   return (
     <>
-      <NextSeo title="Stone Mason Malaysia | Stone Innovations Enterprise" />
+      <NextSeo
+        title="Stone Mason Malaysia | Stone Innovations Enterprise"
+        description="We are a stonemason specializing in quartz stone, granite, sintered stone, and marble for all kinds of kitchen top, wall cladding, and flooring application."
+      />
       <Hero
         imgSrc="/factory-entrance.jpg"
         imgText="factory entrance"

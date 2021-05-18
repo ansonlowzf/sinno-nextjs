@@ -1,7 +1,7 @@
 module.exports = {
-  future: {
-    webpack5: true,
-  },
+  // future: {
+  //   webpack5: true,
+  // },
   webpack: (config, { isServer }) => {
     if (isServer) {
       require("./lib/generate-sitemap");
@@ -9,7 +9,7 @@ module.exports = {
 
     return config;
   },
-  images: {
-    deviceSizes: [600, 960, 1280, 1920],
-  },
+  // images: {
+  //   deviceSizes: [600, 960, 1280, 1920],
+  // },
 };
