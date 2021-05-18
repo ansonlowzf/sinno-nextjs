@@ -24,3 +24,4 @@ export * from "./Back2CaesarstoneButton";
 export * from "./ProductDisplay";
 export * from "./SubNavBar";
 export * from "./CaesarstoneCTA";
+export * from "./ZenstoneDisplay";
