@@ -14,6 +14,8 @@ import {
 } from "../../components";
 import { faqQuartzStone } from "../../constants/faq";
 import { qsRoutes } from "../../constants/route";
+import QsP from "../../sections/QsP";
+import QsA from "../../sections/QsA";
 
 const useStyles = makeStyles((theme) => ({
   textPB: {
@@ -45,32 +47,14 @@ const QuartzStonePage = () => {
       <SubNavBar routes={qsRoutes} />
 
       <SectionWrapper>
-        <Heading2>What Is Your Desire Kitchen Top?</Heading2>
-        <TextWrapper>
-          <Typography component="ul" paragraph>
-            <li>
-              It should be durable when you are using it for cooking every day.
-            </li>
-            <li>
-              Shall not have any scratch mark when you are using it for family
-              cooking.
-            </li>
-            <li>
-              The foods and drink such as carrot, lemon, or coffee should not
-              dim or change the kitchen top colour.
-            </li>
-          </Typography>
-          <Typography component="p" variant="h6" align="center" paragraph>
-            What features are you looking for?
-          </Typography>
-
-          <MaterialArticle />
-        </TextWrapper>
+        <QsP />
+        <QsA />
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>How About These Features?</Heading2>
+        <Heading2>Genuine Quartz Stone With These Features</Heading2>
         <Container maxWidth="sm">
+          <Typography paragraph>These 3 videos:-</Typography>
           <iframe
             title="test quartz stone scratch resistant"
             className={classes.iframeMatchParentWidth}
