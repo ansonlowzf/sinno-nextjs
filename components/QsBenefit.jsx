@@ -2,10 +2,10 @@ import * as React from "react";
 import { Grid, Paper, Typography } from "@material-ui/core";
 import Image from "next/image";
 
-export const ImageWithDescription = ({ imgSrc, title, description }) => {
+export const QsBenefit = ({ imgSrc, title, description }) => {
   return (
-    <Grid container spacing={3} alignItems="center">
-      <Grid item xs={12} sm={5}>
+    <Grid container item spacing={2} alignContent="flex-start" xs={12} md={4}>
+      <Grid item>
         <Paper
           component={Image}
           alt={title}
@@ -14,11 +14,11 @@ export const ImageWithDescription = ({ imgSrc, title, description }) => {
           height={250}
         />
       </Grid>
-      <Grid item xs={12} sm={7}>
-        <Typography component="h3" variant="h5" gutterBottom>
+      <Grid item>
+        <Typography component="h3" variant="h6" gutterBottom>
           {title}
         </Typography>
-        <Typography>{description}</Typography>
+        <Typography align="justify">{description}</Typography>
       </Grid>
     </Grid>
   );

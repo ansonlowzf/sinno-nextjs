@@ -4,7 +4,7 @@ import { NextSeo } from "next-seo";
 import { makeStyles, Typography, Container, Grid } from "@material-ui/core";
 import {
   QuotationCTA,
-  ImageWithDescription,
+  QsBenefit,
   Hero,
   StoneCard,
   MaterialArticle,
@@ -16,6 +16,7 @@ import { faqQuartzStone } from "../../constants/faq";
 import { qsRoutes } from "../../constants/route";
 import QsP from "../../sections/QsP";
 import QsA from "../../sections/QsA";
+import QsS from "../../sections/QsS";
 
 const useStyles = makeStyles((theme) => ({
   textPB: {
@@ -49,74 +50,47 @@ const QuartzStonePage = () => {
       <SectionWrapper>
         <QsP />
         <QsA />
+        <QsS />
       </SectionWrapper>
 
       <SectionWrapper>
-        <Heading2>Genuine Quartz Stone With These Features</Heading2>
-        <Container maxWidth="sm">
-          <Typography paragraph>These 3 videos:-</Typography>
-          <iframe
-            title="test quartz stone scratch resistant"
-            className={classes.iframeMatchParentWidth}
-            src="https://www.youtube.com/embed/jcJIQeojqPQ"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </Container>
-        <Container maxWidth="sm">
-          <iframe
-            title="test quartz stone stain resistant"
-            className={classes.iframeMatchParentWidth}
-            src="https://www.youtube.com/embed/i6N43EqJQpg"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </Container>
-        <Container maxWidth="sm">
-          <iframe
-            title="test quartz stone heat resistant"
-            className={classes.iframeMatchParentWidth}
-            src="https://www.youtube.com/embed/CblsvAtVw9c"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </Container>
-      </SectionWrapper>
-      <SectionWrapper>
-        <Container maxWidth="md">
-          <ImageWithDescription
-            imgSrc="/benefit/stain_resistance.jpg"
-            title="Stain Resistance"
-            description="Virtually worry-free surfaces. Acids such as lemon juice, lime juice have no effect or could dim the surface. It can be cleaned with soft cloth and water. Red wine stain can be removed with CIF foaming gel or acetone. Daily food such as turmeric, coffee or curry will not stain your kitchen top easily"
-          />
-          <ImageWithDescription
-            imgSrc="/benefit/heat_resistance.jpg"
-            title="Heat Resistance"
-            description="Although quartz stone can resist heat up to 150°C, we always recommend using trivets or hot pads for hot hots and pans. However, quartz stone can always tolerate brief exposures to moderately hot temperatures."
-          />
-          <ImageWithDescription
-            imgSrc="/benefit/scratch_resistance.jpg"
-            title="Scratch Resistance"
-            description="Quartz stone is resistant to scratches. Based on Mohs Hardness Scale, lower hardness items such as kitchen tools and utensils will not cause scratches on quartz stone."
-          />
-          <ImageWithDescription
-            imgSrc="/benefit/chemical_resistance.jpg"
-            title="Chemical Resistance"
-            description="Quartz stone can resist most daily use chemicals like acetone, Clorox, gel polisher, and iodine. We'd recommend avoiding cleaning item such as oven cleaner, grill cleaner, and other cleaners which contains abrasive material inside."
-          />
-          <ImageWithDescription
-            imgSrc="/benefit/mildew_resistance.jpg"
-            title="Mildew Resistance"
-            description="Non porous material prevent growth of mold, mildew and bacteria on the surface. In another words, there is no room on the surface for them to live"
-          />
-          <ImageWithDescription
-            imgSrc="/benefit/non_porous.jpg"
-            title="Non-Porous Material"
-            description="Quartz stone requests minimum effect of maintenance and never need to apply any sealant every few year to protect the surface. It's resilient and non-porous. Natural stone like marble require multiple sealants to maintain luster, extend the lifetime of its beautiful surface and increase its stain resistance level. "
-          />
+        <Container maxWidth="lg">
+          <Grid container spacing={3}>
+            <QsBenefit
+              imgSrc="/benefit/stain_resistance.jpg"
+              title="Stain Resistance"
+              description="Virtually worry-free surfaces. Acidic food such as lemon juice
+              or lime juice does not affect or could dim the surface. We can
+              remove heavy colouring food such as red wine, turmeric, coffee
+              or curry's stain with CIF cleaning cream or acetone. Most of the
+              time, we can clean quartz stone top with soft cloth and water."
+            />
+            <QsBenefit
+              imgSrc="/benefit/heat_resistance.jpg"
+              title="Heat Resistance"
+              description="Although quartz stone can resist heat up to 150°C, we recommend using trivets or hot pads for hot pots and pans. However, quartz stone can always tolerate brief exposures to moderately hot temperatures."
+            />
+            <QsBenefit
+              imgSrc="/benefit/scratch_resistance.jpg"
+              title="Scratch Resistance"
+              description="Quartz stone resists scratches from most of the kitchen utensil. Quartz stone is scale 7 based on Mohs Hardness Scale, lower scale such as knife and nail will not cause scratches on quartz stone."
+            />
+            <QsBenefit
+              imgSrc="/benefit/chemical_resistance.jpg"
+              title="Chemical Resistance"
+              description="Quartz stone resists scratches from most of the kitchen utensil. Quartz stone is scale 7 based on Mohs Hardness Scale, lower scale such as knife and nail will not cause scratches on quartz stone."
+            />
+            <QsBenefit
+              imgSrc="/benefit/mildew_resistance.jpg"
+              title="Mildew Resistance"
+              description="Non-porous material prevents the growth of mould, mildew and bacteria on the surface. In other words, there is no room on the surface for them to live."
+            />
+            <QsBenefit
+              imgSrc="/benefit/non_porous.jpg"
+              title="Non-Porous Material"
+              description="Quartz stone requests minimum maintenance and never needs to apply any sealant every few years to protect the surface. It's resilient and non-porous. Natural stone like marble requires multiple sealants to maintain luster, extend the lifetime of its beautiful surface and increase its stain resistance level."
+            />
+          </Grid>
         </Container>
       </SectionWrapper>
 

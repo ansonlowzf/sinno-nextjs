@@ -91,6 +91,16 @@ const QsA = () => {
                 height={720}
               />
             </Grid>
+            <Grid item xs={12} sm={4}>
+              <Paper
+                component={Image}
+                src="/defectqs/burnt-mark.jpg"
+                alt="quartz stone with stain"
+                layout="responsive"
+                width={960}
+                height={720}
+              />
+            </Grid>
           </Grid>
         </Container>
       </SectionWrapper>
@@ -113,14 +123,14 @@ const QsA = () => {
           </Typography>
 
           <Typography component="h3" variant="h6" gutterBottom>
-            What is low-end quartz stone in short description?
+            What is low-end quartz stone in short?
           </Typography>
           <Typography paragraph>
             Supposedly the contain of the quartz stone's sand should be 90% and
             above per slab. Manufacturers reduce to 60% or lower, then replace
             it with glass sand, stone powder and other unknown materials.
             Significantly reduce the cost while can maintain the advantages of
-            genuine quartz stone for a short time.{" "}
+            genuine quartz stone for a short time.
           </Typography>
           <Typography paragraph>
             To make it look polished and shiny. Some manufacturers apply a
