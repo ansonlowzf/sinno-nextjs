@@ -144,7 +144,10 @@ const QsA = () => {
           <Typography paragraph>
             We share a simple method to help you avoid buying low-end quartz
             stone. Check out this blog{" "}
-            <Link href="/blog/test-quartz-stone">article here</Link>.
+            <Link href="/blog/test-quartz-stone">
+              <a className="link-style">article here</a>
+            </Link>
+            .
           </Typography>
           <Typography paragraph>
             Genuine quartz stone will not give you these kinds of issues. They
