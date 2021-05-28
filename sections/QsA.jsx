@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Container, Grid, Paper, Typography } from "@material-ui/core";
 import Image from "next/image";
+import Link from "next/link";
 import { SectionWrapper, TextWrapper } from "../elements";
 
 const QsA = () => {
@@ -135,11 +136,15 @@ const QsA = () => {
           <Typography paragraph>
             To make it look polished and shiny. Some manufacturers apply a
             sealant on top of the surface. Again, to keep the cost low, the
-            manufacturers used low-end sealant and created another problem.{" "}
+            manufacturers used low-end sealant and created another problem. It
+            still contains more than 50% of quartz stone sand. Can people still
+            call or sell it as quartz stone? With a lower price, it can attract
+            many buyers. The buyer doesn't know about this.{" "}
           </Typography>
           <Typography paragraph>
-            Really? Do you want to make a set of kitchen top with this quartz
-            stone quality?
+            We share a simple method to help you avoid buying low-end quartz
+            stone. Check out this blog{" "}
+            <Link href="/blog/test-quartz-stone">article here</Link>.
           </Typography>
           <Typography paragraph>
             Genuine quartz stone will not give you these kinds of issues. They
