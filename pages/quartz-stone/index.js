@@ -7,7 +7,6 @@ import {
   QsBenefit,
   Hero,
   StoneCard,
-  MaterialArticle,
   SinnoButton,
   FaqAccordion,
   SubNavBar,

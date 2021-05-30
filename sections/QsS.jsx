@@ -21,11 +21,14 @@ const QsS = () => {
     <SectionWrapper>
       <Heading2>Why Use Genuine Quartz Stone?</Heading2>
       <Container maxWidth="sm">
-        <Typography paragraph>These 3 videos:-</Typography>
+        <Typography paragraph>
+          Please watch these 3 videos in 3 minutes to see whether the genuine
+          quartz stone is what you are looking for?
+        </Typography>
         <iframe
-          title="test quartz stone scratch resistant"
+          title="test quartz stone scratch resistance"
           className={classes.iframeMatchParentWidth}
-          src="https://www.youtube.com/embed/jcJIQeojqPQ"
+          src="https://www.youtube.com/embed/L80IMvVu8j0"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -33,9 +36,9 @@ const QsS = () => {
       </Container>
       <Container maxWidth="sm">
         <iframe
-          title="test quartz stone stain resistant"
+          title="test quartz stone stain resistance"
           className={classes.iframeMatchParentWidth}
-          src="https://www.youtube.com/embed/i6N43EqJQpg"
+          src="https://www.youtube.com/embed/NPdanaeRwWc"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -43,9 +46,9 @@ const QsS = () => {
       </Container>
       <Container maxWidth="sm">
         <iframe
-          title="test quartz stone heat resistant"
+          title="test quartz stone heat resistance"
           className={classes.iframeMatchParentWidth}
-          src="https://www.youtube.com/embed/CblsvAtVw9c"
+          src="https://www.youtube.com/embed/sEk7n4oj5Ps"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

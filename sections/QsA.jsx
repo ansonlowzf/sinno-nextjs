@@ -139,7 +139,7 @@ const QsA = () => {
             manufacturers used low-end sealant and created another problem. It
             still contains more than 50% of quartz stone sand. Can people still
             call or sell it as quartz stone? With a lower price, it can attract
-            many buyers. The buyer doesn't know about this.{" "}
+            many buyers. The buyer doesn't know about this.
           </Typography>
           <Typography paragraph>
             We share a simple method to help you avoid buying low-end quartz
